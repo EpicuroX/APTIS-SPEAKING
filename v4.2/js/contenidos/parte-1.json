@@ -1,0 +1,756 @@
+{
+  "id": "parte-1",
+  "label": "Parte 1",
+  "subtitle": "3 preguntas personales · 30 seg cada una",
+  "meta": {
+    "tiempo_total": "3 × 30 seg",
+    "preparacion": "0 seg",
+    "formato": "3 preguntas del MISMO tema en escalada",
+    "nivel": "A2 → B2 alto"
+  },
+  "examen": {
+    "preparacion_segundos": 0,
+    "respuesta_segundos": 30,
+    "subtareas": 3,
+    "modo": "tres_separadas"
+  },
+  "objetivo": "Las 3 preguntas del Aptis Parte 1 suelen ir del MISMO tema en escalada: pregunta 1 PRESENTE (describir), pregunta 2 PASADO (tu experiencia), pregunta 3 FUTURO/HIPÓTESIS (preferencia o cambio). Tres plantillas distintas, ~75 palabras cada una.",
+  "patron_oficial": {
+    "titulo": "Patrón oficial del Aptis Parte 1",
+    "descripcion": "Las 3 preguntas escalan en complejidad gramatical: presente → pasado → futuro/hipótesis.",
+    "ejemplo_real": [
+      "Q1 (presente): Tell me about your hometown.",
+      "Q2 (pasado): Tell me about the last time you went back.",
+      "Q3 (futuro/hipótesis): What would you change about your town if you could?"
+    ]
+  },
+  "plantillas": [
+    {
+      "tipo": "A",
+      "label": "Plantilla A · PRESENTE",
+      "uso": "Pregunta directa sobre cómo es algo. Tiempo verbal: presente simple + presente perfecto.",
+      "color": "#16a34a",
+      "objetivo_palabras": "70-80 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Respuesta directa",
+          "time": "8 seg",
+          "grammar": "Presente simple",
+          "conector_inicial": {
+            "texto": "Well, in my case,",
+            "funcion": "Apertura",
+            "alternativas": [
+              { "texto": "Well, in my case,",       "nivel": "B1" },
+              { "texto": "Actually,",               "nivel": "B1" },
+              { "texto": "Now that you ask,",       "nivel": "B2" },
+              { "texto": "To be honest,",           "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Well, in my case, " },
+            { "tipo": "hueco", "id": "sujeto", "label": "sujeto del tema" },
+            { "tipo": "fijo", "texto": " is " },
+            { "tipo": "hueco", "id": "descripcion", "label": "descripción B2" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "sujeto": {
+              "tipo_palabra": "Sujeto del tema",
+              "ayuda": "El sujeto de la pregunta (my hometown, my job, my family…)",
+              "opciones": [
+                { "texto": "my hometown",        "nivel": "A2" },
+                { "texto": "my job",             "nivel": "A2" },
+                { "texto": "my family",          "nivel": "A2" },
+                { "texto": "my daily routine",   "nivel": "B1" },
+                { "texto": "my favourite food",  "nivel": "A2" }
+              ]
+            },
+            "descripcion": {
+              "tipo_palabra": "Adjetivo + sustantivo (descripción)",
+              "ayuda": "2-3 palabras describiendo. Adjetivos B2 mejor que 'good' o 'nice'.",
+              "opciones": [
+                { "texto": "a small but charming coastal town",     "nivel": "B2" },
+                { "texto": "quite a close-knit and supportive one", "nivel": "B2 alto" },
+                { "texto": "really demanding but rewarding",        "nivel": "B2" },
+                { "texto": "pretty packed from morning to night",   "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Frase corta, adjetivo B2. Evita 'good'/'nice'."
+        },
+        {
+          "n": 2,
+          "title": "Dos detalles concretos",
+          "time": "14 seg",
+          "grammar": "Presente simple + presente perfecto",
+          "conector_inicial": {
+            "texto": "What I love most about it",
+            "funcion": "Concretar",
+            "alternativas": [
+              { "texto": "What I love most about it is",        "nivel": "B2" },
+              { "texto": "One of the things I appreciate is",   "nivel": "B2 alto" },
+              { "texto": "It's known for",                       "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "What I love most about it is " },
+            { "tipo": "hueco", "id": "detalle1", "label": "primer detalle" },
+            { "tipo": "fijo", "texto": ". I've been " },
+            { "tipo": "hueco", "id": "experiencia", "label": "experiencia (presente perfecto)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "detalle1": {
+              "tipo_palabra": "Detalle concreto",
+              "ayuda": "Algo específico y memorable del tema.",
+              "opciones": [
+                { "texto": "the friendly atmosphere",         "nivel": "B1" },
+                { "texto": "its rich cultural heritage",      "nivel": "B2 alto" },
+                { "texto": "the flexibility it gives me",     "nivel": "B2" },
+                { "texto": "how peaceful and laid-back it is","nivel": "B2 alto" }
+              ]
+            },
+            "experiencia": {
+              "tipo_palabra": "Verbo + ing / participio (presente perfecto)",
+              "ayuda": "Algo que has hecho/vivido relacionado con esto.",
+              "opciones": [
+                { "texto": "living there for over five years",                "nivel": "B2" },
+                { "texto": "working in this field for nearly a decade",       "nivel": "B2 alto" },
+                { "texto": "doing this routine since I moved in",             "nivel": "B2" },
+                { "texto": "passionate about it for as long as I can remember", "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Mete un presente perfecto ('I've been + ing') = marca B2 instantánea."
+        },
+        {
+          "n": 3,
+          "title": "Cierre con valoración",
+          "time": "8 seg",
+          "grammar": "Presente + idiom B2/C1",
+          "conector_inicial": {
+            "texto": "All in all,",
+            "funcion": "Cierre",
+            "alternativas": [
+              { "texto": "All in all,",              "nivel": "B2" },
+              { "texto": "Honestly,",                 "nivel": "B1" },
+              { "texto": "At the end of the day,",   "nivel": "C1 (idiom)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "All in all, " },
+            { "tipo": "hueco", "id": "cierre", "label": "valoración final" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "cierre": {
+              "tipo_palabra": "Frase de cierre con valoración",
+              "ayuda": "Cómo te hace sentir o por qué importa.",
+              "opciones": [
+                { "texto": "it really makes my day",                       "nivel": "B2 (idiom)" },
+                { "texto": "I wouldn't change it for the world",           "nivel": "B2 alto" },
+                { "texto": "it brings me a real sense of belonging",       "nivel": "C1" },
+                { "texto": "it's something I genuinely value",             "nivel": "B2" }
+              ]
+            }
+          },
+          "trick": "Cierre limpio con idiom B2/C1. No te quedes a medias."
+        }
+      ]
+    },
+    {
+      "tipo": "B",
+      "label": "Plantilla B · PASADO",
+      "uso": "Pregunta sobre tu experiencia o última vez que algo pasó. Tiempo verbal: pasado simple + pasado continuo.",
+      "color": "#2563eb",
+      "objetivo_palabras": "70-80 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Contexto temporal",
+          "time": "8 seg",
+          "grammar": "Pasado simple",
+          "conector_inicial": {
+            "texto": "Actually, last",
+            "funcion": "Apertura narrativa",
+            "alternativas": [
+              { "texto": "Actually, last",                  "nivel": "B1" },
+              { "texto": "Funny you ask, because last",     "nivel": "B2 alto" },
+              { "texto": "I still remember when",           "nivel": "B2" },
+              { "texto": "Not so long ago,",                 "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Actually, last " },
+            { "tipo": "hueco", "id": "periodo", "label": "periodo" },
+            { "tipo": "fijo", "texto": " I " },
+            { "tipo": "hueco", "id": "accion_pasado", "label": "acción en pasado simple" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "periodo": {
+              "tipo_palabra": "Marcador temporal",
+              "ayuda": "Cuándo pasó. Cuanto más concreto, mejor.",
+              "opciones": [
+                { "texto": "weekend",       "nivel": "A2" },
+                { "texto": "summer",        "nivel": "A2" },
+                { "texto": "month",         "nivel": "A2" },
+                { "texto": "year",          "nivel": "A2" },
+                { "texto": "Christmas",     "nivel": "B1" }
+              ]
+            },
+            "accion_pasado": {
+              "tipo_palabra": "Verbo pasado simple + complemento",
+              "ayuda": "Acción puntual concreta.",
+              "opciones": [
+                { "texto": "went back to visit my family",            "nivel": "B1" },
+                { "texto": "decided to take up a new hobby",          "nivel": "B2 alto" },
+                { "texto": "travelled to Italy with my partner",      "nivel": "B2" },
+                { "texto": "cooked a homemade paella for my friends", "nivel": "B2" },
+                { "texto": "took part in a local marathon",           "nivel": "B2" }
+              ]
+            }
+          },
+          "trick": "Acción concreta = imagen mental clara para el evaluador."
+        },
+        {
+          "n": 2,
+          "title": "Acción en curso + detalle",
+          "time": "14 seg",
+          "grammar": "Pasado continuo (was + -ing)",
+          "conector_inicial": {
+            "texto": "I remember I was",
+            "funcion": "Detalle narrativo",
+            "alternativas": [
+              { "texto": "I remember I was",                "nivel": "B2" },
+              { "texto": "At that moment, I was",           "nivel": "B2" },
+              { "texto": "While I was there, I was",        "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "I remember I was " },
+            { "tipo": "hueco", "id": "continuo", "label": "verbo -ing + detalle" },
+            { "tipo": "fijo", "texto": " and " },
+            { "tipo": "hueco", "id": "sensacion", "label": "sensación o reacción" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "continuo": {
+              "tipo_palabra": "Verbo en -ing + detalle",
+              "ayuda": "Acción en curso. Pasado continuo = marca B2.",
+              "opciones": [
+                { "texto": "walking around the old town at sunset",       "nivel": "B2" },
+                { "texto": "catching up with my best friend over coffee", "nivel": "B2 alto" },
+                { "texto": "preparing dinner for the whole family",       "nivel": "B2" },
+                { "texto": "exploring a small village in the mountains",  "nivel": "B2 alto" }
+              ]
+            },
+            "sensacion": {
+              "tipo_palabra": "Sentimiento o reacción",
+              "ayuda": "Cómo te hizo sentir.",
+              "opciones": [
+                { "texto": "it felt absolutely refreshing",       "nivel": "B2" },
+                { "texto": "it took a real load off my mind",     "nivel": "C1 (idiom)" },
+                { "texto": "I was completely amazed",             "nivel": "B2" },
+                { "texto": "it brought back wonderful memories",  "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Pasado simple + continuo en frases seguidas = marca B2 alta inmediata."
+        },
+        {
+          "n": 3,
+          "title": "Reflexión / aprendizaje",
+          "time": "8 seg",
+          "grammar": "Pasado o presente perfecto",
+          "conector_inicial": {
+            "texto": "It made me realise",
+            "funcion": "Reflexión",
+            "alternativas": [
+              { "texto": "It made me realise",          "nivel": "B2 alto" },
+              { "texto": "Honestly, it reminded me",    "nivel": "B2" },
+              { "texto": "Looking back,",                "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "It made me realise " },
+            { "tipo": "hueco", "id": "leccion", "label": "lección aprendida" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "leccion": {
+              "tipo_palabra": "Frase de reflexión",
+              "ayuda": "Qué aprendiste o por qué importa.",
+              "opciones": [
+                { "texto": "how much I miss those moments",                "nivel": "B2" },
+                { "texto": "balance is essential in everything I do",       "nivel": "B2 alto" },
+                { "texto": "small things really make all the difference",   "nivel": "C1 (idiom)" },
+                { "texto": "stepping out of your comfort zone opens your mind", "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Reflexión = madurez discursiva. Examinadores valoran cierre con sentido."
+        }
+      ]
+    },
+    {
+      "tipo": "C",
+      "label": "Plantilla C · FUTURO / HIPÓTESIS",
+      "uso": "Pregunta sobre lo que harías, cambiarías o preferirías. Tiempo verbal: condicional 2 + futuro.",
+      "color": "#dc2626",
+      "objetivo_palabras": "70-80 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Posicionamiento",
+          "time": "8 seg",
+          "grammar": "Condicional 2 (If I had to + would)",
+          "conector_inicial": {
+            "texto": "To be honest, if I had to",
+            "funcion": "Hipótesis personal",
+            "alternativas": [
+              { "texto": "To be honest, if I had to",      "nivel": "B2" },
+              { "texto": "If I were to",                    "nivel": "C1 (inversión)" },
+              { "texto": "If I could,",                     "nivel": "B1" },
+              { "texto": "Were I in that position,",        "nivel": "C1 (inversión)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "To be honest, if I had to " },
+            { "tipo": "hueco", "id": "verbo_hip", "label": "verbo (choose/change…)" },
+            { "tipo": "fijo", "texto": ", I would " },
+            { "tipo": "hueco", "id": "accion_cond", "label": "acción condicional" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "verbo_hip": {
+              "tipo_palabra": "Verbo de elección",
+              "ayuda": "Tras 'had to' va infinitivo sin to.",
+              "opciones": [
+                { "texto": "choose",   "nivel": "A2" },
+                { "texto": "change something", "nivel": "B1" },
+                { "texto": "pick one", "nivel": "B1" },
+                { "texto": "make a decision", "nivel": "B2" }
+              ]
+            },
+            "accion_cond": {
+              "tipo_palabra": "Acción (verbo sin to)",
+              "ayuda": "Tras 'would' va infinitivo sin to.",
+              "opciones": [
+                { "texto": "go for a bigger and greener city",     "nivel": "B2" },
+                { "texto": "invest in better public transport",    "nivel": "B2 alto" },
+                { "texto": "try something completely different",   "nivel": "B2" },
+                { "texto": "set clearer boundaries in my routine", "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "'If I had to + would' = condicional 2 bien construido. Marca B2 limpia.",
+          "warning": "'If I would' = ERROR. Siempre 'If I HAD to + would'."
+        },
+        {
+          "n": 2,
+          "title": "Razón sólida",
+          "time": "14 seg",
+          "grammar": "Presente + razón",
+          "conector_inicial": {
+            "texto": "The main reason is that",
+            "funcion": "Justificar",
+            "alternativas": [
+              { "texto": "The main reason is that",         "nivel": "B2" },
+              { "texto": "Mainly because",                   "nivel": "B1" },
+              { "texto": "What drives me is that",           "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "The main reason is that " },
+            { "tipo": "hueco", "id": "razon", "label": "razón" },
+            { "tipo": "fijo", "texto": ", and " },
+            { "tipo": "hueco", "id": "refuerzo", "label": "refuerzo personal" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "razon": {
+              "tipo_palabra": "Razón (frase con sujeto + verbo)",
+              "ayuda": "Por qué es la mejor opción para ti.",
+              "opciones": [
+                { "texto": "it would give me much more flexibility",        "nivel": "B2" },
+                { "texto": "it really suits my personality",                 "nivel": "B2 alto" },
+                { "texto": "I've always thrived in that kind of environment","nivel": "C1" }
+              ]
+            },
+            "refuerzo": {
+              "tipo_palabra": "Refuerzo personal",
+              "ayuda": "Algo más que apoya tu elección.",
+              "opciones": [
+                { "texto": "honestly, it just feels right",                "nivel": "B2" },
+                { "texto": "it would broaden my horizons enormously",      "nivel": "C1 (colocación)" },
+                { "texto": "it would make a real difference in my life",   "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Doble argumento (razón + refuerzo) = densidad discursiva B2."
+        },
+        {
+          "n": 3,
+          "title": "Cierre con idiom",
+          "time": "8 seg",
+          "grammar": "Presente + idiom",
+          "conector_inicial": {
+            "texto": "At the end of the day,",
+            "funcion": "Cierre",
+            "alternativas": [
+              { "texto": "At the end of the day,",   "nivel": "C1 (idiom)" },
+              { "texto": "All in all,",              "nivel": "B2" },
+              { "texto": "In a nutshell,",           "nivel": "C1 (idiom)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "At the end of the day, " },
+            { "tipo": "hueco", "id": "cierre_c", "label": "frase de cierre" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "cierre_c": {
+              "tipo_palabra": "Frase de cierre B2/C1",
+              "ayuda": "Resumen contundente.",
+              "opciones": [
+                { "texto": "it's all about finding the right balance",      "nivel": "C1 (idiom)" },
+                { "texto": "you have to follow your gut",                    "nivel": "C1 (idiom)" },
+                { "texto": "small choices make a big difference",            "nivel": "B2 alto" },
+                { "texto": "I genuinely believe it would pay off",           "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Idiom de cierre = remate C1."
+        }
+      ]
+    }
+  ],
+  "kits_universales": [
+    {
+      "label": "Verbos B2 para el paso 1 (descripción)",
+      "items": ["is known for", "stands out for", "is famous for its", "is best described as", "happens to be"]
+    },
+    {
+      "label": "Phrasal verbs B2 para todas las plantillas",
+      "items": ["unwind", "switch off", "end up + -ing", "look back on", "stand out", "take up", "come up with"]
+    },
+    {
+      "label": "Adjetivos B2/C1 (evita good/nice)",
+      "items": ["charming", "vibrant", "laid-back", "fast-paced", "rewarding", "demanding", "fulfilling", "stunning", "remarkable"]
+    }
+  ],
+  "temas": [
+    {
+      "id": "hometown",
+      "label": "Hometown / Tu ciudad",
+      "color": "#16a34a",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your hometown.",
+          "What is your town like?",
+          "Where do you live?",
+          "Describe the area where you live.",
+          "What kind of place is your city?"
+        ],
+        "bloque_b": [
+          "Tell me about the last time you went back to your hometown.",
+          "When did you last visit your favourite place in your city?",
+          "Tell me about a special moment you remember in your town.",
+          "What's the most memorable thing you've done in your area recently?",
+          "When did you last show your town to a visitor?"
+        ],
+        "bloque_c": [
+          "What would you change about your town if you could?",
+          "Would you like to live somewhere else in the future?",
+          "If you could move anywhere, where would it be?",
+          "How do you think your town will change in the next 10 years?",
+          "Would you recommend your town to a visitor?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my hometown is a small but charming coastal town. What I love most about it is the friendly atmosphere. I've been living there for over five years. All in all, it really makes my day.",
+      "respuesta_modelo_b": "Actually, last weekend I went back to visit my family. I remember I was walking around the old town at sunset and it felt absolutely refreshing. It made me realise how much I miss those moments.",
+      "respuesta_modelo_c": "To be honest, if I had to choose, I would go for a bigger and greener city. The main reason is that it would give me much more flexibility, and honestly, it just feels right. At the end of the day, it's all about finding the right balance."
+    },
+    {
+      "id": "hobbies",
+      "label": "Free time / Hobbies",
+      "color": "#0d9488",
+      "banco_preguntas": {
+        "bloque_a": [
+          "What do you like doing in your free time?",
+          "Tell me about your hobbies.",
+          "How do you usually relax?",
+          "What do you enjoy doing at the weekend?",
+          "Are you keen on any particular activity?"
+        ],
+        "bloque_b": [
+          "When did you start your favourite hobby?",
+          "Tell me about the last time you enjoyed your hobby.",
+          "What did you do last weekend?",
+          "Have you tried any new hobbies recently?",
+          "Tell me about a hobby you used to do as a child."
+        ],
+        "bloque_c": [
+          "Would you like to try a new hobby in the future?",
+          "If you had more free time, what would you do?",
+          "Would you recommend your hobby to others?",
+          "Do you think hobbies are important?",
+          "What hobby would you love to learn?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my favourite hobby is really demanding but rewarding. What I love most about it is the flexibility it gives me. I've been doing this routine since I moved in. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Actually, last weekend I decided to take up a new hobby. I remember I was preparing dinner for the whole family and it brought back wonderful memories. It made me realise how small things really make all the difference.",
+      "respuesta_modelo_c": "To be honest, if I had to choose a new hobby, I would try something completely different. The main reason is that it really suits my personality, and it would broaden my horizons enormously. In a nutshell, small choices make a big difference."
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "color": "#ea580c",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your family.",
+          "Are there many people in your family?",
+          "Describe your family.",
+          "Who do you live with?",
+          "What's your family like?"
+        ],
+        "bloque_b": [
+          "Tell me about the last time you spent time with your family.",
+          "When did you last have a family gathering?",
+          "Tell me about a special family memory.",
+          "What did you do with your family last weekend?",
+          "Have you visited your family recently?"
+        ],
+        "bloque_c": [
+          "How important is family for you?",
+          "Would you like to live closer to or farther from your family?",
+          "How will your family change in the future?",
+          "If you could spend more time with your family, what would you do?",
+          "Do you think families spend enough time together nowadays?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my family is quite a close-knit and supportive one. What I love most about it is the friendly atmosphere. I've been living with them for over five years. All in all, I wouldn't change it for the world.",
+      "respuesta_modelo_b": "Actually, last Christmas I went back to visit my family. I remember I was catching up with my best friend over coffee and it brought back wonderful memories. It made me realise balance is essential in everything I do.",
+      "respuesta_modelo_c": "To be honest, if I had to change something, I would go for living closer to them. The main reason is that it would give me much more flexibility, and it would make a real difference in my life. At the end of the day, it's all about finding the right balance."
+    },
+    {
+      "id": "work-studies",
+      "label": "Work / Studies",
+      "color": "#2563eb",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your job.",
+          "What do you do for a living?",
+          "What do you study?",
+          "Describe your work.",
+          "What's your typical work day like?"
+        ],
+        "bloque_b": [
+          "Tell me about the last time you had a busy day at work.",
+          "What did you do at work last week?",
+          "Have you faced any challenges in your job recently?",
+          "Tell me about a project you finished recently.",
+          "When did you start your current job?"
+        ],
+        "bloque_c": [
+          "Would you change anything about your job?",
+          "Where would you like to work in the future?",
+          "If you could change career, what would you do?",
+          "How will your job change in the next few years?",
+          "Would you recommend your profession to others?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my job is really demanding but rewarding. What I love most about it is the flexibility it gives me. I've been working in this field for nearly a decade. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Actually, last month I had a really demanding project. I remember I was preparing reports late at night and I was completely amazed by how much I learnt. It made me realise small things really make all the difference.",
+      "respuesta_modelo_c": "To be honest, if I had to change something, I would invest in better remote work options. The main reason is that I've always thrived in that kind of environment, and it would broaden my horizons enormously. In a nutshell, it's all about finding the right balance."
+    },
+    {
+      "id": "food",
+      "label": "Food",
+      "color": "#dc2626",
+      "banco_preguntas": {
+        "bloque_a": [
+          "What's your favourite food?",
+          "Tell me about the food in your country.",
+          "Do you like cooking?",
+          "What kind of food do you usually eat?",
+          "Describe a typical meal in your home."
+        ],
+        "bloque_b": [
+          "Tell me about the last time you cooked something special.",
+          "When did you last go out for a meal?",
+          "Have you tried any new dishes recently?",
+          "Tell me about a memorable meal you've had.",
+          "What did you eat for dinner yesterday?"
+        ],
+        "bloque_c": [
+          "If you could only eat one type of food, what would it be?",
+          "Would you like to learn another country's cuisine?",
+          "How are eating habits changing in your country?",
+          "Would you recommend the food from your country to a visitor?",
+          "Will home cooking disappear in the future?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my favourite food is homemade paella, which is quite a traditional one. What I love most about it is its rich cultural heritage. I've been cooking it for as long as I can remember. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Actually, last weekend I cooked a homemade paella for my friends. I remember I was preparing dinner for the whole family and it brought back wonderful memories. It made me realise how much small things really make all the difference.",
+      "respuesta_modelo_c": "To be honest, if I had to pick one cuisine forever, I would go for Italian. The main reason is that it really suits my personality, and honestly, it just feels right. At the end of the day, you have to follow your gut."
+    },
+    {
+      "id": "daily-routine",
+      "label": "Daily routine",
+      "color": "#9333ea",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your daily routine.",
+          "What's your typical day like?",
+          "Describe a normal day for you.",
+          "How do you usually spend your weekdays?",
+          "What time do you usually start your day?"
+        ],
+        "bloque_b": [
+          "What did you do yesterday?",
+          "Tell me about a day you really enjoyed recently.",
+          "Has your routine changed in the last year?",
+          "Tell me about your busiest day this week.",
+          "What did you do last weekend?"
+        ],
+        "bloque_c": [
+          "Would you change anything in your routine?",
+          "If you had more free time, what would you add to your day?",
+          "How will your routine change in the future?",
+          "Do you think people work too much these days?",
+          "What's the ideal daily routine for you?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my daily routine is pretty packed from morning to night. What I love most about it is the flexibility it gives me. I've been doing this routine since I moved in. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Actually, last weekend I went hiking with friends. I remember I was walking around the old town at sunset and it felt absolutely refreshing. It made me realise balance is essential in everything I do.",
+      "respuesta_modelo_c": "To be honest, if I had to change something, I would set clearer boundaries in my routine. The main reason is that it would give me much more flexibility, and it would make a real difference in my life. In a nutshell, small choices make a big difference."
+    },
+    {
+      "id": "travel",
+      "label": "Travel / Holidays",
+      "color": "#0891b2",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like travelling?",
+          "Tell me about the kind of holidays you prefer.",
+          "Have you travelled much?",
+          "What sort of traveller are you?",
+          "Describe your perfect holiday."
+        ],
+        "bloque_b": [
+          "Where did you go on your last holiday?",
+          "Tell me about your favourite trip.",
+          "When did you last go abroad?",
+          "Tell me about a memorable holiday you've had.",
+          "What's the best place you've travelled to?"
+        ],
+        "bloque_c": [
+          "Where would you like to travel in the future?",
+          "If you could go anywhere, where would you go?",
+          "How will tourism change in the next 10 years?",
+          "Would you live in another country?",
+          "Are people travelling more or less than before?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my favourite type of holiday is quite an adventurous one. What I love most about it is how peaceful and laid-back it is. I've been passionate about travelling for as long as I can remember. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Actually, last summer I travelled to Italy with my partner. I remember I was exploring a small village in the mountains and I was completely amazed. It made me realise stepping out of your comfort zone opens your mind.",
+      "respuesta_modelo_c": "To be honest, if I had to choose a dream destination, I would go for Japan. The main reason is that I've always thrived in that kind of environment, and it would broaden my horizons enormously. At the end of the day, you have to follow your gut."
+    },
+    {
+      "id": "friends",
+      "label": "Friends",
+      "color": "#f59e0b",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your best friend.",
+          "Do you have many friends?",
+          "What kind of friends do you have?",
+          "Describe a close friend.",
+          "How often do you see your friends?"
+        ],
+        "bloque_b": [
+          "When did you last see your best friend?",
+          "Tell me about a fun day with friends.",
+          "How did you meet your best friend?",
+          "What did you do with your friends last weekend?",
+          "Tell me about a friend who has helped you recently."
+        ],
+        "bloque_c": [
+          "Would you like to make new friends?",
+          "If you could meet a famous person, who would it be?",
+          "Are friendships changing because of social media?",
+          "Will you keep in touch with old friends in 10 years?",
+          "What makes a good friend?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my closest friend is quite a close-knit person. What I love most about him is the friendly atmosphere he creates. I've been friends with him for over five years. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Actually, last weekend I caught up with my best friend. I remember I was catching up with him over coffee and it took a real load off my mind. It made me realise how much I miss those moments.",
+      "respuesta_modelo_c": "To be honest, if I had to wish for something, I would meet more people from different backgrounds. The main reason is that it really suits my personality, and it would broaden my horizons enormously. In a nutshell, it's all about finding the right balance."
+    },
+    {
+      "id": "weather",
+      "label": "Weather / Seasons",
+      "color": "#0e7490",
+      "banco_preguntas": {
+        "bloque_a": [
+          "What's the weather like where you live?",
+          "Tell me about the climate in your area.",
+          "What's your favourite season?",
+          "Describe the weather in your country.",
+          "Do you like the weather where you live?"
+        ],
+        "bloque_b": [
+          "Tell me about a day with unusual weather you remember.",
+          "What did you do the last time it rained a lot?",
+          "Has the weather been strange recently?",
+          "Tell me about a holiday with great weather.",
+          "When did you last enjoy a beautiful sunny day?"
+        ],
+        "bloque_c": [
+          "Would you like to live somewhere with a different climate?",
+          "How is climate changing in your area?",
+          "If you could choose any climate, what would it be?",
+          "How will the weather affect future generations?",
+          "Does the weather affect your mood?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, the weather here is pretty packed with sun from morning to night. What I love most about it is how peaceful and laid-back it makes everyone. I've been enjoying this climate for over five years. All in all, it really makes my day.",
+      "respuesta_modelo_b": "Actually, last summer I had a memorable hot day. I remember I was walking around the old town at sunset and it felt absolutely refreshing. It made me realise small things really make all the difference.",
+      "respuesta_modelo_c": "To be honest, if I had to change something, I would go for a milder climate in summer. The main reason is that it would give me much more flexibility, and honestly, it just feels right. At the end of the day, it's all about finding the right balance."
+    },
+    {
+      "id": "sport-health",
+      "label": "Sport / Health & Fitness",
+      "color": "#7c3aed",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you do any sports?",
+          "Tell me about a sport you enjoy.",
+          "How do you keep fit?",
+          "Are you sporty?",
+          "What kind of physical activity do you do?"
+        ],
+        "bloque_b": [
+          "Tell me about the last time you did sport.",
+          "When did you start doing exercise regularly?",
+          "Have you tried any new sport recently?",
+          "What did you do at the gym last time?",
+          "Tell me about a sport moment you'll never forget."
+        ],
+        "bloque_c": [
+          "Would you like to try a new sport?",
+          "If you could play any sport professionally, which would it be?",
+          "How will sport change in the future?",
+          "Should children do more sport at school?",
+          "Are people getting healthier or less healthy?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, my sport routine is really demanding but rewarding. What I love most about it is the flexibility it gives me. I've been doing this for over five years. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Actually, last summer I took part in a local marathon. I remember I was preparing dinner for the whole family afterwards and I was completely amazed. It made me realise balance is essential in everything I do.",
+      "respuesta_modelo_c": "To be honest, if I had to choose a new sport, I would try climbing. The main reason is that I've always thrived in that kind of environment, and it would broaden my horizons enormously. In a nutshell, small choices make a big difference."
+    }
+  ]
+}
