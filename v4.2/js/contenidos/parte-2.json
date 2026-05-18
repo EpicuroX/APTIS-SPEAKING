@@ -1,0 +1,402 @@
+{
+  "id": "parte-2",
+  "label": "Parte 2",
+  "subtitle": "Describir foto + 2 preguntas · 45 seg cada respuesta",
+  "meta": {
+    "tiempo_total": "45 seg por respuesta",
+    "preparacion": "0 seg",
+    "formato": "1 foto + 3 preguntas relacionadas",
+    "nivel": "B1 → B2 alto"
+  },
+  "examen": {
+    "preparacion_segundos": 0,
+    "respuesta_segundos": 45,
+    "subtareas": 3
+  },
+  "objetivo": "Describir foto con orden fijo (qué/dónde/quién/sensación/suposición) y responder con estructura O-P-E-E-C. Aquí se mete el bloque de especulación B2.",
+  "pasos": [
+    {
+      "n": 1,
+      "title": "Localizar la escena",
+      "time": "5 seg",
+      "grammar": "There is/are + sujeto",
+      "conector_inicial": {
+        "texto": null,
+        "funcion": "Apertura descriptiva",
+        "alternativas": [
+          { "texto": "In this picture, I can see…", "nivel": "B1" },
+          { "texto": "This picture shows…",         "nivel": "B1" },
+          { "texto": "The picture depicts…",        "nivel": "B2 alto" },
+          { "texto": "What we can see here is…",    "nivel": "B2" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "In this picture, I can see " },
+        { "tipo": "hueco", "id": "sujeto", "label": "sujeto + acción -ing" },
+        { "tipo": "fijo", "texto": " in " },
+        { "tipo": "hueco", "id": "lugar", "label": "lugar" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "sujeto": {
+          "tipo_palabra": "Sujeto + verbo en -ing",
+          "ayuda": "Quién y qué hace. Presente continuo es lo natural aquí.",
+          "opciones": [
+            { "texto": "two colleagues talking",                    "nivel": "B1" },
+            { "texto": "a family having lunch together",            "nivel": "B1" },
+            { "texto": "a group of friends laughing",               "nivel": "B1" },
+            { "texto": "an elderly couple walking hand in hand",    "nivel": "B2" },
+            { "texto": "three teenagers using their phones",        "nivel": "B2" }
+          ]
+        },
+        "lugar": {
+          "tipo_palabra": "Lugar (sustantivo)",
+          "ayuda": "Dónde se desarrolla la escena.",
+          "opciones": [
+            { "texto": "a modern office",      "nivel": "B1" },
+            { "texto": "a sunny park",         "nivel": "B1" },
+            { "texto": "a busy street",        "nivel": "B1" },
+            { "texto": "a cosy living room",   "nivel": "B2" },
+            { "texto": "a charming café",      "nivel": "B2" }
+          ]
+        }
+      },
+      "trick": "Empieza siempre por la escena general, no por detalles. Si arrancas con detalles te pierdes."
+    },
+    {
+      "n": 2,
+      "title": "Describir cómo están",
+      "time": "8 seg",
+      "grammar": "Presente continuo (are + -ing) + adjetivos de ambiente",
+      "conector_inicial": {
+        "texto": "They are",
+        "funcion": "Descripción de personas",
+        "alternativas": [
+          { "texto": "They are", "nivel": "A2" },
+          { "texto": "They seem to be", "nivel": "B2" },
+          { "texto": "They appear to be", "nivel": "B2" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "They are " },
+        { "tipo": "hueco", "id": "ropa", "label": "ropa o aspecto" },
+        { "tipo": "fijo", "texto": ", and the atmosphere looks " },
+        { "tipo": "hueco", "id": "ambiente", "label": "adjetivo de ambiente" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "ropa": {
+          "tipo_palabra": "Adjetivo + sustantivo (ropa/aspecto)",
+          "ayuda": "Vestimenta o aspecto general.",
+          "opciones": [
+            { "texto": "dressed in casual clothes",  "nivel": "B1" },
+            { "texto": "wearing formal outfits",     "nivel": "B2" },
+            { "texto": "in smart casual clothes",    "nivel": "B2" },
+            { "texto": "dressed in sportswear",      "nivel": "B2" }
+          ]
+        },
+        "ambiente": {
+          "tipo_palabra": "Adjetivo de ambiente",
+          "ayuda": "Adjetivo + and + adjetivo da más nivel.",
+          "opciones": [
+            { "texto": "bright and welcoming",  "nivel": "B2" },
+            { "texto": "warm and homely",       "nivel": "B2 alto" },
+            { "texto": "peaceful and quiet",    "nivel": "B2" },
+            { "texto": "lively and vibrant",    "nivel": "B2 alto" },
+            { "texto": "quite hectic",          "nivel": "B2 (idiom)" }
+          ]
+        }
+      },
+      "trick": "Pareja de adjetivos unidos por 'and' = doble vocabulario en mitad del tiempo. Truco B2 puro."
+    },
+    {
+      "n": 3,
+      "title": "Especular sobre lo que pasa",
+      "time": "10 seg",
+      "grammar": "Verbos de especulación (seem, look like, might, presumably)",
+      "conector_inicial": {
+        "texto": "They seem",
+        "funcion": "Especulación",
+        "alternativas": [
+          { "texto": "They seem",                "nivel": "B2" },
+          { "texto": "They appear to be",        "nivel": "B2" },
+          { "texto": "They must be",             "nivel": "B2" },
+          { "texto": "Presumably they are",      "nivel": "B2 alto" },
+          { "texto": "To judge from their faces,","nivel": "C1" },
+          { "texto": "I get the impression that","nivel": "C1" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "They seem " },
+        { "tipo": "hueco", "id": "sentimiento", "label": "sentimiento" },
+        { "tipo": "fijo", "texto": ", and it looks like " },
+        { "tipo": "hueco", "id": "suposicion", "label": "suposición (frase completa)" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "sentimiento": {
+          "tipo_palabra": "Adjetivo de sentimiento",
+          "ayuda": "Cómo crees que se sienten.",
+          "opciones": [
+            { "texto": "focused",       "nivel": "B1" },
+            { "texto": "relaxed",       "nivel": "B1" },
+            { "texto": "engaged",       "nivel": "B2" },
+            { "texto": "cheerful",      "nivel": "B2" },
+            { "texto": "at ease",       "nivel": "B2 alto" }
+          ]
+        },
+        "suposicion": {
+          "tipo_palabra": "Frase completa (suposición)",
+          "ayuda": "Qué crees que está pasando. Frase entera con sujeto + verbo.",
+          "opciones": [
+            { "texto": "they're working on a joint project",      "nivel": "B2" },
+            { "texto": "they're enjoying a weekend break",         "nivel": "B2" },
+            { "texto": "it's a special celebration",              "nivel": "B2" },
+            { "texto": "they've just met up after a long time",   "nivel": "B2 alto" },
+            { "texto": "they're catching up over coffee",         "nivel": "B2 alto" }
+          ]
+        }
+      },
+      "trick": "'Seem' + 'it looks like' es la combinación reina de la Parte 2. Especular = B2 demostrado.",
+      "warning": "No afirmes ('They are happy'). Especula ('They seem happy'). La diferencia es enorme en puntuación."
+    },
+    {
+      "n": 4,
+      "title": "Valoración final",
+      "time": "8 seg",
+      "grammar": "Frase de opinión",
+      "conector_inicial": {
+        "texto": "In my opinion,",
+        "funcion": "Opinión",
+        "alternativas": [
+          { "texto": "In my opinion,",          "nivel": "B1" },
+          { "texto": "To my mind,",             "nivel": "B2 alto" },
+          { "texto": "From my point of view,",  "nivel": "B2" },
+          { "texto": "Personally,",             "nivel": "B1" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "In my opinion, this picture " },
+        { "tipo": "hueco", "id": "valoracion", "label": "valoración (qué representa)" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "valoracion": {
+          "tipo_palabra": "Frase de valoración",
+          "ayuda": "Qué representa la foto en un sentido más amplio.",
+          "opciones": [
+            { "texto": "captures a typical scene of modern life",       "nivel": "B2" },
+            { "texto": "reflects how we spend our free time",          "nivel": "B2 alto" },
+            { "texto": "shows the importance of human connection",     "nivel": "B2 alto" },
+            { "texto": "depicts an everyday moment full of meaning",   "nivel": "C1" }
+          ]
+        }
+      },
+      "trick": "Cerrar la descripción con valoración te diferencia. La mayoría se queda en 'describir y ya'."
+    }
+  ],
+  "kits_universales": [
+    {
+      "label": "🔮 Especular (verbos clave)",
+      "items": ["seem", "appear to be", "look like", "must be", "might be", "presumably", "to judge from"]
+    },
+    {
+      "label": "Pares de adjetivos B2",
+      "items": ["bright and welcoming", "warm and homely", "lively and vibrant", "peaceful and quiet", "modern and stylish"]
+    }
+  ],
+  "temas": [
+    {
+      "id": "office",
+      "label": "Oficina / Trabajo",
+      "color": "#2563eb",
+      "descripcion_foto": "Una oficina moderna con varias personas trabajando con ordenadores.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what you can see in this picture.",
+          "What do you see in this image?",
+          "Tell me about this picture."
+        ],
+        "bloque_b": [
+          "Do you prefer working in a team or alone? Why?",
+          "Would you like to work in an office like this?",
+          "How important is the work environment for you?"
+        ],
+        "bloque_c": [
+          "How has work changed in the last 20 years?",
+          "Do you think offices will exist in 10 years?",
+          "What's the future of the workplace?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see three colleagues talking around a meeting table in a modern office. They are dressed in smart casual clothes, and the atmosphere looks bright and welcoming. They seem focused, and it looks like they're working on a joint project together. In my opinion, this picture captures a typical scene of modern professional life."
+    },
+    {
+      "id": "park",
+      "label": "Parque / Aire libre",
+      "color": "#16a34a",
+      "descripcion_foto": "Personas paseando y disfrutando en un parque soleado.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What's happening in this image?",
+          "Tell me what you see here."
+        ],
+        "bloque_b": [
+          "Do you enjoy spending time outdoors?",
+          "How often do you go to parks?",
+          "What's your favourite outdoor activity?"
+        ],
+        "bloque_c": [
+          "What are the benefits of green spaces in cities?",
+          "Why are parks important for urban life?",
+          "Has nature become more or less important in modern life?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see several people enjoying a sunny afternoon in a city park. They are dressed in casual clothes, and the atmosphere looks lively and relaxed. They seem cheerful, and it looks like they're making the most of the good weather. In my opinion, this picture reflects how important green spaces are in our daily lives."
+    },
+    {
+      "id": "family-meal",
+      "label": "Comida familiar",
+      "color": "#ea580c",
+      "descripcion_foto": "Una familia comiendo junta alrededor de una mesa.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what you see in this picture.",
+          "Tell me about this image.",
+          "What's going on in this picture?"
+        ],
+        "bloque_b": [
+          "How often do you have meals with your family?",
+          "Tell me about a special family meal you remember.",
+          "Do you prefer family meals or eating out?"
+        ],
+        "bloque_c": [
+          "Why are family meals important?",
+          "Has the way families eat together changed?",
+          "Are family meals disappearing in modern life?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see a family of four having dinner around a wooden table. They are dressed in casual clothes, and the atmosphere looks warm and homely. They seem cheerful, and it looks like they're celebrating something special. In my opinion, this picture captures the importance of spending quality time with our loved ones."
+    },
+    {
+      "id": "classroom",
+      "label": "Aula",
+      "color": "#ca8a04",
+      "descripcion_foto": "Estudiantes en un aula prestando atención al profesor.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What's happening here?",
+          "Tell me what you see."
+        ],
+        "bloque_b": [
+          "Did you enjoy your school years?",
+          "What was your favourite subject?",
+          "Tell me about a teacher who influenced you."
+        ],
+        "bloque_c": [
+          "Has classroom learning changed in recent years?",
+          "Do you think traditional classrooms will disappear?",
+          "What makes a good teacher?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see a group of students taking notes in a bright classroom. They are dressed in casual clothes, and the atmosphere looks focused and quiet. They seem engaged, and it looks like they're listening to an interesting lecture. In my opinion, this picture reflects the importance of education in our personal growth."
+    },
+    {
+      "id": "shopping",
+      "label": "Compras",
+      "color": "#db2777",
+      "descripcion_foto": "Personas comprando en una calle comercial o centro comercial.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what you can see.",
+          "Tell me about this picture.",
+          "What's happening in this image?"
+        ],
+        "bloque_b": [
+          "Do you enjoy shopping?",
+          "Where do you usually shop?",
+          "Do you prefer shopping online or in shops?"
+        ],
+        "bloque_c": [
+          "How have shopping habits changed in recent years?",
+          "Will physical shops disappear?",
+          "What's the future of retail?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see a couple of friends walking through a busy shopping street with bags in their hands. They are dressed in casual clothes, and the atmosphere looks lively and vibrant. They seem cheerful, and it looks like they're enjoying a weekend break. In my opinion, this picture captures how shopping has become a leisure activity for many people."
+    },
+    {
+      "id": "exercise",
+      "label": "Deporte / Ejercicio",
+      "color": "#7c3aed",
+      "descripcion_foto": "Gente haciendo deporte en un gimnasio o al aire libre.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What are the people doing?",
+          "Tell me about this image."
+        ],
+        "bloque_b": [
+          "Do you do any kind of exercise?",
+          "How often do you exercise?",
+          "What's your favourite type of physical activity?"
+        ],
+        "bloque_c": [
+          "Why is sport important nowadays?",
+          "Should children do more sports at school?",
+          "Are people more active than 20 years ago?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see a group of people exercising together in an outdoor space. They are dressed in sportswear, and the atmosphere looks energetic and motivating. They seem focused, and it looks like they're following a training session. In my opinion, this picture reflects how more and more people care about their health."
+    },
+    {
+      "id": "cafe",
+      "label": "Café / Restaurante",
+      "color": "#9333ea",
+      "descripcion_foto": "Personas charlando en un café o restaurante acogedor.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what's happening.",
+          "What can you see in the image?",
+          "Tell me about this picture."
+        ],
+        "bloque_b": [
+          "Do you enjoy going to cafés?",
+          "Do you prefer cafés or restaurants?",
+          "Tell me about your favourite café."
+        ],
+        "bloque_c": [
+          "What role do cafés play in social life?",
+          "Why have cafés become so popular?",
+          "Are cafés replacing other social spaces?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see two friends having coffee in a cosy café. They are dressed in casual clothes, and the atmosphere looks warm and welcoming. They seem at ease, and it looks like they're catching up after a long time. In my opinion, this picture captures how cafés bring people together in modern cities."
+    },
+    {
+      "id": "transport",
+      "label": "Transporte público",
+      "color": "#0891b2",
+      "descripcion_foto": "Personas viajando en metro, autobús o tren.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What do you see here?",
+          "Tell me about this scene."
+        ],
+        "bloque_b": [
+          "Do you use public transport often?",
+          "How do you usually get around?",
+          "Tell me about transport in your city."
+        ],
+        "bloque_c": [
+          "What are the advantages of public transport?",
+          "Will electric cars replace public transport?",
+          "How can cities improve their transport?"
+        ]
+      },
+      "respuesta_modelo": "In this picture, I can see several passengers travelling on a busy underground train. They are dressed in casual and work clothes, and the atmosphere looks quite hectic. They seem tired, and it looks like they're on their way to work. In my opinion, this picture captures a typical scene of city life."
+    }
+  ]
+}
