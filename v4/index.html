@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>Aptis Speaking · Simulador v4</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-row">
+      <h1 class="app-title">🎙️ Aptis Speaking · v4</h1>
+      <p class="app-subtitle">Memorizar · Adaptar · Examinarse · B2 → C1</p>
+    </div>
+    <nav class="part-nav" id="part-nav" role="tablist" aria-label="Secciones"></nav>
+  </header>
+
+  <main class="app-main" id="app-main">
+    <p class="loading">Cargando…</p>
+  </main>
+
+  <footer class="mode-footer" id="mode-footer" hidden>
+    <div class="mode-tabs" role="tablist" aria-label="Modo">
+      <button class="mode-tab active" data-mode="estructura" role="tab">📚 Estructura</button>
+      <button class="mode-tab"        data-mode="conectores"  role="tab">🔗 Conectores</button>
+      <button class="mode-tab"        data-mode="aplicado"    role="tab">🔄 Aplicado</button>
+      <button class="mode-tab"        data-mode="tarjetas"    role="tab">🃏 Tarjetas</button>
+      <button class="mode-tab"        data-mode="examen"      role="tab">🎯 Examen</button>
+    </div>
+  </footer>
+
+  <!-- Bocadillo (popover) reutilizable, montado en body para no romper z-index -->
+  <div class="popover" id="popover" hidden role="dialog" aria-modal="false"></div>
+
+  <script src="js/scorm.js"></script>
+  <script src="js/examen.js"></script>
+  <script src="js/motor.js"></script>
+</body>
+</html>
