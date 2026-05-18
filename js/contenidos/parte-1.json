@@ -1,0 +1,478 @@
+{
+  "id": "parte-1",
+  "label": "Parte 1",
+  "subtitle": "Preguntas personales · 30 seg cada una",
+  "meta": {
+    "tiempo_total": "30 seg por pregunta",
+    "preparacion": "0 seg",
+    "formato": "3 preguntas sobre ti",
+    "nivel": "A2 → B2 alto"
+  },
+  "examen": {
+    "preparacion_segundos": 0,
+    "respuesta_segundos": 30,
+    "subtareas": 3
+  },
+  "objetivo": "Plantilla de 6 pasos: introducción → opinión → razón 1 → razón 2 → ejemplo presente → ejemplo pasado → cierre. Da una respuesta sólida B2 con variedad gramatical en solo 30 seg.",
+  "pasos": [
+    {
+      "n": 1,
+      "title": "Introducción · romper el hielo",
+      "time": "3 seg",
+      "grammar": "Frase hecha",
+      "conector_inicial": {
+        "texto": null,
+        "funcion": "Apertura",
+        "alternativas": [
+          { "texto": "That's an interesting question. Well,", "nivel": "B1" },
+          { "texto": "That's a good question. Let me think…", "nivel": "B1" },
+          { "texto": "Well, now that I think about it,", "nivel": "B2" },
+          { "texto": "I've never thought about that before, but…", "nivel": "B2" },
+          { "texto": "It's funny you ask, because…", "nivel": "B2 alto" },
+          { "texto": "Actually, it's something I often think about…", "nivel": "B2" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "That's an interesting question. Well," }
+      ],
+      "huecos": {},
+      "trick": "Ganas 3 segundos de oro para que tu cerebro piense la respuesta. Memoriza UNA frase, úsala siempre.",
+      "warning": "No te quedes en blanco. Si no se te ocurre nada, repite la pregunta empezando con 'Well, do I…?'"
+    },
+    {
+      "n": 2,
+      "title": "Opinión directa + matiz",
+      "time": "5 seg",
+      "grammar": "Presente simple",
+      "conector_inicial": {
+        "texto": "in my case,",
+        "funcion": "Personalizar",
+        "alternativas": [
+          { "texto": "in my case,", "nivel": "B1" },
+          { "texto": "personally speaking,", "nivel": "B2" },
+          { "texto": "from my point of view,", "nivel": "B2" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "in my case, I " },
+        { "tipo": "hueco", "id": "verbo_opinion", "label": "verbo opinión" },
+        { "tipo": "fijo", "texto": " " },
+        { "tipo": "hueco", "id": "tema", "label": "tema" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "verbo_opinion": {
+          "tipo_palabra": "Verbo de opinión",
+          "ayuda": "Cómo te posicionas frente al tema.",
+          "opciones": [
+            { "texto": "love",                       "nivel": "A2" },
+            { "texto": "really enjoy",               "nivel": "B1" },
+            { "texto": "have always been keen on",   "nivel": "B2" },
+            { "texto": "am really into",             "nivel": "B2 (informal)" },
+            { "texto": "am quite fond of",           "nivel": "B2 alto" },
+            { "texto": "am passionate about",        "nivel": "B2 alto" }
+          ]
+        },
+        "tema": {
+          "tipo_palabra": "Gerundio / sustantivo (el tema)",
+          "ayuda": "El tema en gerundio (cooking) o sustantivo (sports).",
+          "opciones": [
+            { "texto": "travelling",     "nivel": "B1" },
+            { "texto": "cooking at home","nivel": "B1" },
+            { "texto": "reading novels", "nivel": "B1" },
+            { "texto": "outdoor sports", "nivel": "B2" },
+            { "texto": "discovering new cultures", "nivel": "B2 alto" }
+          ]
+        }
+      },
+      "trick": "Tras la introducción de 3 seg, esta frase de 5 seg ya tiene tu opinión clara. Vas en cabeza."
+    },
+    {
+      "n": 3,
+      "title": "Razón 1 · justificas tu opinión",
+      "time": "5 seg",
+      "grammar": "Presente simple (it helps/keeps/makes me…)",
+      "conector_inicial": {
+        "texto": "One reason is that",
+        "funcion": "Adición / justificación",
+        "alternativas": [
+          { "texto": "One reason is that",                 "nivel": "B1" },
+          { "texto": "One of the main reasons is that",    "nivel": "B2" },
+          { "texto": "What I like the most is that",       "nivel": "B2" },
+          { "texto": "Something I really appreciate is that", "nivel": "B2 alto" },
+          { "texto": "What stands out for me is that",     "nivel": "C1" },
+          { "texto": "A big part of it is that",           "nivel": "B2 alto (informal)" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "One reason is that it " },
+        { "tipo": "hueco", "id": "beneficio", "label": "beneficio (helps/makes me + …)" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "beneficio": {
+          "tipo_palabra": "Beneficio (verbo + complemento)",
+          "ayuda": "Qué ganas tú. Acaba con phrasal verb para subir nivel.",
+          "opciones": [
+            { "texto": "helps me unwind",                    "nivel": "B2 (phrasal verb)" },
+            { "texto": "helps me switch off after work",     "nivel": "B2 (phrasal verb)" },
+            { "texto": "keeps me focused",                   "nivel": "B2" },
+            { "texto": "helps me clear my mind",             "nivel": "B2" },
+            { "texto": "recharges my batteries",             "nivel": "B2 alto (idiom)" },
+            { "texto": "broadens my horizons",               "nivel": "C1 (colocación)" },
+            { "texto": "takes a load off my mind",           "nivel": "C1 (idiom)" }
+          ]
+        }
+      },
+      "trick": "El truco brutal: acaba la razón con un phrasal verb o idiom. 'Unwind', 'switch off', 'recharge my batteries' suben nivel al instante."
+    },
+    {
+      "n": 4,
+      "title": "Razón 2 · refuerzas con otra razón",
+      "time": "4 seg",
+      "grammar": "Presente perfecto (he tenido la oportunidad…) o presente simple",
+      "conector_inicial": {
+        "texto": "Besides,",
+        "funcion": "Adición",
+        "alternativas": [
+          { "texto": "Another reason is that",         "nivel": "B1" },
+          { "texto": "Besides,",                       "nivel": "B2" },
+          { "texto": "On top of that,",                "nivel": "C1" },
+          { "texto": "What's more,",                   "nivel": "B2" },
+          { "texto": "I've also noticed that",         "nivel": "B2 alto" },
+          { "texto": "In addition to that,",           "nivel": "B2" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "Besides, " },
+        { "tipo": "hueco", "id": "razon2", "label": "segunda razón (presente perfecto preferible)" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "razon2": {
+          "tipo_palabra": "Frase en presente perfecto o simple",
+          "ayuda": "Usa 'I've + participio' para sumar variedad gramatical. Muy B2.",
+          "opciones": [
+            { "texto": "I've met amazing people along the way",          "nivel": "B2" },
+            { "texto": "I've learnt a lot from this experience",         "nivel": "B2" },
+            { "texto": "it's become a very important part of my routine","nivel": "B2 alto" },
+            { "texto": "I've discovered fascinating places",             "nivel": "B2" },
+            { "texto": "it gives me a real sense of accomplishment",     "nivel": "C1 (colocación)" }
+          ]
+        }
+      },
+      "trick": "Meter aquí el presente perfecto ('I've + participio') te diferencia de un B1. Es la marca B2 más fácil de incrustar."
+    },
+    {
+      "n": 5,
+      "title": "Ejemplo 1 · pasado simple (acción puntual)",
+      "time": "6 seg",
+      "grammar": "Pasado simple",
+      "conector_inicial": {
+        "texto": "For example,",
+        "funcion": "Ejemplificar",
+        "alternativas": [
+          { "texto": "For example,",         "nivel": "A2" },
+          { "texto": "For instance,",        "nivel": "B2" },
+          { "texto": "As an example,",       "nivel": "B2" },
+          { "texto": "Like last year, when", "nivel": "B2 (más natural)" },
+          { "texto": "A good example is when","nivel": "B2 alto" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "For example, last " },
+        { "tipo": "hueco", "id": "periodo", "label": "periodo" },
+        { "tipo": "fijo", "texto": " I " },
+        { "tipo": "hueco", "id": "accion_pasado", "label": "acción en pasado simple" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "periodo": {
+          "tipo_palabra": "Marcador temporal",
+          "ayuda": "Cuándo pasó. Mejor concreto.",
+          "opciones": [
+            { "texto": "weekend",      "nivel": "A2" },
+            { "texto": "summer",       "nivel": "A2" },
+            { "texto": "month",        "nivel": "A2" },
+            { "texto": "year",         "nivel": "A2" },
+            { "texto": "Christmas",    "nivel": "B1" }
+          ]
+        },
+        "accion_pasado": {
+          "tipo_palabra": "Verbo en pasado + complemento",
+          "ayuda": "Acción puntual y concreta. Mejor algo que se pueda imaginar.",
+          "opciones": [
+            { "texto": "went hiking with friends",                       "nivel": "B1" },
+            { "texto": "cooked a homemade lasagna for my family",        "nivel": "B2" },
+            { "texto": "travelled to Italy with my partner",             "nivel": "B2" },
+            { "texto": "took part in a charity race",                    "nivel": "B2" },
+            { "texto": "decided to take up a new hobby",                 "nivel": "B2 alto" }
+          ]
+        }
+      },
+      "trick": "Pasado simple = primer cambio de tiempo verbal. La máquina lo nota."
+    },
+    {
+      "n": 6,
+      "title": "Ejemplo 2 · pasado continuo + cierre",
+      "time": "7 seg",
+      "grammar": "Pasado continuo + cierre con idiom",
+      "conector_inicial": {
+        "texto": "I also remember when",
+        "funcion": "Segundo ejemplo + cierre",
+        "alternativas": [
+          { "texto": "I also remember when",            "nivel": "B2" },
+          { "texto": "I still remember when",           "nivel": "B2" },
+          { "texto": "I'll never forget the time when", "nivel": "B2 alto" },
+          { "texto": "There was this one time when",    "nivel": "C1 (informal)" },
+          { "texto": "I can clearly recall when",       "nivel": "C1" }
+        ]
+      },
+      "plantilla_segmentos": [
+        { "tipo": "fijo", "texto": "I also remember when I was " },
+        { "tipo": "hueco", "id": "accion_continuo", "label": "acción en pasado continuo (was + -ing)" },
+        { "tipo": "fijo", "texto": ". " },
+        { "tipo": "hueco", "id": "cierre", "label": "cierre breve con idiom" },
+        { "tipo": "fijo", "texto": "." }
+      ],
+      "huecos": {
+        "accion_continuo": {
+          "tipo_palabra": "Was + verbo -ing (pasado continuo)",
+          "ayuda": "Acción en curso, con detalle. Combinar con pasado simple del paso 5 = oro B2.",
+          "opciones": [
+            { "texto": "walking by the river at sunset",         "nivel": "B2" },
+            { "texto": "preparing dinner for the whole family",  "nivel": "B2" },
+            { "texto": "exploring a small town in the countryside","nivel": "B2 alto" },
+            { "texto": "training for my first marathon",         "nivel": "B2" }
+          ]
+        },
+        "cierre": {
+          "tipo_palabra": "Frase corta de cierre con idiom",
+          "ayuda": "Idiom B2/C1 que cierra limpio. Una sola frase.",
+          "opciones": [
+            { "texto": "All in all, it's something I genuinely value",     "nivel": "B2" },
+            { "texto": "At the end of the day, it's worth every minute",   "nivel": "C1 (idiom)" },
+            { "texto": "It really makes all the difference",               "nivel": "B2 alto (idiom)" },
+            { "texto": "Honestly, I wouldn't change it for anything",      "nivel": "B2" },
+            { "texto": "It's a no-brainer for me",                         "nivel": "C1 (idiom)" }
+          ]
+        }
+      },
+      "trick": "Pasado continuo + cierre con idiom = doble jugada B2/C1. Esto te separa del B1 medio."
+    }
+  ],
+  "kits_universales": [
+    {
+      "label": "Adjetivos B2 para cerrar (en vez de 'good'/'nice')",
+      "items": ["essential", "rewarding", "refreshing", "fulfilling", "enjoyable", "meaningful", "worthwhile", "enriching"]
+    },
+    {
+      "label": "Phrasal verbs B2 para razones",
+      "items": ["unwind", "switch off", "recharge my batteries", "clear my mind", "end up feeling", "take up"]
+    }
+  ],
+  "temas": [
+    {
+      "id": "hobbies",
+      "label": "Hobbies y tiempo libre",
+      "color": "#16a34a",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you have any hobbies?",
+          "What do you enjoy doing in your free time?",
+          "Are you keen on any particular activity?",
+          "How do you usually relax?",
+          "What's your favourite way to spend a Sunday?"
+        ],
+        "bloque_b": [
+          "Did you have different hobbies when you were younger?",
+          "Have your interests changed over the years?",
+          "Who introduced you to your favourite hobby?",
+          "When did you start it?",
+          "Tell me about the last time you did your favourite activity."
+        ],
+        "bloque_c": [
+          "Would you recommend this hobby to others?",
+          "Why is it important to have hobbies?",
+          "Do you think people have less free time nowadays?",
+          "Is there any activity you'd like to try in the future?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I really enjoy reading novels because it helps me unwind after a long day. One reason is that it takes a load off my mind. Besides, I've discovered fascinating worlds through books over the years. For example, last weekend I finished a thriller in two days. I also remember when I was reading on a quiet beach in Portugal during the holidays. All in all, it's something I genuinely value."
+    },
+    {
+      "id": "work",
+      "label": "Tu trabajo",
+      "color": "#2563eb",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your job.",
+          "What do you do for a living?",
+          "How would you describe your work?",
+          "Are you happy with your current job?",
+          "What's a typical day at work like for you?"
+        ],
+        "bloque_b": [
+          "What do you like most about your job?",
+          "What's the most challenging part?",
+          "How did you get into this field?",
+          "Have you always worked in this area?"
+        ],
+        "bloque_c": [
+          "Would you change anything about your work?",
+          "Do you see yourself in the same job in 5 years?",
+          "Has the way you work changed in recent years?",
+          "Would you recommend your profession to others?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I work in education because I'm passionate about helping others grow. One reason is that it keeps me focused and motivated every day. Besides, I've developed a real sense of accomplishment over the years. For example, last month I led a project that really made an impact. I also remember when I was mentoring a new colleague and saw their confidence grow. All in all, it's something I find truly rewarding."
+    },
+    {
+      "id": "family",
+      "label": "Familia",
+      "color": "#ea580c",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about your family.",
+          "Are there many people in your family?",
+          "Do you live with your family?",
+          "How would you describe your family?"
+        ],
+        "bloque_b": [
+          "Do you spend a lot of time with them?",
+          "Are you closer to your mother or father?",
+          "Do you have any family traditions?",
+          "Tell me about your best memory with your family."
+        ],
+        "bloque_c": [
+          "How important is family for you?",
+          "Has family life changed in your country?",
+          "Why do you think family is important?",
+          "Do you think families spend enough time together nowadays?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I have a close-knit family which I see almost every weekend. One reason is that being with them recharges my batteries. Besides, I've shared some of the best moments of my life with them. For example, last Christmas we organised a huge dinner with everyone cooking a dish. I also remember when we were dancing at my cousin's wedding until dawn. All in all, family is something I genuinely value."
+    },
+    {
+      "id": "weather",
+      "label": "Tiempo y estaciones",
+      "color": "#0891b2",
+      "banco_preguntas": {
+        "bloque_a": [
+          "What's the weather like in your area today?",
+          "What kind of weather do you prefer?",
+          "Is the weather important for you?"
+        ],
+        "bloque_b": [
+          "Tell me about the climate in your region.",
+          "Has the weather changed in recent years?",
+          "What do you usually do on rainy days?"
+        ],
+        "bloque_c": [
+          "How does the weather affect your mood?",
+          "Do you think climate change affects everyday life?",
+          "Would you like to live somewhere with a different climate?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I really enjoy sunny weather because it helps me switch off and spend time outdoors. One reason is that it clears my mind almost instantly. Besides, I've noticed I'm a much happier person on bright days. For example, last summer I spent a long weekend in the mountains. I also remember when I was walking along the coast at sunset. All in all, the weather is something that really makes a difference for me."
+    },
+    {
+      "id": "home",
+      "label": "Donde vives",
+      "color": "#9333ea",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Tell me about where you live.",
+          "What is your town like?",
+          "Describe your neighbourhood.",
+          "Do you live in a big city or a small town?"
+        ],
+        "bloque_b": [
+          "What do you like about your area?",
+          "Have you always lived there?",
+          "How long have you lived there?",
+          "Tell me about a favourite place near your home."
+        ],
+        "bloque_c": [
+          "Is there anything you would change?",
+          "Would you like to move somewhere else?",
+          "How has your area changed in recent years?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I love living in a small town because it's peaceful and has everything I need. One reason is that I can walk almost everywhere, which clears my mind. Besides, I've made wonderful friendships with my neighbours over the years. For example, last weekend I went to the local market and got fresh products. I also remember when I was walking by the river during a summer festival. All in all, it's a place where I feel truly at home."
+    },
+    {
+      "id": "travel",
+      "label": "Viajes",
+      "color": "#0d9488",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like travelling?",
+          "Have you travelled much?",
+          "Are you a frequent traveller?",
+          "What kind of trips do you enjoy?"
+        ],
+        "bloque_b": [
+          "Where did you go on your last holiday?",
+          "Tell me about your favourite trip.",
+          "What's the most beautiful place you've visited?",
+          "Do you prefer travelling alone or with company?"
+        ],
+        "bloque_c": [
+          "Do you have any travel plans for the future?",
+          "Would you like to live abroad?",
+          "Has travelling changed in recent years?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I've always loved travelling because it broadens my horizons. One reason is that it allows me to disconnect and recharge my batteries. Besides, I've met amazing people along the way over the years. For example, last summer I went to Prague and explored its cobblestone streets. I also remember when I was sipping coffee in a small square while street musicians played nearby. All in all, travelling is more than a hobby for me — it's a way to grow."
+    },
+    {
+      "id": "food-cooking",
+      "label": "Comida y cocina",
+      "color": "#dc2626",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like cooking?",
+          "What's your favourite meal?",
+          "Tell me about a typical dish in your country.",
+          "Are you a good cook?"
+        ],
+        "bloque_b": [
+          "How often do you eat out?",
+          "Do you prefer eating at home or in restaurants?",
+          "Tell me about a special meal you remember."
+        ],
+        "bloque_c": [
+          "Has the way people eat changed in your country?",
+          "Is food important in your culture?",
+          "Would you like to learn another country's cuisine?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I'm really into cooking at home because it helps me unwind after work. One reason is that I find it incredibly relaxing. Besides, I've learnt many traditional recipes from my grandmother over the years. For example, last weekend I made a homemade lasagna for my family. I also remember when I was preparing paella for friends in our garden. All in all, cooking is something I truly find rewarding."
+    },
+    {
+      "id": "sport",
+      "label": "Deporte",
+      "color": "#7c3aed",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you do any sports?",
+          "What's your favourite sport?",
+          "Are you sporty?",
+          "Do you prefer watching or playing sports?"
+        ],
+        "bloque_b": [
+          "Did you do sports when you were younger?",
+          "How often do you exercise?",
+          "Tell me about a memorable sport experience."
+        ],
+        "bloque_c": [
+          "Why is sport important nowadays?",
+          "Should sport be taught in schools?",
+          "Do you prefer water or land sports?"
+        ]
+      },
+      "respuesta_modelo": "That's an interesting question. Well, in my case, I'm passionate about running because it really helps me clear my mind. One reason is that it gives me a strong sense of balance. Besides, I've felt much more energetic since I started doing it. For example, last summer I took part in a charity race that made me feel proud. I also remember when I was running in the park at sunrise. All in all, sport is more than exercise for me — it's mental strength."
+    }
+  ]
+}
