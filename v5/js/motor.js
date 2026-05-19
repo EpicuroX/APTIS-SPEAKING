@@ -407,7 +407,7 @@
           </div>
           <div class="card-tj-face card-tj-back">
             <p class="card-tj-type">${escapeHtml(t.type)} · Reverso</p>
-            <p class="card-tj-content">${escapeHtml(t.back)}</p>
+            <p class="card-tj-content" style="font-size:1.35rem;font-weight:700;line-height:1.45;color:var(--ink);margin:0.6rem 0 0.4rem">${escapeHtml(t.back)}</p>
             ${t.truco ? `<p class="card-tj-truco">💡 ${escapeHtml(t.truco)}</p>` : ''}
             <p class="card-tj-hint">Toca para girar 🔄</p>
           </div>
@@ -426,60 +426,105 @@
     if (prev) prev.addEventListener('click', () => { tarjetasIdx = Math.max(0, tarjetasIdx - 1); renderPart(); });
     if (next) next.addEventListener('click', () => { tarjetasIdx++; renderPart(); });
   }
+  // Reparte una respuesta modelo en N pasos. Heurístico: parte por oraciones (. ! ?)
+  // y reparte. La primera oración va al paso 1 si hay >= 3 pasos; las sobrantes se
+  // distribuyen entre los pasos intermedios. Garantiza que NINGUNA oración se pierde.
+  function repartirEnPasos(modelo, nPasos) {
+    if (!modelo || !nPasos) return Array(nPasos || 0).fill('');
+    const oraciones = modelo.match(/[^.!?]+[.!?]+/g) || [modelo];
+    const trim = oraciones.map(s => s.trim()).filter(Boolean);
+    if (trim.length === nPasos) return trim;
+    if (trim.length < nPasos) {
+      const out = trim.slice();
+      while (out.length < nPasos) out.push('');
+      return out;
+    }
+    // Más oraciones que pasos. Estrategia: repartir lo más equilibrado posible
+    // garantizando que cada paso recibe al menos 1 oración y NO se pierde ninguna.
+    const out = [];
+    const base = Math.floor(trim.length / nPasos);
+    let resto = trim.length % nPasos;
+    let i = 0;
+    for (let k = 0; k < nPasos; k++) {
+      // Los pasos centrales (índices 1..N-2) absorben las oraciones sobrantes.
+      const extra = (resto > 0 && k > 0 && k < nPasos - 1) ? 1 : 0;
+      if (extra) resto--;
+      const cuantas = base + extra;
+      out.push(trim.slice(i, i + cuantas).join(' '));
+      i += cuantas;
+    }
+    // Si aún quedan oraciones sin asignar (resto > 0 al final), las pegamos al último paso.
+    if (i < trim.length) {
+      out[out.length - 1] = (out[out.length - 1] + ' ' + trim.slice(i).join(' ')).trim();
+    }
+    return out;
+  }
+
   function construirTarjetas(p, tema) {
     const out = [];
     // Caso 1: parte con plantillas múltiples (A/B/C). Partes 1, 2, 3.
     if (p.plantillas && p.plantillas.length) {
       p.plantillas.forEach(pl => {
-        // Tarjetas de pasos de esta plantilla
-        pl.pasos.forEach(paso => {
-          const txt = paso.plantilla_segmentos
-            ? paso.plantilla_segmentos.map(s => s.tipo === 'fijo' ? s.texto : `[${s.label}]`).join('')
-            : '';
+        const claveLetra = pl.tipo.toLowerCase(); // A → a, B → b, C → c
+        const modelo = tema['respuesta_modelo_' + claveLetra] || tema.respuesta_modelo || '';
+        const frasesPaso = repartirEnPasos(modelo, pl.pasos.length);
+        // Tarjetas de pasos rellenadas con la frase real del tema
+        pl.pasos.forEach((paso, i) => {
+          const fraseRellena = frasesPaso[i] || '(sin frase modelo)';
           out.push({
-            type: `Plantilla ${pl.tipo} · Paso ${paso.n}`,
+            type: `${tema.label} · Plantilla ${pl.tipo} · Paso ${paso.n}`,
             front: paso.title,
             sub: paso.time + (paso.grammar ? ' · ' + paso.grammar : ''),
-            back: txt,
+            back: fraseRellena,
             truco: paso.trick || ''
           });
         });
-        // Tarjeta de respuesta modelo de esta plantilla (a/b/c)
-        const claveLetra = pl.tipo.toLowerCase(); // A → a, B → b, C → c
-        const modelo = tema['respuesta_modelo_' + claveLetra] || tema.respuesta_modelo || '';
+        // Tarjeta resumen: la respuesta modelo entera
         if (modelo) {
           out.push({
-            type: `Modelo ${pl.tipo} · ${tema.label}`,
+            type: `🎯 ${tema.label} · Modelo Plantilla ${pl.tipo}`,
             front: pl.label || `Plantilla ${pl.tipo}`,
-            sub: 'Respuesta modelo completa',
+            sub: 'Respuesta modelo completa para memorizar',
             back: modelo,
-            truco: 'Lee en voz alta tres veces. Luego repítelo sin mirar.'
+            truco: 'Lee en voz alta tres veces. Luego repítelo sin mirar. Padrenuestro.'
           });
         }
       });
       return out;
     }
-    // Caso 2: parte con pasos directos (Parte 4). + 3 modelos a/b/c separados.
+    // Caso 2: parte con pasos directos (Parte 4). 3 modelos a/b/c = 3 bloques.
     if (p.pasos) {
-      p.pasos.forEach(paso => {
-        const txt = paso.plantilla_segmentos
-          ? paso.plantilla_segmentos.map(s => s.tipo === 'fijo' ? s.texto : `[${s.label}]`).join('')
-          : '';
+      // Para Parte 4 los 3 modelos a/b/c son los 3 segmentos de la respuesta de 2 min.
+      // Los 6 pasos de la plantilla corresponden a esos 3 segmentos así:
+      // Pasos 1-2 (apertura + beneficio) → modelo a (Q1: experiencia)
+      // Pasos 3-4 (contraargumento + storytelling) → modelo b (Q2: gestión)
+      // Pasos 5-6 (hipótesis + cierre) → modelo c (Q3: opinión)
+      const modelos = ['a', 'b', 'c'].map(k => tema['respuesta_modelo_' + k] || '');
+      const etiquetas = ['Q1 · Experiencia pasada', 'Q2 · Gestión / sentimiento', 'Q3 · Opinión general'];
+      // Pasos 1, 2 → modelo A
+      // Pasos 3, 4 → modelo B
+      // Pasos 5, 6 → modelo C
+      const asignacion = [0, 0, 1, 1, 2, 2];
+      // Por cada modelo, repartirlo entre sus 2 pasos asignados
+      const frasesPorPaso = [[], [], []];
+      modelos.forEach((m, i) => { frasesPorPaso[i] = repartirEnPasos(m, 2); });
+      p.pasos.forEach((paso, i) => {
+        const idxModelo = asignacion[i];
+        const dentroDelModelo = asignacion.slice(0, i + 1).filter(x => x === idxModelo).length - 1;
+        const fraseRellena = (frasesPorPaso[idxModelo] && frasesPorPaso[idxModelo][dentroDelModelo]) || '(sin frase modelo)';
         out.push({
-          type: `Paso ${paso.n}`,
+          type: `${tema.label} · ${etiquetas[idxModelo]} · Paso ${paso.n}`,
           front: paso.title,
           sub: paso.time + (paso.grammar ? ' · ' + paso.grammar : ''),
-          back: txt,
+          back: fraseRellena,
           truco: paso.trick || ''
         });
       });
-      // 3 tarjetas modelo (a/b/c) para Parte 4: Q1 / Q2 / Q3 del discurso de 2 min
-      const etiquetas = ['Q1 · Experiencia pasada', 'Q2 · Gestión / sentimiento', 'Q3 · Opinión general'];
-      ['a', 'b', 'c'].forEach((k, i) => {
-        const modelo = tema['respuesta_modelo_' + k] || (i === 0 ? tema.respuesta_modelo : '') || '';
+      // 3 tarjetas resumen: cada modelo entero (Q1, Q2, Q3 de la respuesta de 2 min)
+      modelos.forEach((modelo, i) => {
         if (modelo) {
           out.push({
-            type: `Modelo ${k.toUpperCase()} · ${tema.label}`,
+            type: `🎯 ${tema.label} · ${etiquetas[i]}`,
             front: etiquetas[i],
             sub: 'Segmento de la respuesta de 2 min',
             back: modelo,
