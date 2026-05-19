@@ -328,14 +328,28 @@ window.Examen = (function () {
       r.lang = 'en-GB'; r.continuous = true; r.interimResults = true;
       r._active = true;
       state.recognition = r;
-      const baseTexto = state.respuestas[state.preguntaActiva] || '';
+      // FIX Android Chrome: el motor reemite segmentos isFinal=true tras pausas breves,
+      // produciendo el bucle "hello hello my hello". Trackeamos los índices ya procesados
+      // y descartamos cualquier resultado final que repita el transcript del anterior.
+      const procesados = new Set();
+      let ultimoFinalTexto = '';
       r.onresult = (e) => {
         let interim = '';
         let nuevoFinal = '';
         for (let i = e.resultIndex; i < e.results.length; i++) {
           const res = e.results[i];
-          if (res.isFinal) nuevoFinal += res[0].transcript + ' ';
-          else interim += res[0].transcript;
+          const texto = (res[0].transcript || '').trim();
+          if (!texto) continue;
+          if (res.isFinal) {
+            // Si este índice ya fue procesado O el texto repite literalmente al anterior, descartar.
+            if (procesados.has(i)) continue;
+            if (texto === ultimoFinalTexto) { procesados.add(i); continue; }
+            procesados.add(i);
+            ultimoFinalTexto = texto;
+            nuevoFinal += texto + ' ';
+          } else {
+            interim += texto + ' ';
+          }
         }
         if (nuevoFinal) state.respuestas[state.preguntaActiva] += nuevoFinal;
         const tr = document.getElementById('ex-transcripcion');
