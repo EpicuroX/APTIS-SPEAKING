@@ -1,7 +1,7 @@
 /* =============================================================================
  * Aptis Speaking v4 · motor.js
  * - Renderiza plantillas con texto fijo en negrita + huecos como bocadillos.
- * - Modos: Estructura, Conectores, Aplicado, Tarjetas, Examen.
+ * - Modos: Estructura, Conectores, Tarjetas, Examen.
  * - Carga 4 partes + kits-globales.
  * ============================================================================= */
 (function () {
@@ -108,10 +108,12 @@
       </div>
     `;
     let body = '';
+    // Fallback: 'aplicado' fue eliminado en v5. Cualquier modo desconocido cae a estructura.
+    const MODOS_VALIDOS = ['estructura', 'conectores', 'tarjetas', 'examen', 'simulacro'];
+    if (!MODOS_VALIDOS.includes(state.mode)) state.mode = 'estructura';
     switch (state.mode) {
       case 'estructura': body = renderEstructura(p); break;
       case 'conectores': body = renderConectores(p); break;
-      case 'aplicado':   body = renderAplicado(p); break;
       case 'tarjetas':   body = renderTarjetas(p); break;
       case 'examen':
         if (window.Examen) {
@@ -376,57 +378,6 @@
     else if (n.indexOf('b2') >= 0) cls = 'b2';
     else if (n.indexOf('b1') >= 0) cls = 'b1';
     return `<span class="chip-nivel chip-nivel-${cls}">${escapeHtml(nivel)}</span>`;
-  }
-
-  // ============== MODO APLICADO ==============
-  function renderAplicado(p) {
-    if (!state.tema || !p.temas.find(t => t.id === state.tema)) state.tema = p.temas[0].id;
-    const tema = p.temas.find(t => t.id === state.tema);
-    const otros = p.temas.filter(t => t.id !== state.tema);
-    const otro = otros[Math.floor(Math.random() * otros.length)] || tema;
-
-    const selectorHtml = `
-      <div class="aplicado-controls">
-        <div class="aplicado-col">
-          <label class="aplicado-label" for="tema-select">Tema</label>
-          <select id="tema-select" class="tema-select">
-            ${p.temas.map(t => `<option value="${t.id}" ${t.id === state.tema ? 'selected' : ''}>${escapeHtml(t.label)}</option>`).join('')}
-          </select>
-        </div>
-      </div>
-    `;
-    const carta = (t, etiqueta) => {
-      const preguntasMuestra = pickPreguntasMuestra(t);
-      return `
-      <div class="aplicado-card" style="--tema-color:${t.color || '#0f172a'}">
-        <div class="aplicado-card-head">
-          <span class="aplicado-etiqueta">${escapeHtml(etiqueta)}</span>
-          <span class="aplicado-tema">${escapeHtml(t.label)}</span>
-        </div>
-        <div class="aplicado-preguntas">
-          <p class="aplicado-preg-label">Ejemplo de preguntas (banco de ${contarPreguntas(t)})</p>
-          ${preguntasMuestra.map((q, i) => `<p class="aplicado-preg">${i+1}. ${escapeHtml(q)}</p>`).join('')}
-        </div>
-        <button class="btn btn-listen btn-listen-small" data-speak="${escapeAttr(t.respuesta_modelo)}">🔊 Escuchar respuesta modelo</button>
-        <p class="aplicado-respuesta" style="margin-top:0.6rem">${escapeHtml(t.respuesta_modelo)}</p>
-      </div>`;
-    };
-    return selectorHtml + '<p class="mode-hint">Respuestas modelo con la plantilla aplicada. Compara dos temas y verás que <strong>la estructura es la misma</strong>; solo cambian los detalles.</p>' +
-      '<div class="aplicado-grid">' + carta(tema, 'Tema actual') + carta(otro, 'Otro ejemplo') + '</div>';
-  }
-
-  function pickPreguntasMuestra(tema) {
-    const bp = tema.banco_preguntas || {};
-    const out = [];
-    ['bloque_a', 'bloque_b', 'bloque_c'].forEach(b => {
-      const arr = bp[b] || [];
-      if (arr.length) out.push(arr[Math.floor(Math.random() * arr.length)]);
-    });
-    return out;
-  }
-  function contarPreguntas(tema) {
-    const bp = tema.banco_preguntas || {};
-    return (bp.bloque_a || []).length + (bp.bloque_b || []).length + (bp.bloque_c || []).length;
   }
 
   // ============== MODO TARJETAS ==============
