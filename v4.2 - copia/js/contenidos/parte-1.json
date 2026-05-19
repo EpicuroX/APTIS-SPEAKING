@@ -1,0 +1,800 @@
+{
+  "id": "parte-1",
+  "label": "Parte 1",
+  "subtitle": "3 preguntas personales · 30 seg cada una",
+  "meta": {
+    "tiempo_total": "3 × 30 seg",
+    "preparacion": "0 seg",
+    "formato": "3 preguntas variadas (gusto / descripción / experiencia)",
+    "nivel": "A2 → B2 alto"
+  },
+  "examen": {
+    "preparacion_segundos": 0,
+    "respuesta_segundos": 30,
+    "subtareas": 3,
+    "modo": "tres_separadas"
+  },
+  "objetivo": "Las 3 preguntas del Aptis Parte 1 varían mucho. El patrón real es: ~60% GUSTO/PREFERENCIA (Do you like / are you keen on), ~20% DESCRIPCIÓN personal o factual (Tell me about your town, How old are your siblings), ~20% EXPERIENCIA o hábito pasado (Have you ever / Talk about your first). Tres plantillas distintas, ~70 palabras cada una.",
+  "patron_oficial": {
+    "titulo": "Patrón real del Aptis Parte 1 (extraído de 10 exámenes oficiales)",
+    "descripcion": "Las 3 preguntas son VARIADAS, no escalan en el mismo tema. Pueden ser 3 preguntas de gusto distintas, o mezclar gusto + descripción + experiencia.",
+    "ejemplo_real": [
+      "Q1 (gusto): Are you keen on gardening? / What is your favourite movie? / Do you prefer water or land sports?",
+      "Q2 (descripción): What is your town like? / Is the weather rainy or sunny? / How old are your siblings?",
+      "Q3 (experiencia): Have you ever collected anything? / Talk about your first big purchase. / What is the most beautiful city you've visited?"
+    ]
+  },
+  "plantillas": [
+    {
+      "tipo": "A",
+      "label": "Plantilla A · GUSTO / PREFERENCIA",
+      "uso": "Pregunta tipo 'Do you like / enjoy…?' / 'Are you keen on…?' / 'What's your favourite…?' / 'Do you prefer X or Y?'. Tiempo verbal: presente simple + frecuencia + razón.",
+      "color": "#16a34a",
+      "objetivo_palabras": "60-75 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Respuesta directa con grado",
+          "time": "8 seg",
+          "grammar": "Presente simple + adverbio de intensidad",
+          "conector_inicial": {
+            "texto": "Well, in my case,",
+            "funcion": "Apertura",
+            "alternativas": [
+              { "texto": "Well, in my case,",       "nivel": "B1" },
+              { "texto": "Actually,",               "nivel": "B1" },
+              { "texto": "To be honest,",           "nivel": "B2" },
+              { "texto": "Now that you ask,",       "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Well, in my case, I'm " },
+            { "tipo": "hueco", "id": "grado", "label": "grado de gusto" },
+            { "tipo": "fijo", "texto": " " },
+            { "tipo": "hueco", "id": "tema_gusto", "label": "tema (-ing o sustantivo)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "grado": {
+              "tipo_palabra": "Adverbio de intensidad + verbo de gusto",
+              "ayuda": "Cuánto te gusta. Marca el nivel.",
+              "opciones": [
+                { "texto": "really into",            "nivel": "B2 (idiom)" },
+                { "texto": "absolutely keen on",     "nivel": "B2 alto" },
+                { "texto": "quite fond of",           "nivel": "B2 alto" },
+                { "texto": "not particularly into",   "nivel": "B2" },
+                { "texto": "head over heels for",     "nivel": "C1 (idiom)" }
+              ]
+            },
+            "tema_gusto": {
+              "tipo_palabra": "Tema en -ing o sustantivo",
+              "ayuda": "Tras 'into / fond of / keen on' va -ing o sustantivo. UNIVERSAL.",
+              "opciones": [
+                { "texto": "this kind of activity",      "nivel": "B2" },
+                { "texto": "anything along those lines",  "nivel": "B2 alto" },
+                { "texto": "that sort of thing",          "nivel": "B2" },
+                { "texto": "this whole world",            "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Empieza con grado de gusto + objeto. Evita 'Yes, I like X' (plano).",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('I'm into / I'm keen on').",
+            "PISTA: si la pregunta empieza por 'Do you like…?', 'Are you keen on…?', 'What's your favourite…?', toca plantilla A.",
+            "GRAMÁTICA: tras 'into / fond of / keen on' SIEMPRE va -ing o sustantivo (NO infinitivo).",
+            "EVITA: 'Yes, I like it' (plano A2). USA grado: 'absolutely keen on / really into'."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Detalle concreto + presente perfecto",
+          "time": "14 seg",
+          "grammar": "Presente simple + presente perfecto (have been -ing)",
+          "conector_inicial": {
+            "texto": "What I love most about it",
+            "funcion": "Concretar",
+            "alternativas": [
+              { "texto": "What I love most about it is",        "nivel": "B2" },
+              { "texto": "One of the things I appreciate is",   "nivel": "B2 alto" },
+              { "texto": "It's something that",                  "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "What I love most about it is " },
+            { "tipo": "hueco", "id": "detalle1", "label": "primer detalle" },
+            { "tipo": "fijo", "texto": ". I've been " },
+            { "tipo": "hueco", "id": "experiencia", "label": "experiencia (presente perfecto)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "detalle1": {
+              "tipo_palabra": "Detalle concreto",
+              "ayuda": "Algo específico y memorable del tema.",
+              "opciones": [
+                { "texto": "the friendly atmosphere",         "nivel": "B1" },
+                { "texto": "its rich cultural heritage",      "nivel": "B2 alto" },
+                { "texto": "the flexibility it gives me",     "nivel": "B2" },
+                { "texto": "how peaceful and laid-back it is","nivel": "B2 alto" }
+              ]
+            },
+            "experiencia": {
+              "tipo_palabra": "Verbo + ing / participio (presente perfecto)",
+              "ayuda": "Algo que has hecho/vivido relacionado con esto.",
+              "opciones": [
+                { "texto": "doing this for over five years",                "nivel": "B2" },
+                { "texto": "passionate about it for as long as I can remember", "nivel": "C1" },
+                { "texto": "into this since I was a teenager",                "nivel": "B2 alto" },
+                { "texto": "hooked on it for ages",                          "nivel": "B2 alto (idiom)" }
+              ]
+            }
+          },
+          "trick": "Mete un presente perfecto ('I've been + ing') = marca B2 instantánea.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple + presente perfecto continuo ('I've been -ing').",
+            "MARCA B2: el presente perfecto con duración ('for over five years', 'since I was…') es marca registrada.",
+            "IDIOM: 'hooked on it for ages' / 'as long as I can remember' suben media nota.",
+            "EVITA: pasado simple aquí ('I did this for 5 years'). USA PERFECTO ('I've been doing')."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Cierre con valoración",
+          "time": "8 seg",
+          "grammar": "Presente + idiom B2/C1",
+          "conector_inicial": {
+            "texto": "All in all,",
+            "funcion": "Cierre",
+            "alternativas": [
+              { "texto": "All in all,",              "nivel": "B2" },
+              { "texto": "Honestly,",                 "nivel": "B1" },
+              { "texto": "At the end of the day,",   "nivel": "C1 (idiom)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "All in all, " },
+            { "tipo": "hueco", "id": "cierre", "label": "valoración final" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "cierre": {
+              "tipo_palabra": "Frase de cierre con valoración",
+              "ayuda": "Cómo te hace sentir o por qué importa.",
+              "opciones": [
+                { "texto": "it really makes my day",                       "nivel": "B2 (idiom)" },
+                { "texto": "I wouldn't change it for the world",           "nivel": "B2 alto" },
+                { "texto": "it brings me a real sense of belonging",       "nivel": "C1" },
+                { "texto": "it's something I genuinely value",             "nivel": "B2" }
+              ]
+            }
+          },
+          "trick": "Cierre limpio con idiom B2/C1. No te quedes a medias.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple.",
+            "MARCA B2: idiom de cierre ('makes my day', 'wouldn't change it for the world') eleva el último segundo.",
+            "TEMA: UNIVERSAL — los 4 cierres del banco funcionan para cualquier pregunta de gusto.",
+            "EVITA: silencio o 'and that's it'. Cierre con idiom = +5 puntos."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "B",
+      "label": "Plantilla B · DESCRIPCIÓN PERSONAL / FACTUAL",
+      "uso": "Pregunta tipo 'Tell me about your town/family' / 'What is X like?' / 'How would you describe yourself?' / 'How old are your siblings?'. Descripción factual con detalles. Tiempo verbal: presente simple + adjetivos + un detalle.",
+      "color": "#2563eb",
+      "objetivo_palabras": "60-75 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Descripción esencial",
+          "time": "8 seg",
+          "grammar": "Presente simple + 'to be' + adjetivo doble",
+          "conector_inicial": {
+            "texto": "Sure, let me tell you.",
+            "funcion": "Apertura descriptiva",
+            "alternativas": [
+              { "texto": "Sure, let me tell you.",      "nivel": "B2" },
+              { "texto": "Well, where do I start?",      "nivel": "B2 (idiom)" },
+              { "texto": "Funnily enough,",              "nivel": "B2 alto" },
+              { "texto": "Right, so",                     "nivel": "B1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Sure, let me tell you. " },
+            { "tipo": "hueco", "id": "sujeto_desc", "label": "sujeto" },
+            { "tipo": "fijo", "texto": " is " },
+            { "tipo": "hueco", "id": "adjetivos", "label": "pareja de adjetivos B2" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "sujeto_desc": {
+              "tipo_palabra": "Sujeto de la pregunta",
+              "ayuda": "Repite el sujeto de la pregunta para ganar tiempo. UNIVERSAL.",
+              "opciones": [
+                { "texto": "my hometown",       "nivel": "A2" },
+                { "texto": "my family",          "nivel": "A2" },
+                { "texto": "the weather here",   "nivel": "B1" },
+                { "texto": "the area I live in", "nivel": "B2" },
+                { "texto": "my personality",     "nivel": "B2" }
+              ]
+            },
+            "adjetivos": {
+              "tipo_palabra": "Pareja de adjetivos B2",
+              "ayuda": "Dos adjetivos unidos por 'and' = vocabulario doble. UNIVERSAL.",
+              "opciones": [
+                { "texto": "quite charming and laid-back",          "nivel": "B2 alto" },
+                { "texto": "rather fast-paced and demanding",       "nivel": "B2 alto" },
+                { "texto": "fairly close-knit and supportive",      "nivel": "B2 alto" },
+                { "texto": "pretty straightforward and predictable","nivel": "B2 alto" },
+                { "texto": "surprisingly diverse and welcoming",    "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Pareja de adjetivos = doble vocabulario en mitad del tiempo.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('is' + adjetivos).",
+            "PISTA: si la pregunta es 'Tell me about your X' / 'What is X like?' / 'How would you describe…?', toca plantilla B.",
+            "MARCA B2: pareja de adjetivos con 'and'. NUNCA un solo adjetivo plano.",
+            "EVITA: 'good', 'nice', 'beautiful'. Sustituye por adjetivos del banco."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Un detalle concreto + dato cuantificable",
+          "time": "14 seg",
+          "grammar": "Presente simple + cláusula relativa",
+          "conector_inicial": {
+            "texto": "One thing that really stands out is",
+            "funcion": "Concretar con detalle",
+            "alternativas": [
+              { "texto": "One thing that really stands out is", "nivel": "B2 alto" },
+              { "texto": "What's special about it is",          "nivel": "B2" },
+              { "texto": "If I had to pick one detail,",        "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "One thing that really stands out is " },
+            { "tipo": "hueco", "id": "detalle_desc", "label": "detalle distintivo" },
+            { "tipo": "fijo", "texto": ", and " },
+            { "tipo": "hueco", "id": "dato", "label": "dato concreto / número" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "detalle_desc": {
+              "tipo_palabra": "Detalle distintivo (frase)",
+              "ayuda": "Algo específico que destaca. UNIVERSAL.",
+              "opciones": [
+                { "texto": "the way people interact with each other",  "nivel": "B2 alto" },
+                { "texto": "the variety you can find everywhere",       "nivel": "B2" },
+                { "texto": "how everything is within walking distance", "nivel": "B2 alto" },
+                { "texto": "the mix of old and new",                    "nivel": "B2" },
+                { "texto": "the strong bond we share",                  "nivel": "B2 alto" }
+              ]
+            },
+            "dato": {
+              "tipo_palabra": "Dato concreto (número, edad, frecuencia)",
+              "ayuda": "Un detalle factual: número de personas, años, frecuencia… UNIVERSAL.",
+              "opciones": [
+                { "texto": "there are around five of us in total",        "nivel": "B2" },
+                { "texto": "it's been like this for generations",         "nivel": "B2 alto" },
+                { "texto": "we're roughly the same age, give or take",    "nivel": "B2 alto (idiom)" },
+                { "texto": "it stretches across the whole area",          "nivel": "B2 alto" },
+                { "texto": "you can find it pretty much anywhere",        "nivel": "B2" }
+              ]
+            }
+          },
+          "trick": "Un dato concreto (número, frecuencia) = imagen mental clara y demuestra precisión.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('stands out', 'there are', 'we're').",
+            "MARCA B2 ALTO: 'one thing that really stands out is' + relativa demuestra estructura compleja.",
+            "TRUCO: incluir un DATO (número, frecuencia, duración) sube precisión y nota.",
+            "EVITA: enumerar 5 cosas sin profundizar. Mejor UN detalle bien explicado."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Cierre con valoración personal",
+          "time": "8 seg",
+          "grammar": "Presente + frase valorativa",
+          "conector_inicial": {
+            "texto": "Honestly,",
+            "funcion": "Cierre personal",
+            "alternativas": [
+              { "texto": "Honestly,",                 "nivel": "B1" },
+              { "texto": "All things considered,",    "nivel": "B2 alto" },
+              { "texto": "Looking at it overall,",     "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Honestly, " },
+            { "tipo": "hueco", "id": "valoracion_pers", "label": "valoración personal" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "valoracion_pers": {
+              "tipo_palabra": "Valoración personal (frase)",
+              "ayuda": "Cómo te hace sentir. UNIVERSAL.",
+              "opciones": [
+                { "texto": "I couldn't ask for anything better",        "nivel": "B2 alto (idiom)" },
+                { "texto": "it really suits the way I am",              "nivel": "B2 alto" },
+                { "texto": "it's part of who I am",                      "nivel": "B2" },
+                { "texto": "I feel really lucky in that respect",        "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Cierre con valoración personal + idiom = remate B2 alto.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('suits', 'feel', 'is').",
+            "MARCA B2 ALTO: cierre con valoración personal + idiom 'couldn't ask for anything better'.",
+            "TEMA: UNIVERSAL — las 4 valoraciones cierran cualquier descripción.",
+            "EVITA: cerrar con 'and that's all'. USA idiom o frase personal."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "C",
+      "label": "Plantilla C · EXPERIENCIA / HÁBITO PASADO",
+      "uso": "Pregunta tipo 'Have you ever…?' / 'Talk about your first…' / 'When was the last time…?' / 'What's the most X you've Y?'. Una experiencia pasada concreta. Tiempo verbal: pasado simple + presente perfecto + pasado continuo.",
+      "color": "#dc2626",
+      "objetivo_palabras": "60-75 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Anclaje temporal + acción pasada",
+          "time": "8 seg",
+          "grammar": "Pasado simple + marcador temporal",
+          "conector_inicial": {
+            "texto": "Yes, actually,",
+            "funcion": "Confirmar + anclar",
+            "alternativas": [
+              { "texto": "Yes, actually,",                  "nivel": "B1" },
+              { "texto": "Funnily enough, just last",       "nivel": "B2 alto" },
+              { "texto": "I still remember when",           "nivel": "B2" },
+              { "texto": "Not so long ago,",                 "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Yes, actually, " },
+            { "tipo": "hueco", "id": "marcador", "label": "marcador temporal" },
+            { "tipo": "fijo", "texto": " I " },
+            { "tipo": "hueco", "id": "accion_pasado", "label": "acción en pasado simple" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "marcador": {
+              "tipo_palabra": "Marcador temporal",
+              "ayuda": "Cuándo pasó. Cuanto más concreto, mejor.",
+              "opciones": [
+                { "texto": "just a couple of months ago,",   "nivel": "B2" },
+                { "texto": "back when I was younger,",        "nivel": "B2" },
+                { "texto": "not so long ago,",                "nivel": "B2" },
+                { "texto": "around this time last year,",     "nivel": "B2 alto" },
+                { "texto": "ages ago,",                       "nivel": "B2 (idiom)" }
+              ]
+            },
+            "accion_pasado": {
+              "tipo_palabra": "Verbo pasado simple + complemento",
+              "ayuda": "UNIVERSAL: acciones que valen para muchos temas.",
+              "opciones": [
+                { "texto": "did something really memorable",           "nivel": "B2" },
+                { "texto": "had a similar experience",                  "nivel": "B2" },
+                { "texto": "took the plunge and tried it",              "nivel": "C1 (idiom)" },
+                { "texto": "went through something just like that",     "nivel": "B2 alto" },
+                { "texto": "decided to give it a go",                   "nivel": "B2 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Anclaje temporal concreto + acción puntual = imagen mental clara.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: pasado simple ('I did / had / took / went').",
+            "PISTA: si la pregunta es 'Have you ever…?' / 'Talk about your first…' / 'When was the last time…?', toca plantilla C.",
+            "TEMA: UNIVERSAL — las 5 acciones del banco encajan en cualquier tema de experiencia.",
+            "EVITA: 'one day' (cuento infantil). USA marcador concreto."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Detalle vivido en pasado continuo",
+          "time": "14 seg",
+          "grammar": "Pasado continuo (was + -ing) + reacción",
+          "conector_inicial": {
+            "texto": "At the time, I was",
+            "funcion": "Detalle narrativo",
+            "alternativas": [
+              { "texto": "At the time, I was",              "nivel": "B2" },
+              { "texto": "What I remember is that I was",   "nivel": "B2 alto" },
+              { "texto": "Picture this: I was",              "nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "At the time, I was " },
+            { "tipo": "hueco", "id": "continuo", "label": "verbo -ing + detalle" },
+            { "tipo": "fijo", "texto": " and " },
+            { "tipo": "hueco", "id": "sensacion", "label": "sensación o reacción" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "continuo": {
+              "tipo_palabra": "Verbo en -ing + detalle",
+              "ayuda": "Acción en curso. Pasado continuo = marca B2. UNIVERSAL.",
+              "opciones": [
+                { "texto": "trying to make the most of it",            "nivel": "B2 (idiom)" },
+                { "texto": "taking it all in for the first time",      "nivel": "B2 alto (idiom)" },
+                { "texto": "completely caught up in the moment",        "nivel": "C1 (idiom)" },
+                { "texto": "doing something I'd never done before",     "nivel": "B2 alto" }
+              ]
+            },
+            "sensacion": {
+              "tipo_palabra": "Sentimiento o reacción",
+              "ayuda": "Cómo te hizo sentir. Idioms suben media nota cada uno.",
+              "opciones": [
+                { "texto": "it felt absolutely unforgettable",     "nivel": "B2" },
+                { "texto": "I had a whale of a time",              "nivel": "C1 (idiom)" },
+                { "texto": "I was completely blown away",          "nivel": "B2 alto (idiom)" },
+                { "texto": "it really took me by surprise",        "nivel": "B2 alto (idiom)" }
+              ]
+            }
+          },
+          "trick": "Pasado simple + pasado continuo encadenados = marca B2 alta inmediata.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: pasado continuo ('I was + -ing') + pasado simple ('it felt / I was').",
+            "MARCA B2 ALTO: pasado simple + continuo en frases seguidas es la combinación nativa.",
+            "IDIOM: 'whale of a time' / 'blown away' / 'caught up in the moment' suben media nota.",
+            "EVITA: pasado perfecto continuo ('I had been doing'). Casi siempre mal construido."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Conexión con el ahora (presente perfecto)",
+          "time": "8 seg",
+          "grammar": "Presente perfecto (have + participio)",
+          "conector_inicial": {
+            "texto": "Since then,",
+            "funcion": "Puente al presente",
+            "alternativas": [
+              { "texto": "Since then,",                "nivel": "B2" },
+              { "texto": "Ever since,",                "nivel": "B2 alto" },
+              { "texto": "Looking back,",              "nivel": "B2 alto" },
+              { "texto": "From that moment on,",       "nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Since then, I've " },
+            { "tipo": "hueco", "id": "presente_perfecto", "label": "participio + complemento" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "presente_perfecto": {
+              "tipo_palabra": "Participio + complemento",
+              "ayuda": "Algo que has hecho desde entonces. UNIVERSAL.",
+              "opciones": [
+                { "texto": "tried to recreate that feeling several times",   "nivel": "B2 alto" },
+                { "texto": "kept that memory close to my heart",              "nivel": "C1 (idiom)" },
+                { "texto": "been hooked on it ever since",                     "nivel": "B2 alto (idiom)" },
+                { "texto": "made a point of doing it again",                   "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Presente perfecto = puente pasado-presente. Marca B2 garantizada.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente perfecto ('I've tried / kept / been / made').",
+            "MARCA B2: el presente perfecto al final demuestra dominio de tiempos (pasado simple + continuo + perfecto en 30 seg).",
+            "TEMA: UNIVERSAL — los 4 cierres encajan en cualquier experiencia pasada.",
+            "EVITA: pasado simple aquí ('Since then I tried'). Tiene que ser PERFECTO ('Since then I've tried')."
+          ]
+        }
+      ]
+    }
+  ],
+  "kits_universales": [
+    {
+      "label": "Verbos de gusto (escalados)",
+      "items": ["like", "enjoy", "be into", "be keen on", "be fond of", "love", "adore", "be head over heels for"]
+    },
+    {
+      "label": "Pares de adjetivos descriptivos B2",
+      "items": ["charming and laid-back", "fast-paced and demanding", "close-knit and supportive", "diverse and welcoming", "straightforward and predictable"]
+    },
+    {
+      "label": "Marcadores temporales B2",
+      "items": ["a couple of months ago", "back when I was younger", "around this time last year", "not so long ago", "just the other day"]
+    },
+    {
+      "label": "Cierres con idiom universal",
+      "items": ["it really makes my day", "I wouldn't change it for the world", "it brings me a real sense of belonging", "I couldn't ask for anything better"]
+    },
+    {
+      "label": "Adjetivos B2/C1 (evita good/nice)",
+      "items": ["charming", "vibrant", "laid-back", "fast-paced", "rewarding", "demanding", "fulfilling", "stunning", "remarkable"]
+    }
+  ],
+  "temas": [
+    {
+      "id": "hometown",
+      "label": "Hometown / Tu ciudad",
+      "color": "#16a34a",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like the area where you live?",
+          "Are you keen on living in a big city?",
+          "What's your favourite part of your town?",
+          "Do you prefer the city centre or the suburbs?"
+        ],
+        "bloque_b": [
+          "Tell me about your hometown.",
+          "What is your town like?",
+          "Describe the area where you live.",
+          "What kind of place is your city?",
+          "What is the most beautiful city you've visited?"
+        ],
+        "bloque_c": [
+          "Tell me about the last time you went back to your hometown.",
+          "When did you last visit your favourite place in your city?",
+          "Have you ever shown your town to a visitor?",
+          "What's the most memorable thing you've done in your area recently?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm really into this whole world and that sort of thing. What I love most about it is the flexibility it gives me and the friendly atmosphere. I've been hooked on it for ages. All in all, it really makes my day.",
+      "respuesta_modelo_b": "Sure, let me tell you. My hometown is quite charming and laid-back. One thing that really stands out is the way people interact with each other, and it's been like this for generations. Honestly, I couldn't ask for anything better.",
+      "respuesta_modelo_c": "Yes, actually, just a couple of months ago, I had a similar experience. At the time, I was taking it all in for the first time and I was completely blown away. Since then, I've kept that memory close to my heart."
+    },
+    {
+      "id": "hobbies",
+      "label": "Free time / Hobbies",
+      "color": "#0d9488",
+      "banco_preguntas": {
+        "bloque_a": [
+          "What do you enjoy doing in your free time?",
+          "Are you keen on any particular activity?",
+          "Do you like to create art?",
+          "Do you enjoy taking photographs?",
+          "What is your favourite game to play with friends?",
+          "Do you enjoy learning new languages?"
+        ],
+        "bloque_b": [
+          "Tell me about your hobbies.",
+          "How do you usually relax?",
+          "What kind of hobbies are popular in your country?"
+        ],
+        "bloque_c": [
+          "Have you ever collected anything?",
+          "When did you start your favourite hobby?",
+          "Have you tried any new hobbies recently?",
+          "Tell me about a hobby you used to do as a child."
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm absolutely keen on this kind of activity. What I love most about it is the flexibility it gives me. I've been into this since I was a teenager. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Sure, let me tell you. The area I live in is surprisingly diverse and welcoming. One thing that really stands out is the variety you can find everywhere, and you can find it pretty much anywhere. Honestly, it really suits the way I am.",
+      "respuesta_modelo_c": "Yes, actually, back when I was younger I took the plunge and tried it. At the time, I was doing something I'd never done before and it felt absolutely unforgettable. Since then, I've been hooked on it ever since."
+    },
+    {
+      "id": "family",
+      "label": "Family / Friends",
+      "color": "#ea580c",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like spending time with your family?",
+          "Are you fond of big family gatherings?",
+          "What's your favourite thing about your family?"
+        ],
+        "bloque_b": [
+          "Tell me about your family.",
+          "Are there many people in your family?",
+          "Who do you live with?",
+          "How old are your siblings?",
+          "How would you describe yourself?",
+          "Have you got many friends?"
+        ],
+        "bloque_c": [
+          "Tell me about the last time you spent time with your family.",
+          "When did you last have a family gathering?",
+          "Have you visited your family recently?",
+          "Talk about a friend who has helped you recently."
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm quite fond of that sort of thing. What I love most about it is the friendly atmosphere. I've been doing this for over five years. All in all, I wouldn't change it for the world.",
+      "respuesta_modelo_b": "Sure, let me tell you. My family is fairly close-knit and supportive. One thing that really stands out is the strong bond we share, and there are around five of us in total. Honestly, I feel really lucky in that respect.",
+      "respuesta_modelo_c": "Yes, actually, just a couple of months ago I had a similar experience. At the time, I was completely caught up in the moment and it really took me by surprise. Since then, I've kept that memory close to my heart."
+    },
+    {
+      "id": "work-studies",
+      "label": "Work / Studies",
+      "color": "#2563eb",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like your job?",
+          "Are you keen on what you study?",
+          "What's your favourite part about working?",
+          "Do you prefer working alone or in a team?"
+        ],
+        "bloque_b": [
+          "Tell me about your job.",
+          "What do you do for a living?",
+          "What do you study?",
+          "Describe your work."
+        ],
+        "bloque_c": [
+          "Talk about your first big purchase.",
+          "Tell me about the last time you had a busy day at work.",
+          "Have you faced any challenges in your job recently?",
+          "When did you start your current job?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm really into this whole world. What I love most about it is the flexibility it gives me. I've been passionate about it for as long as I can remember. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Sure, let me tell you. My personality is rather fast-paced and demanding. One thing that really stands out is how everything is within walking distance, and it stretches across the whole area. Honestly, it's part of who I am.",
+      "respuesta_modelo_c": "Yes, actually, around this time last year I decided to give it a go. At the time, I was trying to make the most of it and I was completely blown away. Since then, I've made a point of doing it again."
+    },
+    {
+      "id": "food",
+      "label": "Food",
+      "color": "#dc2626",
+      "banco_preguntas": {
+        "bloque_a": [
+          "What's your favourite food?",
+          "Do you like cooking?",
+          "Are you fond of trying new dishes?",
+          "Do you prefer eating at home or eating out?"
+        ],
+        "bloque_b": [
+          "Tell me about the food in your country.",
+          "What kind of food do you usually eat?",
+          "Describe a typical meal in your home."
+        ],
+        "bloque_c": [
+          "Tell me about the last time you cooked something special.",
+          "When did you last go out for a meal?",
+          "Have you tried any new dishes recently?",
+          "Tell me about a memorable meal you've had."
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm absolutely keen on that sort of thing. What I love most about it is its rich cultural heritage. I've been hooked on it for ages. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Sure, let me tell you. The area I live in is surprisingly diverse and welcoming. One thing that really stands out is the mix of old and new, and you can find it pretty much anywhere. Honestly, it really suits the way I am.",
+      "respuesta_modelo_c": "Yes, actually, not so long ago I went through something just like that. At the time, I was completely caught up in the moment and it felt absolutely unforgettable. Since then, I've tried to recreate that feeling several times."
+    },
+    {
+      "id": "daily-routine",
+      "label": "Daily routine",
+      "color": "#9333ea",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like your daily routine?",
+          "Are you keen on having a fixed schedule?",
+          "What's your favourite part of the day?",
+          "Do you use social media a lot?"
+        ],
+        "bloque_b": [
+          "Tell me about your daily routine.",
+          "What's your typical day like?",
+          "How do you usually spend your weekdays?"
+        ],
+        "bloque_c": [
+          "Have you ever changed your routine completely?",
+          "Tell me about a day you really enjoyed recently.",
+          "When did you last have a completely different day?",
+          "What did you do last weekend?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm really into this whole world. What I love most about it is the flexibility it gives me. I've been doing this for over five years. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Sure, let me tell you. The weather here is pretty straightforward and predictable. One thing that really stands out is how everything is within walking distance, and it's been like this for generations. Honestly, I feel really lucky in that respect.",
+      "respuesta_modelo_c": "Yes, actually, just a couple of months ago I did something really memorable. At the time, I was trying to make the most of it and it felt absolutely unforgettable. Since then, I've kept that memory close to my heart."
+    },
+    {
+      "id": "travel",
+      "label": "Travel / Holidays",
+      "color": "#0891b2",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like to travel?",
+          "Are you keen on adventurous holidays?",
+          "What's your favourite type of holiday?",
+          "Do you prefer beach or mountain holidays?",
+          "Which culture fascinates you the most?"
+        ],
+        "bloque_b": [
+          "Tell me about the kind of holidays you prefer.",
+          "What sort of traveller are you?",
+          "Describe your perfect holiday."
+        ],
+        "bloque_c": [
+          "Have you travelled much?",
+          "Tell me about your favourite trip.",
+          "When did you last go abroad?",
+          "What is the most beautiful city you've visited?",
+          "Talk about a memorable holiday you've had."
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm absolutely keen on this kind of activity. What I love most about it is how peaceful and laid-back it is. I've been passionate about travelling for as long as I can remember. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Sure, let me tell you. The area I live in is surprisingly diverse and welcoming. One thing that really stands out is the variety you can find everywhere, and it stretches across the whole area. Honestly, I couldn't ask for anything better.",
+      "respuesta_modelo_c": "Yes, actually, around this time last year I took the plunge and tried it. At the time, I was taking it all in for the first time and I had a whale of a time. Since then, I've made a point of doing it again."
+    },
+    {
+      "id": "weather",
+      "label": "Weather / Seasons",
+      "color": "#0e7490",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you like the weather where you live?",
+          "Are you keen on cold or hot weather?",
+          "What's your favourite season?",
+          "Do you prefer sunny or rainy days?"
+        ],
+        "bloque_b": [
+          "What's the weather like where you live?",
+          "Tell me about the climate in your area.",
+          "Describe the weather in your country.",
+          "Is the weather in your city rainy or sunny?"
+        ],
+        "bloque_c": [
+          "Tell me about a day with unusual weather you remember.",
+          "Have you ever experienced extreme weather?",
+          "When did you last enjoy a beautiful sunny day?",
+          "Tell me about a holiday with great weather."
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm quite fond of that sort of thing. What I love most about it is how peaceful and laid-back it is. I've been hooked on it for ages. All in all, it really makes my day.",
+      "respuesta_modelo_b": "Sure, let me tell you. The weather here is pretty straightforward and predictable. One thing that really stands out is the mix of old and new, and it's been like this for generations. Honestly, it's part of who I am.",
+      "respuesta_modelo_c": "Yes, actually, just a couple of months ago I had a similar experience. At the time, I was completely caught up in the moment and it felt absolutely unforgettable. Since then, I've tried to recreate that feeling several times."
+    },
+    {
+      "id": "sport-health",
+      "label": "Sport / Health & Fitness",
+      "color": "#7c3aed",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you do any sports?",
+          "Are you keen on physical activity?",
+          "What is your favourite sport to watch?",
+          "Do you prefer water or land sports?",
+          "What is the best way to keep fit?",
+          "Do you enjoy spending time with animals?"
+        ],
+        "bloque_b": [
+          "Tell me about a sport you enjoy.",
+          "How do you keep fit?",
+          "Are you sporty?",
+          "What kind of physical activity do you do?",
+          "Do you watch TV a lot?"
+        ],
+        "bloque_c": [
+          "Tell me about the last time you did sport.",
+          "When did you start doing exercise regularly?",
+          "Have you tried any new sport recently?",
+          "Talk about a sport moment you'll never forget."
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm really into this whole world. What I love most about it is the flexibility it gives me. I've been doing this for over five years. All in all, it brings me a real sense of belonging.",
+      "respuesta_modelo_b": "Sure, let me tell you. My personality is rather fast-paced and demanding. One thing that really stands out is the way people interact with each other, and we're roughly the same age, give or take. Honestly, it really suits the way I am.",
+      "respuesta_modelo_c": "Yes, actually, around this time last year I took the plunge and tried it. At the time, I was doing something I'd never done before and I was completely blown away. Since then, I've made a point of doing it again."
+    },
+    {
+      "id": "culture-media",
+      "label": "Culture / TV / Media",
+      "color": "#f59e0b",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Do you play any musical instruments?",
+          "Who is your favourite TV personality?",
+          "Do you prefer music online or live?",
+          "What is your favourite book genre?",
+          "Are you keen on gardening?",
+          "What is your favourite movie?"
+        ],
+        "bloque_b": [
+          "Tell me about your favourite TV programme.",
+          "What kind of music do you usually listen to?",
+          "Describe the typical Spanish TV shows."
+        ],
+        "bloque_c": [
+          "Have you ever been to a live concert?",
+          "When did you last read a really good book?",
+          "Talk about a film that made an impression on you.",
+          "Have you watched any series lately you'd recommend?"
+        ]
+      },
+      "respuesta_modelo_a": "Well, in my case, I'm head over heels for anything along those lines. What I love most about it is its rich cultural heritage. I've been passionate about it for as long as I can remember. All in all, it's something I genuinely value.",
+      "respuesta_modelo_b": "Sure, let me tell you. My hometown is quite charming and laid-back. One thing that really stands out is the way people interact with each other, and you can find it pretty much anywhere. Honestly, I couldn't ask for anything better.",
+      "respuesta_modelo_c": "Yes, actually, not so long ago I had a similar experience. At the time, I was taking it all in for the first time and it really took me by surprise. Since then, I've been hooked on it ever since."
+    }
+  ]
+}

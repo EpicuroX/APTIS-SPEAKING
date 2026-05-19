@@ -1,0 +1,840 @@
+{
+  "id": "parte-2",
+  "label": "Parte 2",
+  "subtitle": "Describir foto + 2 preguntas · 45 seg cada respuesta",
+  "meta": {
+    "tiempo_total": "45 seg por respuesta",
+    "preparacion": "0 seg",
+    "formato": "1 foto + 3 preguntas: A describir / B experiencia / C opinión",
+    "nivel": "B2 → B2 alto"
+  },
+  "examen": {
+    "preparacion_segundos": 0,
+    "respuesta_segundos": 45,
+    "subtareas": 3
+  },
+  "objetivo": "Tres plantillas distintas para las 3 preguntas de Parte 2: A describir foto, B tu experiencia personal con el tema (pasado), C tu opinión razonada (presente + valoración). Cada respuesta ~75 palabras.",
+  "patron_oficial": {
+    "titulo": "Patrón real del Aptis Parte 2 (extraído de exámenes oficiales)",
+    "descripcion": "Q1 siempre describir la foto. Q2 casi siempre tu EXPERIENCIA personal con el tema (pasado o presente perfecto). Q3 tu OPINIÓN o reflexión general (presente + opinión razonada).",
+    "ejemplo_real": [
+      "Q1: Describe the picture.",
+      "Q2: Do you remember your first time watching a sports event? · When was the last time you visited a farm?",
+      "Q3: Do you enjoy sports events with friends or alone? · Should children learn how to take care of animals and crops at school?"
+    ]
+  },
+  "plantillas": [
+    {
+      "tipo": "A",
+      "label": "Plantilla A · DESCRIBIR FOTO",
+      "uso": "Pregunta directa: 'Describe the picture' / 'What can you see?' / 'Tell me about this image'. Tiempo verbal dominante: presente continuo + especulación.",
+      "color": "#16a34a",
+      "objetivo_palabras": "70-85 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Localizar la escena",
+          "time": "5 seg",
+          "grammar": "There is/are + sujeto + verbo -ing",
+          "conector_inicial": {
+            "texto": null,
+            "funcion": "Apertura descriptiva",
+            "alternativas": [
+              { "texto": "In this picture, I can see…", "nivel": "B1" },
+              { "texto": "This picture shows…",         "nivel": "B1" },
+              { "texto": "The picture depicts…",        "nivel": "B2 alto" },
+              { "texto": "What we can see here is…",    "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "In this picture, I can see " },
+            { "tipo": "hueco", "id": "sujeto", "label": "sujeto + acción -ing" },
+            { "tipo": "fijo", "texto": " in " },
+            { "tipo": "hueco", "id": "lugar", "label": "lugar" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "sujeto": {
+              "tipo_palabra": "Sujeto + verbo en -ing",
+              "ayuda": "Quién y qué hace. Presente continuo es lo natural aquí.",
+              "opciones": [
+                { "texto": "two colleagues talking",                    "nivel": "B1" },
+                { "texto": "a family having lunch together",            "nivel": "B1" },
+                { "texto": "a group of friends laughing",               "nivel": "B1" },
+                { "texto": "an elderly couple walking hand in hand",    "nivel": "B2" },
+                { "texto": "three teenagers using their phones",        "nivel": "B2" }
+              ]
+            },
+            "lugar": {
+              "tipo_palabra": "Lugar (sustantivo)",
+              "ayuda": "Dónde se desarrolla la escena.",
+              "opciones": [
+                { "texto": "a modern office",      "nivel": "B1" },
+                { "texto": "a sunny park",         "nivel": "B1" },
+                { "texto": "a busy street",        "nivel": "B1" },
+                { "texto": "a cosy living room",   "nivel": "B2" },
+                { "texto": "a charming café",      "nivel": "B2" }
+              ]
+            }
+          },
+          "trick": "Empieza siempre por la escena general, no por detalles. Si arrancas con detalles te pierdes.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente continuo (X is/are + -ing) para describir lo que pasa AHORA en la foto.",
+            "PISTA: si la pregunta es 'Describe…' o 'What can you see?', SIEMPRE empiezas con plantilla A.",
+            "TEMA: cualquiera. Esta plantilla sirve para todas las fotos.",
+            "EVITA: pasado o futuro aquí. La foto está pasando ahora."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Describir cómo están",
+          "time": "8 seg",
+          "grammar": "Presente continuo (are + -ing) + adjetivos de ambiente",
+          "conector_inicial": {
+            "texto": "They are",
+            "funcion": "Descripción de personas",
+            "alternativas": [
+              { "texto": "They are", "nivel": "A2" },
+              { "texto": "They seem to be", "nivel": "B2" },
+              { "texto": "They appear to be", "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "They are " },
+            { "tipo": "hueco", "id": "ropa", "label": "ropa o aspecto" },
+            { "tipo": "fijo", "texto": ", and the atmosphere looks " },
+            { "tipo": "hueco", "id": "ambiente", "label": "adjetivo de ambiente" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "ropa": {
+              "tipo_palabra": "Adjetivo + sustantivo (ropa/aspecto)",
+              "ayuda": "Vestimenta o aspecto general.",
+              "opciones": [
+                { "texto": "dressed in casual clothes",  "nivel": "B1" },
+                { "texto": "wearing formal outfits",     "nivel": "B2" },
+                { "texto": "in smart casual clothes",    "nivel": "B2" },
+                { "texto": "dressed in sportswear",      "nivel": "B2" }
+              ]
+            },
+            "ambiente": {
+              "tipo_palabra": "Adjetivo de ambiente",
+              "ayuda": "Adjetivo + and + adjetivo da más nivel.",
+              "opciones": [
+                { "texto": "bright and welcoming",  "nivel": "B2" },
+                { "texto": "warm and homely",       "nivel": "B2 alto" },
+                { "texto": "peaceful and quiet",    "nivel": "B2" },
+                { "texto": "lively and vibrant",    "nivel": "B2 alto" },
+                { "texto": "quite hectic",          "nivel": "B2 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Pareja de adjetivos unidos por 'and' = doble vocabulario en mitad del tiempo. Truco B2 puro.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente continuo + presente simple ('looks').",
+            "TRUCO: pareja de adjetivos con 'and' suma vocabulario sin gastar tiempo.",
+            "IDIOM: 'quite hectic' funciona en cualquier escena urbana o de trabajo.",
+            "EVITA: 'good', 'nice', 'beautiful'. Sustitúyelos por pares de adjetivos."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Especular sobre lo que pasa",
+          "time": "10 seg",
+          "grammar": "Verbos de especulación (seem, look like, might, presumably)",
+          "conector_inicial": {
+            "texto": "They seem",
+            "funcion": "Especulación",
+            "alternativas": [
+              { "texto": "They seem",                "nivel": "B2" },
+              { "texto": "They appear to be",        "nivel": "B2" },
+              { "texto": "They must be",             "nivel": "B2" },
+              { "texto": "Presumably they are",      "nivel": "B2 alto" },
+              { "texto": "To judge from their faces,","nivel": "C1" },
+              { "texto": "I get the impression that","nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "They seem " },
+            { "tipo": "hueco", "id": "sentimiento", "label": "sentimiento" },
+            { "tipo": "fijo", "texto": ", and it looks like " },
+            { "tipo": "hueco", "id": "suposicion", "label": "suposición (frase completa)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "sentimiento": {
+              "tipo_palabra": "Adjetivo de sentimiento",
+              "ayuda": "Cómo crees que se sienten.",
+              "opciones": [
+                { "texto": "focused",       "nivel": "B1" },
+                { "texto": "relaxed",       "nivel": "B1" },
+                { "texto": "engaged",       "nivel": "B2" },
+                { "texto": "cheerful",      "nivel": "B2" },
+                { "texto": "at ease",       "nivel": "B2 alto" }
+              ]
+            },
+            "suposicion": {
+              "tipo_palabra": "Frase completa (suposición)",
+              "ayuda": "Qué crees que está pasando. Frase entera con sujeto + verbo.",
+              "opciones": [
+                { "texto": "they're working on a joint project",      "nivel": "B2" },
+                { "texto": "they're enjoying a weekend break",         "nivel": "B2" },
+                { "texto": "it's a special celebration",              "nivel": "B2" },
+                { "texto": "they've just met up after a long time",   "nivel": "B2 alto" },
+                { "texto": "they're catching up over coffee",         "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "'Seem' + 'it looks like' es la combinación reina de la Parte 2. Especular = B2 demostrado.",
+          "warning": "No afirmes ('They are happy'). Especula ('They seem happy'). La diferencia es enorme en puntuación.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: 'seem' + adjetivo / 'look like' + frase completa.",
+            "MARCA B2: especular en lugar de afirmar es la marca registrada de la Parte 2.",
+            "PISTA: si no estás seguro de lo que pasa en la foto, mejor — especular suena más natural.",
+            "EVITA: 'They are happy / sad / busy' (afirmación). USA: 'They seem happy / sad / busy'."
+          ]
+        },
+        {
+          "n": 4,
+          "title": "Valoración final",
+          "time": "8 seg",
+          "grammar": "Frase de opinión",
+          "conector_inicial": {
+            "texto": "In my opinion,",
+            "funcion": "Opinión",
+            "alternativas": [
+              { "texto": "In my opinion,",          "nivel": "B1" },
+              { "texto": "To my mind,",             "nivel": "B2 alto" },
+              { "texto": "From my point of view,",  "nivel": "B2" },
+              { "texto": "Personally,",             "nivel": "B1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "In my opinion, this picture " },
+            { "tipo": "hueco", "id": "valoracion", "label": "valoración (qué representa)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "valoracion": {
+              "tipo_palabra": "Frase de valoración",
+              "ayuda": "Qué representa la foto en un sentido más amplio.",
+              "opciones": [
+                { "texto": "captures a typical scene of modern life",       "nivel": "B2" },
+                { "texto": "reflects how we spend our free time",          "nivel": "B2 alto" },
+                { "texto": "shows the importance of human connection",     "nivel": "B2 alto" },
+                { "texto": "depicts an everyday moment full of meaning",   "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Cerrar la descripción con valoración te diferencia. La mayoría se queda en 'describir y ya'.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('captures', 'reflects', 'shows').",
+            "TRUCO: cerrar con valoración general te diferencia del 80% que solo describe.",
+            "TEMA: las 4 valoraciones del banco sirven para cualquier foto del Aptis.",
+            "EVITA: terminar con 'and that's it' o silencio. Cierre limpio = +5 puntos."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "B",
+      "label": "Plantilla B · EXPERIENCIA PERSONAL",
+      "uso": "Pregunta tipo 'Do you remember the last time…?' / 'When was the last time…?' / 'Have you ever…?'. Tu experiencia con el tema. Tiempo verbal: pasado simple + pasado continuo + presente perfecto.",
+      "color": "#2563eb",
+      "objetivo_palabras": "75-85 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Anclaje temporal",
+          "time": "10 seg",
+          "grammar": "Pasado simple + marcador temporal",
+          "conector_inicial": {
+            "texto": "Actually, I do remember",
+            "funcion": "Confirmar y anclar",
+            "alternativas": [
+              { "texto": "Actually, I do remember",         "nivel": "B2" },
+              { "texto": "Funnily enough,",                  "nivel": "B2 alto" },
+              { "texto": "Now that you mention it,",         "nivel": "B2" },
+              { "texto": "Yes, absolutely — I recall",       "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Actually, I do remember " },
+            { "tipo": "hueco", "id": "evento_pasado", "label": "evento pasado (-ing o sustantivo)" },
+            { "tipo": "fijo", "texto": " " },
+            { "tipo": "hueco", "id": "tiempo", "label": "marcador temporal" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "evento_pasado": {
+              "tipo_palabra": "Evento en -ing o sustantivo + complemento",
+              "ayuda": "Universal: 'the last time I [verbo en pasado]' encaja en cualquier tema.",
+              "opciones": [
+                { "texto": "the last time I went to a similar event",      "nivel": "B2" },
+                { "texto": "visiting [place] with my family",              "nivel": "B2" },
+                { "texto": "going through something just like this",       "nivel": "B2 alto" },
+                { "texto": "an occasion when I did exactly that",          "nivel": "B2 alto" },
+                { "texto": "a moment that really stands out to me",        "nivel": "C1" }
+              ]
+            },
+            "tiempo": {
+              "tipo_palabra": "Marcador temporal",
+              "ayuda": "Cuanto más concreto, mejor. Evita 'one day'.",
+              "opciones": [
+                { "texto": "a couple of months ago",      "nivel": "B2" },
+                { "texto": "last summer",                 "nivel": "B1" },
+                { "texto": "not so long ago",             "nivel": "B2" },
+                { "texto": "back when I was a teenager",  "nivel": "B2 alto" },
+                { "texto": "just the other day",          "nivel": "B2 alto (idiom)" }
+              ]
+            }
+          },
+          "trick": "Anclaje temporal concreto = imagen mental clara para el evaluador.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: pasado simple (went / visited / had).",
+            "PISTA: si la pregunta empieza por 'When was the last time…', 'Do you remember…' o 'Have you ever…', toca plantilla B.",
+            "TEMA: esta plantilla es UNIVERSAL — solo cambia el 'evento_pasado'.",
+            "EVITA: 'one day' (suena a cuento infantil). USA marcador concreto."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Detalle vivido",
+          "time": "20 seg",
+          "grammar": "Pasado continuo (was + -ing) + reacción en pasado simple",
+          "conector_inicial": {
+            "texto": "What I remember most vividly is that I was",
+            "funcion": "Detalle narrativo",
+            "alternativas": [
+              { "texto": "What I remember most vividly is that I was", "nivel": "B2 alto" },
+              { "texto": "I clearly remember I was",                    "nivel": "B2" },
+              { "texto": "At the time, I was",                          "nivel": "B2" },
+              { "texto": "Picture this: I was",                          "nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "What I remember most vividly is that I was " },
+            { "tipo": "hueco", "id": "accion_continua", "label": "acción en -ing (universal)" },
+            { "tipo": "fijo", "texto": ", and " },
+            { "tipo": "hueco", "id": "reaccion", "label": "reacción / sensación" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "accion_continua": {
+              "tipo_palabra": "Verbo en -ing + complemento",
+              "ayuda": "UNIVERSAL: si no se te ocurre nada específico, usa una opción genérica del banco.",
+              "opciones": [
+                { "texto": "doing something I had been looking forward to", "nivel": "B2 alto" },
+                { "texto": "completely immersed in the moment",             "nivel": "B2 alto" },
+                { "texto": "trying to take it all in",                      "nivel": "B2 (idiom)" },
+                { "texto": "making the most of every single minute",        "nivel": "B2 alto (idiom)" },
+                { "texto": "chatting with people I really care about",      "nivel": "B2" }
+              ]
+            },
+            "reaccion": {
+              "tipo_palabra": "Reacción o sensación (frase con sujeto)",
+              "ayuda": "Cómo te hizo sentir. Idioms aquí suben muy rápido la nota.",
+              "opciones": [
+                { "texto": "I had a whale of a time",            "nivel": "C1 (idiom)" },
+                { "texto": "I was completely blown away",        "nivel": "B2 alto (idiom)" },
+                { "texto": "it felt absolutely unforgettable",   "nivel": "B2" },
+                { "texto": "it really took me by surprise",      "nivel": "B2 alto (idiom)" },
+                { "texto": "I was on cloud nine",                "nivel": "C1 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Pasado simple + pasado continuo encadenados = marca B2 alta instantánea.",
+          "warning": "NO uses 'I had been doing' aquí — pasado perfecto continuo suele salir mal. Pasado continuo limpio.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: pasado continuo ('I was + -ing') + pasado simple para la reacción.",
+            "MARCA B2 ALTO: combinar pasado simple + continuo en frases seguidas.",
+            "IDIOM: 'had a whale of a time' / 'on cloud nine' / 'blown away' suben media nota cada uno.",
+            "EVITA: pasado perfecto continuo ('I had been doing'). Casi siempre se construye mal."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Conexión con el ahora",
+          "time": "15 seg",
+          "grammar": "Presente perfecto (have + participio)",
+          "conector_inicial": {
+            "texto": "Since then,",
+            "funcion": "Puente al presente",
+            "alternativas": [
+              { "texto": "Since then,",            "nivel": "B2" },
+              { "texto": "Ever since,",            "nivel": "B2 alto" },
+              { "texto": "Looking back,",          "nivel": "B2 alto" },
+              { "texto": "From that point on,",    "nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Since then, I've " },
+            { "tipo": "hueco", "id": "accion_pp", "label": "participio pasado + complemento" },
+            { "tipo": "fijo", "texto": " whenever I " },
+            { "tipo": "hueco", "id": "ocasion", "label": "ocasión (presente simple)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "accion_pp": {
+              "tipo_palabra": "Participio pasado + complemento",
+              "ayuda": "Algo que has hecho varias veces desde aquella experiencia.",
+              "opciones": [
+                { "texto": "tried to recreate that same feeling",     "nivel": "B2 alto" },
+                { "texto": "been completely hooked on it",            "nivel": "B2 alto (idiom)" },
+                { "texto": "made a point of repeating it",            "nivel": "C1" },
+                { "texto": "kept that memory in mind",                "nivel": "B2" },
+                { "texto": "looked for similar experiences",          "nivel": "B2" }
+              ]
+            },
+            "ocasion": {
+              "tipo_palabra": "Frase con presente simple",
+              "ayuda": "Cuándo lo haces.",
+              "opciones": [
+                { "texto": "have the chance",                          "nivel": "B2" },
+                { "texto": "feel like switching off",                  "nivel": "B2 alto (idiom)" },
+                { "texto": "need to recharge my batteries",            "nivel": "B2 (idiom)" },
+                { "texto": "want to make the most of my weekend",      "nivel": "B2 (idiom)" },
+                { "texto": "find myself in a similar mood",            "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Presente perfecto = conector temporal con el presente. Marca B2 garantizada.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente perfecto ('I've tried / been / kept').",
+            "MARCA B2: usar presente perfecto en una respuesta de pasado demuestra dominio de tiempos.",
+            "IDIOM: 'recharge my batteries' / 'hooked on it' / 'switching off' son comodines universales.",
+            "EVITA: pasado simple aquí ('I tried'). Tiene que ser PERFECTO ('I've tried')."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "C",
+      "label": "Plantilla C · OPINIÓN / VALORACIÓN GENERAL",
+      "uso": "Pregunta tipo 'Do you think…?' / 'Should children…?' / 'In your opinion…?' / 'Why do people…?'. Tu opinión razonada sobre el tema. Tiempo verbal: presente simple + because + ejemplo.",
+      "color": "#dc2626",
+      "objetivo_palabras": "75-85 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Posicionamiento claro",
+          "time": "10 seg",
+          "grammar": "Presente simple + that + cláusula",
+          "conector_inicial": {
+            "texto": "Personally speaking,",
+            "funcion": "Apertura de opinión",
+            "alternativas": [
+              { "texto": "Personally speaking,",   "nivel": "B2" },
+              { "texto": "From where I stand,",     "nivel": "C1" },
+              { "texto": "If you ask me,",          "nivel": "B2" },
+              { "texto": "To my mind,",             "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Personally speaking, I " },
+            { "tipo": "hueco", "id": "verbo_opinion", "label": "verbo de opinión" },
+            { "tipo": "fijo", "texto": " that " },
+            { "tipo": "hueco", "id": "tesis", "label": "tesis (frase con sujeto+verbo)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "verbo_opinion": {
+              "tipo_palabra": "Verbo de opinión",
+              "ayuda": "Más fuerte que 'think'. Marca convicción.",
+              "opciones": [
+                { "texto": "firmly believe",   "nivel": "B2 alto" },
+                { "texto": "would argue",      "nivel": "C1" },
+                { "texto": "feel strongly",    "nivel": "B2" },
+                { "texto": "genuinely think",  "nivel": "B2" }
+              ]
+            },
+            "tesis": {
+              "tipo_palabra": "Tesis (frase con sujeto + verbo)",
+              "ayuda": "Una posición CLARA en pocas palabras. UNIVERSAL: las 4 opciones sirven para cualquier pregunta.",
+              "opciones": [
+                { "texto": "it depends entirely on the circumstances",     "nivel": "B2 alto" },
+                { "texto": "everyone should give it a try at least once",  "nivel": "B2" },
+                { "texto": "it's high time we rethought this",             "nivel": "C1 (idiom)" },
+                { "texto": "this is a real game-changer",                   "nivel": "B2 alto (idiom)" },
+                { "texto": "there's no one-size-fits-all answer",          "nivel": "C1 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Empieza con tesis CLARA en 5 palabras. Sin 'well, I think maybe…'.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('I believe / argue / think').",
+            "PISTA: si la pregunta empieza por 'Do you think…?', 'Should…?', 'In your opinion…?', 'Why do people…?', toca plantilla C.",
+            "TEMA: UNIVERSAL — las 4 tesis del banco cubren cualquier pregunta abstracta.",
+            "EVITA: 'I think it's good / bad' (vago). USA tesis con verbo + complemento."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Razón + ejemplo concreto",
+          "time": "20 seg",
+          "grammar": "Presente simple + 'because' + ejemplo",
+          "conector_inicial": {
+            "texto": "The reason I say that is",
+            "funcion": "Justificar con ejemplo",
+            "alternativas": [
+              { "texto": "The reason I say that is",      "nivel": "B2" },
+              { "texto": "What makes me say this is",      "nivel": "B2 alto" },
+              { "texto": "I'd back this up by saying",     "nivel": "C1" },
+              { "texto": "Mainly because",                  "nivel": "B1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "The reason I say that is " },
+            { "tipo": "hueco", "id": "razon", "label": "razón general" },
+            { "tipo": "fijo", "texto": ", and a clear example is " },
+            { "tipo": "hueco", "id": "ejemplo", "label": "ejemplo concreto" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "razon": {
+              "tipo_palabra": "Razón general (frase)",
+              "ayuda": "UNIVERSAL: razones que valen para casi cualquier tema social.",
+              "opciones": [
+                { "texto": "we live in a fast-paced world",                "nivel": "B2 (idiom)" },
+                { "texto": "people are often glued to their screens",      "nivel": "B2 alto (idiom)" },
+                { "texto": "human connection has become a luxury",         "nivel": "C1" },
+                { "texto": "it brings out the best in people",             "nivel": "B2 (idiom)" },
+                { "texto": "it shapes who we become in the long run",      "nivel": "B2 alto" }
+              ]
+            },
+            "ejemplo": {
+              "tipo_palabra": "Ejemplo concreto",
+              "ayuda": "UNIVERSAL: ejemplos abiertos que encajan en cualquier tema.",
+              "opciones": [
+                { "texto": "what happens in most family gatherings",         "nivel": "B2" },
+                { "texto": "the way people behave in everyday situations",   "nivel": "B2" },
+                { "texto": "how my own routine has changed lately",          "nivel": "B2 alto" },
+                { "texto": "any classroom or workplace you walk into",       "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "Razón general + ejemplo concreto = doble argumento = densidad discursiva B2.",
+          "warning": "'Because because' o frases inacabadas matan la nota. Frase entera o calla.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple (general truth).",
+            "MARCA B2 ALTO: 'razón general + ejemplo concreto' es el patrón de respuesta nativo.",
+            "IDIOM: 'fast-paced world' / 'glued to their screens' / 'brings out the best' funcionan en cualquier tema social.",
+            "EVITA: dar SOLO razón sin ejemplo, o SOLO ejemplo sin razón. Necesitas los dos."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Cierre con apertura",
+          "time": "15 seg",
+          "grammar": "Presente + futuro will / hope",
+          "conector_inicial": {
+            "texto": "All things considered,",
+            "funcion": "Cierre valorativo",
+            "alternativas": [
+              { "texto": "All things considered,",       "nivel": "B2 alto" },
+              { "texto": "At the end of the day,",       "nivel": "C1 (idiom)" },
+              { "texto": "When all's said and done,",    "nivel": "C1 (idiom)" },
+              { "texto": "Overall,",                      "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "All things considered, " },
+            { "tipo": "hueco", "id": "valoracion_final", "label": "valoración final" },
+            { "tipo": "fijo", "texto": ", and I hope " },
+            { "tipo": "hueco", "id": "deseo", "label": "deseo futuro" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "valoracion_final": {
+              "tipo_palabra": "Valoración final",
+              "ayuda": "Cierre con sustancia. Idiom recomendado.",
+              "opciones": [
+                { "texto": "it really comes down to balance",          "nivel": "B2 alto (idiom)" },
+                { "texto": "small habits make a huge difference",       "nivel": "B2 (idiom)" },
+                { "texto": "we shouldn't lose sight of this",          "nivel": "B2 alto (idiom)" },
+                { "texto": "this trend is here to stay",               "nivel": "C1 (idiom)" }
+              ]
+            },
+            "deseo": {
+              "tipo_palabra": "Frase con presente o futuro",
+              "ayuda": "Tras 'I hope' va presente o futuro.",
+              "opciones": [
+                { "texto": "we keep this tradition alive",              "nivel": "B2" },
+                { "texto": "future generations will appreciate it",     "nivel": "B2" },
+                { "texto": "things will change for the better",          "nivel": "B2" },
+                { "texto": "more and more people will follow suit",     "nivel": "C1 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Cierre con idiom + futuro = subes medio nivel solo en estas 8 palabras.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple en la valoración + futuro (will) en el deseo.",
+            "MARCA C1: 'at the end of the day' + idiom de cierre + futuro = patrón nativo.",
+            "TEMA: UNIVERSAL — las 4 valoraciones cierran cualquier respuesta de opinión.",
+            "EVITA: silencio al final. Cerrar mal te baja la nota global. Cierre limpio = +5 puntos."
+          ]
+        }
+      ]
+    }
+  ],
+  "kits_universales": [
+    {
+      "label": "🔮 Especular (verbos clave)",
+      "items": ["seem", "appear to be", "look like", "must be", "might be", "presumably", "to judge from"]
+    },
+    {
+      "label": "Pares de adjetivos B2",
+      "items": ["bright and welcoming", "warm and homely", "lively and vibrant", "peaceful and quiet", "modern and stylish"]
+    },
+    {
+      "label": "Verbos de opinión B2 alto",
+      "items": ["firmly believe", "would argue", "feel strongly", "genuinely think", "be inclined to think"]
+    },
+    {
+      "label": "Idioms universales para cierre",
+      "items": ["it comes down to balance", "small habits make a huge difference", "this trend is here to stay", "at the end of the day", "in the grand scheme of things"]
+    }
+  ],
+  "temas": [
+    {
+      "id": "office",
+      "label": "Oficina / Trabajo",
+      "color": "#2563eb",
+      "descripcion_foto": "Una oficina moderna con varias personas trabajando con ordenadores.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what you can see in this picture.",
+          "What do you see in this image?",
+          "Tell me about this picture."
+        ],
+        "bloque_b": [
+          "Do you prefer working in a team or alone? Why?",
+          "Would you like to work in an office like this?",
+          "How important is the work environment for you?",
+          "When was the last time you worked from home?",
+          "Have you ever changed jobs because of the work atmosphere?"
+        ],
+        "bloque_c": [
+          "How has work changed in the last 20 years?",
+          "Do you think offices will exist in 10 years?",
+          "What's the future of the workplace?",
+          "Should employers offer more flexibility to their staff?",
+          "Why do you think hybrid work has become so popular?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see three colleagues talking around a meeting table in a modern office. They are dressed in smart casual clothes, and the atmosphere looks bright and welcoming. They seem focused, and it looks like they're working on a joint project together. In my opinion, this picture captures a typical scene of modern professional life.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I worked from home a couple of months ago. What I remember most vividly is that I was completely immersed in the moment, and I had a whale of a time. Since then, I've made a point of repeating it whenever I feel like switching off from the office.",
+      "respuesta_modelo_c": "Personally speaking, I firmly believe that it depends entirely on the circumstances. The reason I say that is we live in a fast-paced world, and a clear example is how my own routine has changed lately. All things considered, it really comes down to balance, and I hope more and more people will follow suit."
+    },
+    {
+      "id": "park",
+      "label": "Parque / Aire libre",
+      "color": "#16a34a",
+      "descripcion_foto": "Personas paseando y disfrutando en un parque soleado.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What's happening in this image?",
+          "Tell me what you see here."
+        ],
+        "bloque_b": [
+          "Do you enjoy spending time outdoors?",
+          "How often do you go to parks?",
+          "What's your favourite outdoor activity?",
+          "Do you enjoy being out? In which seasons?",
+          "When was the last time you spent a whole day outdoors?"
+        ],
+        "bloque_c": [
+          "What are the benefits of green spaces in cities?",
+          "Why are parks important for urban life?",
+          "Has nature become more or less important in modern life?",
+          "Do you think it's better for children to spend time outdoors or to stay in and do other activities?",
+          "Should cities invest more in public green spaces?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see several people enjoying a sunny afternoon in a city park. They are dressed in casual clothes, and the atmosphere looks lively and vibrant. They seem cheerful, and it looks like they're making the most of the good weather. In my opinion, this picture reflects how important green spaces are in our daily lives.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I went to a similar place last summer. What I remember most vividly is that I was making the most of every single minute, and it felt absolutely unforgettable. Since then, I've tried to recreate that same feeling whenever I need to recharge my batteries.",
+      "respuesta_modelo_c": "Personally speaking, I firmly believe that everyone should give it a try at least once. The reason I say that is human connection has become a luxury, and a clear example is the way people behave in everyday situations. All things considered, small habits make a huge difference, and I hope future generations will appreciate it."
+    },
+    {
+      "id": "family-meal",
+      "label": "Comida familiar / Comida con amigos",
+      "color": "#ea580c",
+      "descripcion_foto": "Una familia o grupo de amigos comiendo junta alrededor de una mesa.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what you see in this picture.",
+          "Tell me about this image.",
+          "What's going on in this picture?"
+        ],
+        "bloque_b": [
+          "How often do you have meals with your family?",
+          "Tell me about a special family meal you remember.",
+          "Do you prefer family meals or eating out?",
+          "When having family meals, do you prefer hosting or just attending?",
+          "When was the last time you cooked for a group of friends?"
+        ],
+        "bloque_c": [
+          "Why are family meals important?",
+          "Has the way families eat together changed?",
+          "Are family meals disappearing in modern life?",
+          "In which occasions do people sit down to eat together?",
+          "Why do you think shared meals are valued in most cultures?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see a group of friends having dinner around a long wooden table. They are dressed in casual clothes, and the atmosphere looks warm and homely. They seem cheerful, and it looks like they're celebrating something special. In my opinion, this picture captures the importance of spending quality time with our loved ones.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I hosted a dinner just the other day. What I remember most vividly is that I was chatting with people I really care about, and I was on cloud nine. Since then, I've made a point of repeating it whenever I have the chance.",
+      "respuesta_modelo_c": "Personally speaking, I would argue that this is a real game-changer. The reason I say that is human connection has become a luxury, and a clear example is what happens in most family gatherings. All things considered, we shouldn't lose sight of this, and I hope we keep this tradition alive."
+    },
+    {
+      "id": "classroom",
+      "label": "Aula / Educación",
+      "color": "#ca8a04",
+      "descripcion_foto": "Estudiantes en un aula prestando atención al profesor.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What's happening here?",
+          "Tell me what you see."
+        ],
+        "bloque_b": [
+          "Did you enjoy your school years?",
+          "What was your favourite subject at school?",
+          "Tell me about a teacher who influenced you.",
+          "Are you planning on studying anything in the future?",
+          "When was the last time you learned something new?"
+        ],
+        "bloque_c": [
+          "Has classroom learning changed in recent years?",
+          "Do you think traditional classrooms will disappear?",
+          "What makes a good teacher?",
+          "Should children learn how to take care of animals and crops at school?",
+          "Is online learning as effective as face-to-face teaching?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see a group of students taking notes in a bright classroom while a teacher is explaining something at the board. They are dressed in casual clothes, and the atmosphere looks focused and quiet. They seem engaged, and it looks like they're listening to an interesting lecture. In my opinion, this picture reflects the importance of education in our personal growth.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I went back to studying back when I was a teenager. What I remember most vividly is that I was doing something I had been looking forward to, and I was completely blown away. Since then, I've kept that memory in mind whenever I find myself in a similar mood.",
+      "respuesta_modelo_c": "Personally speaking, I firmly believe that it's high time we rethought this. The reason I say that is it shapes who we become in the long run, and a clear example is any classroom or workplace you walk into. All things considered, small habits make a huge difference, and I hope future generations will appreciate it."
+    },
+    {
+      "id": "shopping",
+      "label": "Compras / Mercado",
+      "color": "#db2777",
+      "descripcion_foto": "Personas comprando en una calle comercial, mercado o centro comercial.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what you can see.",
+          "Tell me about this picture.",
+          "What's happening in this image?"
+        ],
+        "bloque_b": [
+          "Do you enjoy shopping?",
+          "Where do you usually shop?",
+          "Do you prefer shopping online or in shops?",
+          "Do you usually do your shopping with time or at the last minute?",
+          "What was your first big purchase?"
+        ],
+        "bloque_c": [
+          "How have shopping habits changed in recent years?",
+          "Will physical shops disappear?",
+          "What's the future of retail?",
+          "What is your favourite part about going shopping?",
+          "Do you try to buy organic produce? Is it more expensive than processed food?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see a couple of friends walking through a busy shopping street with bags in their hands. They are dressed in casual clothes, and the atmosphere looks lively and vibrant. They seem cheerful, and it looks like they're enjoying a weekend break. In my opinion, this picture captures how shopping has become a leisure activity for many people.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I went shopping a couple of months ago. What I remember most vividly is that I was trying to take it all in, and it really took me by surprise. Since then, I've looked for similar experiences whenever I want to make the most of my weekend.",
+      "respuesta_modelo_c": "Personally speaking, I genuinely think that there's no one-size-fits-all answer. The reason I say that is people are often glued to their screens, and a clear example is how my own routine has changed lately. All things considered, this trend is here to stay, and I hope things will change for the better."
+    },
+    {
+      "id": "exercise",
+      "label": "Deporte / Ejercicio",
+      "color": "#7c3aed",
+      "descripcion_foto": "Gente haciendo deporte en un gimnasio, al aire libre o viendo un evento deportivo.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What are the people doing?",
+          "Tell me about this image."
+        ],
+        "bloque_b": [
+          "Do you do any kind of exercise?",
+          "How often do you exercise?",
+          "What's your favourite type of physical activity?",
+          "Do you remember your first time watching a sports event?",
+          "Have you ever tried off-road biking? What was the experience like?"
+        ],
+        "bloque_c": [
+          "Why is sport important nowadays?",
+          "Should children do more sports at school?",
+          "Are people more active than 20 years ago?",
+          "Do you enjoy sports events with friends or alone?",
+          "What are the key safety measures when practising adventure sports?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see a group of people exercising together in an outdoor space, with several spectators around them. They are dressed in sportswear, and the atmosphere looks energetic and motivating. They seem focused, and it looks like they're following a training session. In my opinion, this picture reflects how more and more people care about their health.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I went to a similar event a couple of months ago. What I remember most vividly is that I was completely immersed in the moment, and I had a whale of a time. Since then, I've been completely hooked on it whenever I have the chance.",
+      "respuesta_modelo_c": "Personally speaking, I firmly believe that everyone should give it a try at least once. The reason I say that is it brings out the best in people, and a clear example is any classroom or workplace you walk into. All things considered, small habits make a huge difference, and I hope more and more people will follow suit."
+    },
+    {
+      "id": "cafe",
+      "label": "Café / Restaurante",
+      "color": "#9333ea",
+      "descripcion_foto": "Personas charlando en un café o restaurante acogedor.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe what's happening.",
+          "What can you see in the image?",
+          "Tell me about this picture."
+        ],
+        "bloque_b": [
+          "Do you enjoy going to cafés?",
+          "Do you prefer cafés or restaurants?",
+          "Tell me about your favourite café.",
+          "When was the last time you met someone for coffee?",
+          "Do you usually study or work in cafés?"
+        ],
+        "bloque_c": [
+          "What role do cafés play in social life?",
+          "Why have cafés become so popular?",
+          "Are cafés replacing other social spaces?",
+          "Has the way we socialise changed in the last 20 years?",
+          "Why do you think people are willing to pay so much for a coffee out?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see two friends having coffee in a cosy café. They are dressed in casual clothes, and the atmosphere looks warm and welcoming. They seem at ease, and it looks like they're catching up after a long time. In my opinion, this picture captures how cafés bring people together in modern cities.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I met a friend for coffee not so long ago. What I remember most vividly is that I was chatting with people I really care about, and I was on cloud nine. Since then, I've tried to recreate that same feeling whenever I feel like switching off.",
+      "respuesta_modelo_c": "Personally speaking, I would argue that this is a real game-changer. The reason I say that is human connection has become a luxury, and a clear example is the way people behave in everyday situations. All things considered, this trend is here to stay, and I hope we keep this tradition alive."
+    },
+    {
+      "id": "transport",
+      "label": "Transporte público / Commuting",
+      "color": "#0891b2",
+      "descripcion_foto": "Personas viajando en metro, autobús, tren o esperando en una estación.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Describe this picture.",
+          "What do you see here?",
+          "Tell me about this scene."
+        ],
+        "bloque_b": [
+          "Do you use public transport often?",
+          "How do you usually get around?",
+          "Tell me about transport in your city.",
+          "Do you commute a lot?",
+          "When was the last time you took a long train journey?"
+        ],
+        "bloque_c": [
+          "What are the advantages of public transport?",
+          "Will electric cars replace public transport?",
+          "How can cities improve their transport?",
+          "Do you think the train is the best method to commute? What other means of transport are there that are good as well?",
+          "Should public transport be free in big cities?"
+        ]
+      },
+      "respuesta_modelo_a": "In this picture, I can see several passengers travelling on a busy underground train. They are dressed in casual and work clothes, and the atmosphere looks quite hectic. They seem tired, and it looks like they're on their way to work. In my opinion, this picture captures a typical scene of city life.",
+      "respuesta_modelo_b": "Actually, I do remember the last time I commuted across town just the other day. What I remember most vividly is that I was trying to take it all in, and it really took me by surprise. Since then, I've kept that memory in mind whenever I need to recharge my batteries.",
+      "respuesta_modelo_c": "Personally speaking, I feel strongly that it depends entirely on the circumstances. The reason I say that is we live in a fast-paced world, and a clear example is how my own routine has changed lately. All things considered, it really comes down to balance, and I hope things will change for the better."
+    }
+  ]
+}

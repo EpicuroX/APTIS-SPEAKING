@@ -1,0 +1,827 @@
+{
+  "id": "parte-3",
+  "label": "Parte 3",
+  "subtitle": "Comparar 2 fotos + 2 preguntas · 45 seg cada respuesta",
+  "meta": {
+    "tiempo_total": "45 seg por respuesta",
+    "preparacion": "0 seg",
+    "formato": "2 fotos + 3 preguntas: A comparar / B preferencia / C análisis general",
+    "nivel": "B2 alto → C1"
+  },
+  "examen": {
+    "preparacion_segundos": 0,
+    "respuesta_segundos": 45,
+    "subtareas": 3
+  },
+  "objetivo": "Tres plantillas para las 3 preguntas de Parte 3: A comparar y contrastar las dos fotos, B tu preferencia o hábito personal, C análisis abstracto / tendencia general. Cada respuesta ~75 palabras.",
+  "patron_oficial": {
+    "titulo": "Patrón real del Aptis Parte 3 (extraído de exámenes oficiales)",
+    "descripcion": "Q1 comparar las dos fotos. Q2 tu PREFERENCIA o hábito personal entre ambas. Q3 análisis GENERAL o de tendencia (cómo es en tu país, por qué pasa).",
+    "ejemplo_real": [
+      "Q1: Compare both pictures.",
+      "Q2: What is your favourite part about going shopping? · Do you go hiking in the mountains often? · Do you try to buy organic produce?",
+      "Q3: Do you usually do your shopping with time or at the last minute? · How common are these two situations in your country? · Is it more expensive to eat unprocessed food than organic? Why?"
+    ]
+  },
+  "plantillas": [
+    {
+      "tipo": "A",
+      "label": "Plantilla A · COMPARAR FOTOS",
+      "uso": "Pregunta directa: 'Compare both pictures' / 'Describe what you see'. Tiempo verbal dominante: presente continuo + contraste con 'whereas'.",
+      "color": "#16a34a",
+      "objetivo_palabras": "70-85 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Apertura comparativa",
+          "time": "10 seg",
+          "grammar": "Presente simple",
+          "conector_inicial": {
+            "texto": null,
+            "funcion": "Apertura",
+            "alternativas": [
+              { "texto": "At first sight, both pictures show",       "nivel": "B2" },
+              { "texto": "Straight away, I can tell that both",      "nivel": "B2 alto" },
+              { "texto": "From the very first glance,",              "nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "At first sight, both pictures show situations related to " },
+            { "tipo": "hueco", "id": "tema_general", "label": "tema común" },
+            { "tipo": "fijo", "texto": ", but in completely different contexts." }
+          ],
+          "huecos": {
+            "tema_general": {
+              "tipo_palabra": "Tema común a ambas fotos",
+              "ayuda": "Categoría que abarca ambas: work, education, leisure, etc.",
+              "opciones": [
+                { "texto": "work",       "nivel": "A2" },
+                { "texto": "education",  "nivel": "B1" },
+                { "texto": "leisure",    "nivel": "B2" },
+                { "texto": "travelling", "nivel": "B1" },
+                { "texto": "technology", "nivel": "B1" }
+              ]
+            }
+          },
+          "trick": "Una sola frase de apertura te ahorra pensar 5 segundos. Memorízala.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple.",
+            "PISTA: si la pregunta es 'Compare these pictures' / 'Describe both', SIEMPRE empiezas con plantilla A.",
+            "TEMA: encuentra el paraguas común a las dos fotos (work, leisure, food, transport…).",
+            "EVITA: empezar describiendo una foto sola. Empieza por LO QUE COMPARTEN."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Similitudes",
+          "time": "8 seg",
+          "grammar": "Both + verbo plural",
+          "conector_inicial": {
+            "texto": "Both pictures",
+            "funcion": "Similitud",
+            "alternativas": [
+              { "texto": "Both pictures show",          "nivel": "B1" },
+              { "texto": "What they have in common is", "nivel": "B2 alto" },
+              { "texto": "Similarly,",                   "nivel": "B2" },
+              { "texto": "In both cases,",               "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Both pictures show " },
+            { "tipo": "hueco", "id": "comun", "label": "elemento común" },
+            { "tipo": "fijo", "texto": ", and in both of them, the people seem " },
+            { "tipo": "hueco", "id": "sentimiento", "label": "sentimiento común" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "comun": {
+              "tipo_palabra": "Elemento común",
+              "ayuda": "Algo que se da en las dos fotos.",
+              "opciones": [
+                { "texto": "people interacting",                 "nivel": "B1" },
+                { "texto": "individuals engaged in an activity", "nivel": "B2" },
+                { "texto": "a sense of togetherness",            "nivel": "B2 alto" },
+                { "texto": "people enjoying their time",         "nivel": "B1" }
+              ]
+            },
+            "sentimiento": {
+              "tipo_palabra": "Sentimiento común",
+              "ayuda": "Adjetivo que aplique a las personas de las dos fotos.",
+              "opciones": [
+                { "texto": "engaged",              "nivel": "B2" },
+                { "texto": "at ease",              "nivel": "B2 alto" },
+                { "texto": "focused on what they're doing", "nivel": "B2" }
+              ]
+            }
+          },
+          "trick": "Si no encuentras similitud clara, 'people interacting' funciona para casi todo.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple + 'seem' (especulación).",
+            "TRUCO COMODÍN: 'people interacting' + 'engaged' sirve para el 90% de las fotos.",
+            "MARCA B2: 'a sense of togetherness' eleva la frase sin esfuerzo.",
+            "EVITA: 'They are the same' (falso y plano). Especifica QUÉ comparten."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Diferencias (lo más importante)",
+          "time": "17 seg",
+          "grammar": "Whereas / while",
+          "conector_inicial": {
+            "texto": "However,",
+            "funcion": "Contraste",
+            "alternativas": [
+              { "texto": "However,",        "nivel": "B2" },
+              { "texto": "Nevertheless,",   "nivel": "C1" },
+              { "texto": "In contrast,",    "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "However, the main difference is that in the first picture " },
+            { "tipo": "hueco", "id": "foto1", "label": "detalle foto 1" },
+            { "tipo": "fijo", "texto": ", whereas in the second one " },
+            { "tipo": "hueco", "id": "foto2", "label": "detalle foto 2 (opuesto)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "foto1": {
+              "tipo_palabra": "Frase descriptiva foto 1",
+              "ayuda": "Detalle específico de la foto 1.",
+              "opciones": [
+                { "texto": "several colleagues are interacting in an office",  "nivel": "B2" },
+                { "texto": "the setting is indoors and formal",                 "nivel": "B2 alto" },
+                { "texto": "people are face to face",                           "nivel": "B2" }
+              ]
+            },
+            "foto2": {
+              "tipo_palabra": "Frase descriptiva foto 2 (opuesta)",
+              "ayuda": "Detalle opuesto al de la foto 1.",
+              "opciones": [
+                { "texto": "a person is working alone from home",            "nivel": "B2" },
+                { "texto": "the setting is outdoors and relaxed",            "nivel": "B2 alto" },
+                { "texto": "people are interacting through screens",        "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "'Whereas' es el conector REY de Parte 3. Memorízalo. Es B2 alto sin esfuerzo.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente continuo en las dos partes ('are interacting' / 'is working').",
+            "MARCA B2 ALTO: 'whereas' es EL conector estrella de Parte 3. Memorízalo.",
+            "TRUCO: la foto 2 tiene que ser opuesta o complementaria a la 1. No describas dos cosas iguales.",
+            "EVITA: 'but in the second one' (plano). USA 'whereas' siempre."
+          ]
+        },
+        {
+          "n": 4,
+          "title": "Preferencia personal con condicional 2",
+          "time": "10 seg",
+          "grammar": "If I had to + would (condicional 2)",
+          "conector_inicial": {
+            "texto": "If I had to choose,",
+            "funcion": "Hipótesis / preferencia",
+            "alternativas": [
+              { "texto": "If I had to choose,",          "nivel": "B2" },
+              { "texto": "Were I to choose,",            "nivel": "C1 (inversión)" },
+              { "texto": "Given the option, I would",    "nivel": "B2 alto" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "If I had to choose, I would personally lean towards " },
+            { "tipo": "hueco", "id": "opcion", "label": "qué foto/opción" },
+            { "tipo": "fijo", "texto": ", because " },
+            { "tipo": "hueco", "id": "razon", "label": "razón sólida" },
+            { "tipo": "fijo", "texto": ". It's far more " },
+            { "tipo": "hueco", "id": "adj", "label": "adjetivo comparativo" },
+            { "tipo": "fijo", "texto": " for someone like me." }
+          ],
+          "huecos": {
+            "opcion": {
+              "tipo_palabra": "Cuál prefieres",
+              "ayuda": "La primera o la segunda.",
+              "opciones": [
+                { "texto": "the first option",   "nivel": "B1" },
+                { "texto": "the second option",  "nivel": "B1" }
+              ]
+            },
+            "razon": {
+              "tipo_palabra": "Razón sólida",
+              "ayuda": "Por qué la prefieres. Mejor algo personal.",
+              "opciones": [
+                { "texto": "it gives me more flexibility",   "nivel": "B2" },
+                { "texto": "it suits my personality better", "nivel": "B2 alto" },
+                { "texto": "it fits the way I work",         "nivel": "B2" }
+              ]
+            },
+            "adj": {
+              "tipo_palabra": "Adjetivo B2 comparativo",
+              "ayuda": "Adjetivo + 'for someone like me'.",
+              "opciones": [
+                { "texto": "enjoyable",   "nivel": "B2" },
+                { "texto": "rewarding",   "nivel": "B2" },
+                { "texto": "meaningful",  "nivel": "B2 alto" },
+                { "texto": "stimulating", "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "'Lean towards' es phrasal verb B2 — mejor que 'prefer'. + condicional 2 = doble jugada.",
+          "warning": "'If I would choose, I would…' = ERROR. La condición SIEMPRE va en pasado: 'If I HAD to choose, I WOULD…'",
+          "trucos_examen": [
+            "TIEMPO VERBAL: condicional 2 ('If I HAD to + WOULD').",
+            "MARCA B2 ALTO: 'lean towards' es phrasal verb. Mejor que 'prefer'.",
+            "TRUCO: 'for someone like me' es muletilla nativa de cierre.",
+            "EVITA: 'If I would choose'. ERROR GRAMATICAL CRÍTICO. La condición va en pasado simple."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "B",
+      "label": "Plantilla B · PREFERENCIA / HÁBITO PERSONAL",
+      "uso": "Pregunta tipo 'Which would you prefer?' / 'Do you usually…?' / 'Have you ever…?' relacionada con las fotos. Tiempo verbal: condicional 2 + presente de hábito + comparativo.",
+      "color": "#2563eb",
+      "objetivo_palabras": "75-85 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Marcar tu lado",
+          "time": "10 seg",
+          "grammar": "Condicional 2 (If I had to + would)",
+          "conector_inicial": {
+            "texto": "If I had to pick one,",
+            "funcion": "Decisión clara",
+            "alternativas": [
+              { "texto": "If I had to pick one,",                  "nivel": "B2" },
+              { "texto": "I'd say without hesitation that",        "nivel": "B2 alto" },
+              { "texto": "Honestly, I tend to",                     "nivel": "B2" },
+              { "texto": "Were I to choose,",                       "nivel": "C1 (inversión)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "If I had to pick one, I'd definitely go for " },
+            { "tipo": "hueco", "id": "opcion_elegida", "label": "opción elegida" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "opcion_elegida": {
+              "tipo_palabra": "Opción elegida",
+              "ayuda": "UNIVERSAL: cualquiera de estas funciona para casi cualquier pregunta de preferencia.",
+              "opciones": [
+                { "texto": "the first option",                                    "nivel": "B1" },
+                { "texto": "the more traditional approach",                       "nivel": "B2" },
+                { "texto": "the second scene without a doubt",                    "nivel": "B2" },
+                { "texto": "something more along the lines of the first one",     "nivel": "B2 alto" },
+                { "texto": "the option that feels more genuine to me",            "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Decide rápido. La indecisión cuesta puntos. 'I'd go for X' en 5 segundos.",
+          "warning": "NO uses 'I would to choose' ni 'If I would choose'. Es 'If I HAD to + WOULD'.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: condicional 2 ('If I HAD to + WOULD go for').",
+            "PISTA: si la pregunta es 'Which do you prefer?' / 'Would you rather…?', toca plantilla B.",
+            "TEMA: UNIVERSAL — las 5 opciones del banco sirven para cualquier pregunta de preferencia.",
+            "EVITA: la indecisión. 'I don't know' o 'both are good' bajan la nota muchísimo."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Tu hábito real",
+          "time": "20 seg",
+          "grammar": "Presente simple + adverbio de frecuencia colocado en medio",
+          "conector_inicial": {
+            "texto": "In my day-to-day life,",
+            "funcion": "Pasar a tu rutina",
+            "alternativas": [
+              { "texto": "In my day-to-day life,",     "nivel": "B2" },
+              { "texto": "Truth be told,",             "nivel": "B2 alto (idiom)" },
+              { "texto": "More often than not,",       "nivel": "B2 alto (idiom)" },
+              { "texto": "Generally speaking,",         "nivel": "B2" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "In my day-to-day life, I " },
+            { "tipo": "hueco", "id": "frecuencia", "label": "frecuencia / verbo auxiliar" },
+            { "tipo": "fijo", "texto": " " },
+            { "tipo": "hueco", "id": "accion_hab", "label": "acción habitual" },
+            { "tipo": "fijo", "texto": ", because " },
+            { "tipo": "hueco", "id": "razon_personal", "label": "razón personal" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "frecuencia": {
+              "tipo_palabra": "Adverbio de frecuencia o auxiliar",
+              "ayuda": "Colocación nativa: entre sujeto y verbo principal.",
+              "opciones": [
+                { "texto": "tend to",                  "nivel": "B2" },
+                { "texto": "usually end up",            "nivel": "B2 alto" },
+                { "texto": "make a point of",           "nivel": "C1" },
+                { "texto": "rarely manage to",          "nivel": "B2 alto" },
+                { "texto": "almost always",             "nivel": "B2" }
+              ]
+            },
+            "accion_hab": {
+              "tipo_palabra": "Acción habitual (verbo + complemento)",
+              "ayuda": "UNIVERSAL: estas opciones encajan en preferencias de cualquier tipo.",
+              "opciones": [
+                { "texto": "go for the practical option",          "nivel": "B2" },
+                { "texto": "stick to what I know",                  "nivel": "B2 (idiom)" },
+                { "texto": "try something new every now and then",  "nivel": "B2 (idiom)" },
+                { "texto": "lean towards the quieter alternative",  "nivel": "B2 alto" },
+                { "texto": "follow my gut instinct",                "nivel": "C1 (idiom)" }
+              ]
+            },
+            "razon_personal": {
+              "tipo_palabra": "Razón personal (frase)",
+              "ayuda": "UNIVERSAL: razones que funcionan para cualquier hábito.",
+              "opciones": [
+                { "texto": "it saves me a lot of stress",          "nivel": "B2" },
+                { "texto": "it just feels more natural to me",     "nivel": "B2" },
+                { "texto": "I'm a creature of habit",              "nivel": "B2 alto (idiom)" },
+                { "texto": "it really suits the way I'm wired",    "nivel": "C1 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Adverbios de frecuencia colocados en mitad de frase = construcción nativa.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple con adverbio de frecuencia entre sujeto y verbo principal.",
+            "MARCA B2 ALTO: 'tend to' / 'make a point of' / 'end up' son construcciones nativas.",
+            "IDIOM: 'stick to what I know' / 'creature of habit' / 'gut instinct' suben media nota cada una.",
+            "EVITA: 'I always do X' (plano). USA 'I tend to / make a point of / usually end up'."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Cierre con comparación valorativa",
+          "time": "15 seg",
+          "grammar": "Comparativos con adverbio intensificador",
+          "conector_inicial": {
+            "texto": "All in all, it just feels",
+            "funcion": "Cierre con comparativo",
+            "alternativas": [
+              { "texto": "All in all, it just feels",      "nivel": "B2" },
+              { "texto": "At the end of the day, it's",     "nivel": "C1 (idiom)" },
+              { "texto": "If you ask me, it's",             "nivel": "B2" },
+              { "texto": "When all's said and done, it's",  "nivel": "C1 (idiom)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "All in all, it just feels " },
+            { "tipo": "hueco", "id": "comparativo", "label": "comparativo intensificado" },
+            { "tipo": "fijo", "texto": " for someone like me." }
+          ],
+          "huecos": {
+            "comparativo": {
+              "tipo_palabra": "Adverbio + comparativo + adjetivo",
+              "ayuda": "Fórmula cerrada B2 perfecta. Cualquiera de estas funciona universalmente.",
+              "opciones": [
+                { "texto": "far more rewarding",              "nivel": "B2 alto" },
+                { "texto": "noticeably more enjoyable",       "nivel": "B2 alto" },
+                { "texto": "considerably more convenient",    "nivel": "B2 alto" },
+                { "texto": "significantly more meaningful",   "nivel": "B2 alto" },
+                { "texto": "infinitely more stimulating",     "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Adverbio + comparativo + 'for someone like me' = fórmula cerrada B2 perfecta.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple ('feels').",
+            "MARCA B2 ALTO: adverbio intensificador ('far' / 'noticeably' / 'considerably') + comparativo. Sin adverbio es plano.",
+            "TEMA: UNIVERSAL — los 5 comparativos cierran cualquier pregunta de preferencia.",
+            "EVITA: 'much better' o 'more nice'. Mal en ambos casos."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "C",
+      "label": "Plantilla C · ANÁLISIS ABSTRACTO / TENDENCIA",
+      "uso": "Pregunta tipo 'How common is this in your country?' / 'Why do you think…?' / 'Is it more expensive…?'. Análisis general o tendencia. Tiempo verbal: presente simple (verdad general) + contraste pasado/presente + futuro.",
+      "color": "#dc2626",
+      "objetivo_palabras": "75-90 palabras",
+      "pasos": [
+        {
+          "n": 1,
+          "title": "Generalización inicial",
+          "time": "10 seg",
+          "grammar": "Presente simple + cuantificador",
+          "conector_inicial": {
+            "texto": "Generally speaking,",
+            "funcion": "Apertura general",
+            "alternativas": [
+              { "texto": "Generally speaking,",                   "nivel": "B2" },
+              { "texto": "Broadly speaking,",                     "nivel": "B2 alto" },
+              { "texto": "It's fair to say that",                  "nivel": "B2 alto" },
+              { "texto": "It's a well-known fact that",            "nivel": "C1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Generally speaking, " },
+            { "tipo": "hueco", "id": "cuantificador", "label": "cuantificador" },
+            { "tipo": "fijo", "texto": " of people " },
+            { "tipo": "hueco", "id": "tendencia_general", "label": "tendencia (verbo en presente)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "cuantificador": {
+              "tipo_palabra": "Cuantificador",
+              "ayuda": "Cuánta gente. Más preciso que 'many'.",
+              "opciones": [
+                { "texto": "the vast majority",   "nivel": "B2 alto" },
+                { "texto": "more and more",        "nivel": "B2" },
+                { "texto": "a fair number",        "nivel": "B2" },
+                { "texto": "a growing share",      "nivel": "C1" },
+                { "texto": "a significant portion", "nivel": "B2 alto" }
+              ]
+            },
+            "tendencia_general": {
+              "tipo_palabra": "Verbo en presente + complemento",
+              "ayuda": "UNIVERSAL: tendencias que valen para casi cualquier tema social.",
+              "opciones": [
+                { "texto": "are shifting towards healthier choices",   "nivel": "B2 alto" },
+                { "texto": "still cling to traditional ways",          "nivel": "C1 (idiom)" },
+                { "texto": "are becoming more aware of this",          "nivel": "B2" },
+                { "texto": "tend to overlook how serious it is",       "nivel": "B2 alto (idiom)" },
+                { "texto": "are caught between two worlds",            "nivel": "C1 (idiom)" }
+              ]
+            }
+          },
+          "trick": "Empieza siempre por cuantificador + verbo en presente = tono 'ensayo hablado' inmediato.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple (verdad general).",
+            "PISTA: si la pregunta es 'How common…?' / 'Why do people…?' / 'Is it more X than Y in your country?', toca plantilla C.",
+            "TEMA: UNIVERSAL — las 5 tendencias del banco se aplican a cualquier tema social.",
+            "EVITA: 'a lot of people' (vago). USA 'the vast majority' / 'a growing share'."
+          ]
+        },
+        {
+          "n": 2,
+          "title": "Causa razonada con contraste pasado/presente",
+          "time": "20 seg",
+          "grammar": "Presente simple + 'whereas in the past' + pasado simple",
+          "conector_inicial": {
+            "texto": "This is largely due to the fact that",
+            "funcion": "Causa formal",
+            "alternativas": [
+              { "texto": "This is largely due to the fact that",   "nivel": "C1" },
+              { "texto": "The reason behind this is that",          "nivel": "B2 alto" },
+              { "texto": "This boils down to",                       "nivel": "C1 (idiom)" },
+              { "texto": "Mainly because",                           "nivel": "B1" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "This is largely due to the fact that " },
+            { "tipo": "hueco", "id": "causa", "label": "causa actual" },
+            { "tipo": "fijo", "texto": ", whereas in the past " },
+            { "tipo": "hueco", "id": "contraste_pasado", "label": "contraste pasado" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "causa": {
+              "tipo_palabra": "Causa actual (frase con sujeto+verbo)",
+              "ayuda": "UNIVERSAL: causas que valen para casi cualquier tema social actual.",
+              "opciones": [
+                { "texto": "modern life is increasingly demanding",          "nivel": "B2 alto" },
+                { "texto": "social media shapes everything we do",            "nivel": "B2 alto" },
+                { "texto": "people are more health-conscious than ever",      "nivel": "C1" },
+                { "texto": "convenience has become the top priority",         "nivel": "B2 alto" },
+                { "texto": "we're all juggling more responsibilities",        "nivel": "C1 (idiom)" }
+              ]
+            },
+            "contraste_pasado": {
+              "tipo_palabra": "Contraste con el pasado (pasado simple)",
+              "ayuda": "Cómo era antes. Pasado simple obligatorio.",
+              "opciones": [
+                { "texto": "things were much simpler",                      "nivel": "B2" },
+                { "texto": "people didn't have the same options",           "nivel": "B2" },
+                { "texto": "this would have been unthinkable",              "nivel": "C1 (mixed conditional)" },
+                { "texto": "it wasn't even on people's radar",              "nivel": "B2 alto (idiom)" },
+                { "texto": "such choices were a luxury",                     "nivel": "B2 alto" }
+              ]
+            }
+          },
+          "trick": "'Whereas in the past + pasado simple' = contraste pasado/presente = marca B2 sobresaliente.",
+          "warning": "NO 'due to that…' sin sustantivo. 'Due to + sustantivo' o 'due to the fact that + sujeto+verbo'.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: presente simple para la causa + pasado simple para el contraste.",
+            "MARCA B2 ALTO: combinar tiempos (presente + pasado en una frase) demuestra dominio.",
+            "IDIOM: 'on people's radar' / 'juggling responsibilities' / 'boils down to' suben nota.",
+            "EVITA: 'because of that' (plano). USA 'this is largely due to the fact that'."
+          ]
+        },
+        {
+          "n": 3,
+          "title": "Predicción / valoración",
+          "time": "15 seg",
+          "grammar": "Futuro will + 'unless' + presente simple",
+          "conector_inicial": {
+            "texto": "Looking ahead,",
+            "funcion": "Cierre proyectivo",
+            "alternativas": [
+              { "texto": "Looking ahead,",            "nivel": "B2 alto" },
+              { "texto": "If this trend continues,",   "nivel": "B2 alto" },
+              { "texto": "In the long run,",           "nivel": "B2 (idiom)" },
+              { "texto": "Should this carry on,",      "nivel": "C1 (inversión)" }
+            ]
+          },
+          "plantilla_segmentos": [
+            { "tipo": "fijo", "texto": "Looking ahead, I expect " },
+            { "tipo": "hueco", "id": "prediccion", "label": "predicción (futuro)" },
+            { "tipo": "fijo", "texto": ", unless " },
+            { "tipo": "hueco", "id": "condicion", "label": "condición (presente simple)" },
+            { "tipo": "fijo", "texto": "." }
+          ],
+          "huecos": {
+            "prediccion": {
+              "tipo_palabra": "Predicción (frase con futuro o sustantivo)",
+              "ayuda": "Cómo evolucionará la cosa.",
+              "opciones": [
+                { "texto": "this gap will only widen",            "nivel": "B2 alto" },
+                { "texto": "things will balance out",              "nivel": "B2 (idiom)" },
+                { "texto": "the situation will reverse completely","nivel": "B2 alto" },
+                { "texto": "we'll see a real turnaround",          "nivel": "C1 (idiom)" }
+              ]
+            },
+            "condicion": {
+              "tipo_palabra": "Condición (presente simple)",
+              "ayuda": "Tras 'unless' va SIEMPRE presente simple. Equivale a 'if … not'.",
+              "opciones": [
+                { "texto": "society changes its mindset",        "nivel": "B2" },
+                { "texto": "policies are put in place",          "nivel": "B2 alto (pasiva)" },
+                { "texto": "people start speaking up",            "nivel": "B2" },
+                { "texto": "we collectively decide otherwise",   "nivel": "C1" }
+              ]
+            }
+          },
+          "trick": "Predicción + 'unless' + condición = estructura compleja con subordinada = marca de C1.",
+          "warning": "Tras 'unless' NUNCA futuro: 'unless we'll change' = ERROR. SIEMPRE presente: 'unless we change'.",
+          "trucos_examen": [
+            "TIEMPO VERBAL: futuro will para la predicción + presente simple tras 'unless'.",
+            "MARCA C1: 'unless' + presente simple es estructura subordinada compleja.",
+            "TRUCO: 'looking ahead' / 'in the long run' / 'should this carry on' son aperturas que suenan a redacción.",
+            "EVITA: 'unless we will' (ERROR). Tras 'unless' va PRESENTE."
+          ]
+        }
+      ]
+    }
+  ],
+  "kits_universales": [
+    {
+      "label": "Conectores de contraste",
+      "items": ["but", "while", "whereas", "however", "nevertheless", "in contrast", "on the other hand", "on the flip side"]
+    },
+    {
+      "label": "Adjetivos comparativos B2",
+      "items": ["far more convenient", "much more rewarding", "considerably more engaging", "significantly easier", "noticeably better"]
+    },
+    {
+      "label": "Cuantificadores B2 alto",
+      "items": ["the vast majority", "more and more", "a fair number", "a growing share", "a significant portion"]
+    },
+    {
+      "label": "Aperturas para análisis general",
+      "items": ["Generally speaking,", "Broadly speaking,", "It's fair to say that", "It's a well-known fact that", "Looking at the bigger picture,"]
+    }
+  ],
+  "temas": [
+    {
+      "id": "office-home",
+      "label": "Oficina vs Casa",
+      "color": "#2563eb",
+      "descripcion_fotos": "Foto 1: oficina moderna. Foto 2: persona trabajando desde casa.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "Describe and compare what you see.",
+          "Tell me about the differences and similarities."
+        ],
+        "bloque_b": [
+          "Which working environment would you prefer?",
+          "Where would you be more productive?",
+          "Have you ever worked in both?",
+          "Do you commute a lot, or do you mainly work from home?",
+          "What's your ideal balance between office and home?"
+        ],
+        "bloque_c": [
+          "How has remote work changed our lives?",
+          "Will offices disappear in the future?",
+          "Why has working from home become so common?",
+          "How common is hybrid work in your country?",
+          "Are employers adapting fast enough to this shift?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to work, but in completely different contexts. Both pictures show people engaged in their professional tasks, and in both of them they seem focused. However, the main difference is that in the first picture several colleagues are interacting in an office, whereas in the second one a person is working alone from home. If I had to choose, I would personally lean towards working from home, because it gives me more flexibility. It's far more convenient for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd definitely go for the second scene without a doubt. In my day-to-day life, I tend to go for the practical option, because it just feels more natural to me. All in all, it just feels significantly more meaningful for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, more and more people are shifting towards healthier choices. This is largely due to the fact that modern life is increasingly demanding, whereas in the past things were much simpler. Looking ahead, I expect this gap will only widen, unless society changes its mindset."
+    },
+    {
+      "id": "books-digital",
+      "label": "Libros vs Digital",
+      "color": "#ca8a04",
+      "descripcion_fotos": "Foto 1: gente con libros impresos. Foto 2: gente con tablets / ebooks.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "Describe both images.",
+          "Tell me about what you see."
+        ],
+        "bloque_b": [
+          "Which way of reading do you prefer?",
+          "Do you read printed books or ebooks?",
+          "What's the last book you read?",
+          "Do you prefer studying at the library or at home?",
+          "Do you think all libraries should be open 24 hours a day?"
+        ],
+        "bloque_c": [
+          "Will printed books disappear?",
+          "How has reading changed in recent years?",
+          "Are people reading more or less now?",
+          "Do you think culture should be accessible to everyone?",
+          "Why do you think bookshops are closing in most cities?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to reading, but in completely different contexts. Both pictures show people engaged in books, and in both of them they seem focused. However, the main difference is that in the first picture readers are using printed books, whereas in the second one they're reading from digital devices. If I had to choose, I would personally lean towards printed books, because the feel of paper helps me concentrate. It's far more enjoyable for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd definitely go for the more traditional approach. In my day-to-day life, I make a point of sticking to what I know, because it really suits the way I'm wired. All in all, it just feels considerably more convenient for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, the vast majority of people are caught between two worlds. This is largely due to the fact that convenience has become the top priority, whereas in the past such choices were a luxury. Looking ahead, I expect things will balance out, unless we collectively decide otherwise."
+    },
+    {
+      "id": "face-online",
+      "label": "Cara a cara vs Online",
+      "color": "#9333ea",
+      "descripcion_fotos": "Foto 1: amigos hablando en persona. Foto 2: gente videollamando.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "What's happening in each picture?",
+          "Describe both scenes."
+        ],
+        "bloque_b": [
+          "Which type of communication do you prefer?",
+          "How do you usually keep in touch with friends?",
+          "Tell me about the last time you had a long conversation.",
+          "Do you prefer spending time with people or on your own?",
+          "What are your favourite activities to do with friends?"
+        ],
+        "bloque_c": [
+          "How has technology changed the way we relate?",
+          "Are we more or less connected nowadays?",
+          "Will video calls replace face-to-face contact?",
+          "How common is video calling in your country?",
+          "Is social isolation a real problem in modern life?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to communication, but in completely different contexts. Both pictures show people interacting, and in both of them they seem engaged. However, the main difference is that in the first picture friends are talking face to face, whereas in the second one they're communicating through screens. If I had to choose, I would personally lean towards face-to-face contact, because it feels more genuine. It's far more meaningful for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd say without hesitation that the option that feels more genuine to me. In my day-to-day life, I usually end up leaning towards the quieter alternative, because I'm a creature of habit. All in all, it just feels infinitely more stimulating for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, a growing share of people tend to overlook how serious it is. This is largely due to the fact that social media shapes everything we do, whereas in the past it wasn't even on people's radar. Looking ahead, I expect we'll see a real turnaround, unless people start speaking up."
+    },
+    {
+      "id": "classroom-online",
+      "label": "Aula vs Online",
+      "color": "#16a34a",
+      "descripcion_fotos": "Foto 1: clase presencial. Foto 2: clase online desde casa.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "What's similar and different?",
+          "Describe both situations."
+        ],
+        "bloque_b": [
+          "Which type of learning do you prefer?",
+          "Have you ever studied online?",
+          "Tell me about your school experience.",
+          "Do you remember your school days as something positive or the opposite?",
+          "Would you like to study more than one degree?"
+        ],
+        "bloque_c": [
+          "Will online learning replace traditional classrooms?",
+          "What are the benefits of online education?",
+          "How has education changed in recent years?",
+          "Should children learn how to take care of animals and crops at school?",
+          "Is it harder for students to concentrate today than 20 years ago?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to education, but in completely different contexts. Both pictures show students learning, and in both of them they seem focused. However, the main difference is that in the first picture students are sitting in a traditional classroom, whereas in the second one they're studying through a screen at home. If I had to choose, I would personally lean towards the traditional setting, because human contact really matters in learning. It's far more rewarding for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd definitely go for the first option. In my day-to-day life, I tend to follow my gut instinct, because it really suits the way I'm wired. All in all, it just feels noticeably more enjoyable for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, a significant portion of people are becoming more aware of this. This is largely due to the fact that people are more health-conscious than ever, whereas in the past such choices were a luxury. Looking ahead, I expect the situation will reverse completely, unless policies are put in place."
+    },
+    {
+      "id": "city-country",
+      "label": "Ciudad vs Campo",
+      "color": "#0d9488",
+      "descripcion_fotos": "Foto 1: ciudad bulliciosa. Foto 2: paisaje rural tranquilo.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "Describe what you see in both.",
+          "Tell me about each picture."
+        ],
+        "bloque_b": [
+          "Where would you prefer to live?",
+          "Where did you grow up?",
+          "Have you lived in both kinds of places?",
+          "Do you like spending time in nature?",
+          "Do you go hiking in the mountains often?"
+        ],
+        "bloque_c": [
+          "Why do so many people move to big cities?",
+          "Is rural life disappearing?",
+          "What are the challenges of urban living?",
+          "How common are these two situations in your country?",
+          "Are mountain getaways more popular than other types of holidays?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to where we choose to live, but in completely different contexts. Both pictures show daily life, and in both of them people seem comfortable in their environment. However, the main difference is that in the first picture the setting is a busy urban area, whereas in the second one it's a peaceful rural landscape. If I had to choose, I would personally lean towards the countryside, because it gives me a sense of calm. It's far more relaxing for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd definitely go for something more along the lines of the second one. In my day-to-day life, I make a point of trying something new every now and then, because it just feels more natural to me. All in all, it just feels far more rewarding for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, more and more people are shifting towards healthier choices. This is largely due to the fact that modern life is increasingly demanding, whereas in the past things were much simpler. Looking ahead, I expect this gap will only widen, unless society changes its mindset."
+    },
+    {
+      "id": "shop-online",
+      "label": "Tienda física vs Online",
+      "color": "#dc2626",
+      "descripcion_fotos": "Foto 1: tienda física, bazar o mercado. Foto 2: persona comprando online o centro comercial.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "Describe both shopping experiences.",
+          "What's the main difference here?"
+        ],
+        "bloque_b": [
+          "How do you usually shop?",
+          "Do you trust online shopping?",
+          "When did you last buy something online?",
+          "What is your favourite part about going shopping?",
+          "Do you usually do your shopping with time or at the last minute?"
+        ],
+        "bloque_c": [
+          "Is online shopping replacing physical shops?",
+          "What are the risks of online shopping?",
+          "Will high streets survive?",
+          "Do you try to buy organic produce?",
+          "Is it more expensive to eat unprocessed food than organic? Why do you think that?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to shopping, but in completely different contexts. Both pictures show people purchasing products, and in both of them they seem engaged. However, the main difference is that in the first picture customers are browsing in a physical shop, whereas in the second one a person is buying from a laptop at home. If I had to choose, I would personally lean towards online shopping, because it saves me a lot of time. It's far more convenient for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd definitely go for the second scene without a doubt. In my day-to-day life, I rarely manage to stick to what I know, because I'm a creature of habit. All in all, it just feels considerably more convenient for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, the vast majority of people still cling to traditional ways. This is largely due to the fact that convenience has become the top priority, whereas in the past this would have been unthinkable. Looking ahead, I expect things will balance out, unless we collectively decide otherwise."
+    },
+    {
+      "id": "gym-outdoor",
+      "label": "Gimnasio vs Aire libre",
+      "color": "#7c3aed",
+      "descripcion_fotos": "Foto 1: gimnasio cerrado o deporte indoor. Foto 2: deporte al aire libre, montaña o senderismo.",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "Describe both activities.",
+          "What's similar between the two scenes?"
+        ],
+        "bloque_b": [
+          "Which type of exercise do you prefer?",
+          "Do you go to the gym?",
+          "Tell me about your sport routine.",
+          "Do you enjoy being out? In which seasons?",
+          "Have you ever tried off-road biking? If so, what was the experience like?"
+        ],
+        "bloque_c": [
+          "What are the benefits of doing sport outdoors?",
+          "Is the gym better than outdoor exercise?",
+          "Has the way we exercise changed?",
+          "In your opinion, what are the key safety measures one should take when practising adventure sports?",
+          "Why do you think outdoor sports have become so popular recently?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to physical exercise, but in completely different contexts. Both pictures show people working out, and in both of them they seem focused. However, the main difference is that in the first picture people are training in a gym, whereas in the second one they're running outdoors. If I had to choose, I would personally lean towards outdoor exercise, because being in nature clears my mind. It's far more refreshing for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd definitely go for the second scene without a doubt. In my day-to-day life, I almost always go for the practical option, because it saves me a lot of stress. All in all, it just feels significantly more meaningful for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, more and more people are shifting towards healthier choices. This is largely due to the fact that people are more health-conscious than ever, whereas in the past it wasn't even on people's radar. Looking ahead, I expect the situation will reverse completely, unless society changes its mindset."
+    },
+    {
+      "id": "group-individual",
+      "label": "Grupo vs Individual",
+      "color": "#0891b2",
+      "descripcion_fotos": "Foto 1: actividad en grupo (juego de mesa, amigos). Foto 2: actividad en solitario (videojuegos, persona sola).",
+      "banco_preguntas": {
+        "bloque_a": [
+          "Compare these two pictures.",
+          "What's the main difference?",
+          "Describe both situations."
+        ],
+        "bloque_b": [
+          "Do you prefer doing things alone or in a group?",
+          "Are you more introvert or extrovert?",
+          "Tell me about a recent group activity.",
+          "What is more entertaining for you, board games or computer games?",
+          "How many times per week do you play games?"
+        ],
+        "bloque_c": [
+          "What can we learn from group activities?",
+          "Why is teamwork important?",
+          "Are people more individualistic nowadays?",
+          "How has age affected the type of activities people enjoy?",
+          "Is gaming changing how young people socialise?"
+        ]
+      },
+      "respuesta_modelo_a": "At first sight, both pictures show situations related to leisure activities, but in completely different contexts. Both pictures show people engaged in what they're doing, and in both of them they seem at ease. However, the main difference is that in the first picture a group of people are sharing an activity, whereas in the second one a person is doing it alone. If I had to choose, I would personally lean towards group activities, because they bring out the best in me. It's far more rewarding for someone like me.",
+      "respuesta_modelo_b": "If I had to pick one, I'd say without hesitation that the option that feels more genuine to me. In my day-to-day life, I tend to follow my gut instinct, because it just feels more natural to me. All in all, it just feels infinitely more stimulating for someone like me.",
+      "respuesta_modelo_c": "Generally speaking, a growing share of people are caught between two worlds. This is largely due to the fact that we're all juggling more responsibilities, whereas in the past such choices were a luxury. Looking ahead, I expect we'll see a real turnaround, unless people start speaking up."
+    }
+  ]
+}
