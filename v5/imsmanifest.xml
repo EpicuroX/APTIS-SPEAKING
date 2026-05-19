@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="APTIS_SPEAKING_V4" version="4.0"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata><schema>ADL SCORM</schema><schemaversion>1.2</schemaversion></metadata>
+  <organizations default="ORG">
+    <organization identifier="ORG">
+      <title>Aptis Speaking · Simulador v4 (B2 → C1)</title>
+      <item identifier="ITEM" identifierref="RES">
+        <title>Speaking</title>
+        <adlcp:masteryscore>70</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="css/style.css"/>
+      <file href="js/scorm.js"/>
+      <file href="js/motor.js"/>
+      <file href="js/examen.js"/>
+      <file href="js/contenidos/kits-globales.json"/>
+      <file href="js/contenidos/parte-1.json"/>
+      <file href="js/contenidos/parte-2.json"/>
+      <file href="js/contenidos/parte-3.json"/>
+      <file href="js/contenidos/parte-4.json"/>
+    </resource>
+  </resources>
+</manifest>

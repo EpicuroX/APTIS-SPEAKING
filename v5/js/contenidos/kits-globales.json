@@ -1,0 +1,329 @@
+{
+  "id": "kits-globales",
+  "label": "Kits universales (compartidos por todas las partes)",
+  "conectores": [
+    {
+      "id": "adicion",
+      "label": "ADICIÓN",
+      "icon": "➕",
+      "cuando": "Para añadir un segundo argumento, idea o detalle sin cambiar de dirección.",
+      "donde": "Al inicio de una frase nueva, después del primer argumento.",
+      "ejemplo_aplicado": "It helps us save time. **Moreover**, it allows us to work from anywhere.",
+      "items": [
+        { "texto": "Also,",                  "nivel": "A2-B1" },
+        { "texto": "What's more,",           "nivel": "B2" },
+        { "texto": "Besides,",               "nivel": "B2" },
+        { "texto": "Moreover,",              "nivel": "B2 alto" },
+        { "texto": "Furthermore,",           "nivel": "C1" },
+        { "texto": "On top of that,",        "nivel": "C1" },
+        { "texto": "In addition,",           "nivel": "B2" },
+        { "texto": "Apart from that,",       "nivel": "C1" }
+      ]
+    },
+    {
+      "id": "contraste",
+      "label": "CONTRASTE",
+      "icon": "⚡",
+      "cuando": "Para introducir una idea opuesta o un matiz contrario.",
+      "donde": "Al inicio de la frase contraria (NO en medio).",
+      "ejemplo_aplicado": "It saves time. **However**, it can also become addictive.",
+      "items": [
+        { "texto": "But",                    "nivel": "A1" },
+        { "texto": "While",                  "nivel": "B1" },
+        { "texto": "However,",               "nivel": "B2" },
+        { "texto": "Whereas",                "nivel": "B2 alto" },
+        { "texto": "On the other hand,",     "nivel": "B2" },
+        { "texto": "Nevertheless,",          "nivel": "C1" },
+        { "texto": "In contrast,",           "nivel": "B2 alto" },
+        { "texto": "On the flip side,",      "nivel": "C1 (informal)" }
+      ]
+    },
+    {
+      "id": "causa",
+      "label": "CAUSA",
+      "icon": "📍",
+      "cuando": "Para explicar el motivo o razón de algo.",
+      "donde": "Conectando la consecuencia con su causa.",
+      "ejemplo_aplicado": "I avoid social media **due to** its impact on my sleep.",
+      "items": [
+        { "texto": "Because",                "nivel": "A2 (+ frase)" },
+        { "texto": "As",                     "nivel": "B1 (+ frase)" },
+        { "texto": "Since",                  "nivel": "B2 (+ frase)" },
+        { "texto": "Because of",             "nivel": "B1 (+ sustantivo/-ing)" },
+        { "texto": "Due to",                 "nivel": "B2 (+ sustantivo/-ing)" },
+        { "texto": "Owing to",               "nivel": "C1 (+ sustantivo/-ing)" },
+        { "texto": "On the grounds that",    "nivel": "C1 (+ frase, formal)" }
+      ]
+    },
+    {
+      "id": "consecuencia",
+      "label": "CONSECUENCIA",
+      "icon": "➡️",
+      "cuando": "Para indicar el resultado o efecto de algo.",
+      "donde": "Después de la causa, abriendo la frase del efecto.",
+      "ejemplo_aplicado": "Smartphones are everywhere. **As a result**, attention spans are shorter.",
+      "items": [
+        { "texto": "So,",                    "nivel": "A2" },
+        { "texto": "That's why",             "nivel": "B1" },
+        { "texto": "Therefore,",             "nivel": "B2" },
+        { "texto": "As a result,",           "nivel": "B2" },
+        { "texto": "Consequently,",          "nivel": "C1" },
+        { "texto": "As a consequence,",      "nivel": "B2 alto" },
+        { "texto": "Thus,",                  "nivel": "C1 (formal)" },
+        { "texto": "This means that",        "nivel": "B2" }
+      ]
+    },
+    {
+      "id": "concesion",
+      "label": "CONCESIÓN",
+      "icon": "🤝",
+      "cuando": "Para admitir algo, antes de matizarlo con un pero.",
+      "donde": "Al inicio de la concesión; el pero va detrás.",
+      "ejemplo_aplicado": "**Although** it's expensive, it's worth every penny.",
+      "items": [
+        { "texto": "Although",               "nivel": "B1 (+ frase)" },
+        { "texto": "Even though",            "nivel": "B2 (+ frase)" },
+        { "texto": "Despite",                "nivel": "B2 (+ sustantivo/-ing)" },
+        { "texto": "In spite of",            "nivel": "B2 (+ sustantivo/-ing)" },
+        { "texto": "While",                  "nivel": "B2 (+ frase)" }
+      ]
+    },
+    {
+      "id": "listado",
+      "label": "LISTADO",
+      "icon": "📋",
+      "cuando": "Para ordenar argumentos en una respuesta larga.",
+      "donde": "Al inicio de cada punto enumerado.",
+      "ejemplo_aplicado": "**To start with**,… **Secondly**,… **Last but not least**,…",
+      "items": [
+        { "texto": "First of all,",          "nivel": "B1" },
+        { "texto": "To start with,",         "nivel": "B2" },
+        { "texto": "To begin with,",         "nivel": "B2" },
+        { "texto": "In the first place,",    "nivel": "B2 alto" },
+        { "texto": "Secondly,",              "nivel": "B1" },
+        { "texto": "Next,",                  "nivel": "B1" },
+        { "texto": "Finally,",               "nivel": "B1" },
+        { "texto": "Last but not least,",    "nivel": "C1 (idiom)" }
+      ]
+    },
+    {
+      "id": "muletillas-blanco",
+      "label": "MULETILLA · CUANDO TE QUEDAS EN BLANCO AL EMPEZAR",
+      "icon": "🚨",
+      "cuando": "Te hacen la pregunta y no se te ocurre nada. Estas frases ganan 5-10 segundos sin parecer perdido.",
+      "donde": "Como PRIMERA frase de tu respuesta, antes de empezar el contenido real.",
+      "ejemplo_aplicado": "*[Pregunta: Have you ever collected anything?]* **Well, that's an interesting question. Let me think for a second.** Yes, actually, when I was younger…",
+      "items": [
+        { "texto": "Well, that's an interesting question. Let me think for a second. → Bueno, qué pregunta más interesante. Déjame pensar un segundo.", "nivel": "B2" },
+        { "texto": "That's actually something I've never thought about before. → Pues mira, en eso nunca había pensado.", "nivel": "B2 alto" },
+        { "texto": "Funnily enough, this comes up a lot lately. → Mira, justo esto sale mucho últimamente.", "nivel": "B2 alto (idiom)" },
+        { "texto": "Now that you ask, quite a few things come to mind. → Ahora que lo dices, se me vienen varias cosas a la cabeza.", "nivel": "B2 alto" },
+        { "texto": "Where do I even start with that one? → ¿Por dónde empiezo con esa?", "nivel": "B2 alto (idiom)" },
+        { "texto": "Honestly, I could talk about this for hours. → La verdad, podría hablar de esto durante horas.", "nivel": "B2" }
+      ]
+    },
+    {
+      "id": "muletillas-puente",
+      "label": "MULETILLA · CONECTAR DOS FRASES CUANDO SE CORTA EL HILO",
+      "icon": "🌉",
+      "cuando": "Has terminado una frase y se te ha ido la idea siguiente. Estos puentes te dan 2-3 segundos para reorganizar sin sonar a pausa.",
+      "donde": "Entre dos frases. Después de un punto, antes de seguir.",
+      "ejemplo_aplicado": "I really enjoyed it. **Having said that**, it wasn't easy at first…",
+      "items": [
+        { "texto": "Having said that, → Dicho esto,", "nivel": "B2 alto" },
+        { "texto": "On a related note, → Y ya que estamos,", "nivel": "C1" },
+        { "texto": "That brings me to another point. → Eso me lleva a otro punto.", "nivel": "B2 alto" },
+        { "texto": "Speaking of which, → Hablando de esto,", "nivel": "B2 alto (idiom)" },
+        { "texto": "Which reminds me, → Lo cual me recuerda,", "nivel": "B2" },
+        { "texto": "Now, on top of that, → Y además de eso,", "nivel": "B2 alto" },
+        { "texto": "What I mean is, → Lo que quiero decir es,", "nivel": "B2" }
+      ]
+    },
+    {
+      "id": "muletillas-pasado",
+      "label": "MULETILLA · RELLENO VAGO DE EXPERIENCIA PASADA",
+      "icon": "🎭",
+      "cuando": "Te preguntan sobre una experiencia pasada y no se te ocurre nada concreto, o lo que tienes es muy pobre. Estas frases son gramaticalmente impecables y vacías de contenido específico — el examen no te puntúa por la riqueza de tu vida.",
+      "donde": "Como cuerpo de la respuesta de cualquier pregunta de tipo 'Have you ever / Tell me about / When was the last time'.",
+      "ejemplo_aplicado": "**Yes, actually, I went through something just like that not so long ago. At the time, I was completely caught up in the moment, and it felt absolutely unforgettable. Since then, I've tried to recreate that feeling several times.**",
+      "items": [
+        { "texto": "I went through something just like that not so long ago. → Me pasó algo parecido hace nada.", "nivel": "B2 alto" },
+        { "texto": "At the time, I was completely caught up in the moment. → En ese momento estaba totalmente metido en lo que pasaba.", "nivel": "C1 (idiom)" },
+        { "texto": "It felt absolutely unforgettable. → Fue una sensación inolvidable.", "nivel": "B2 alto" },
+        { "texto": "It's one of those experiences that really stayed with me. → Es de esas cosas que se te quedan grabadas.", "nivel": "B2 alto" },
+        { "texto": "Since then, I've tried to recreate that feeling several times. → Desde entonces, he intentado repetir esa sensación varias veces.", "nivel": "B2 alto" },
+        { "texto": "It was the kind of moment that's hard to put into words. → Fue uno de esos momentos difíciles de describir con palabras.", "nivel": "C1 (idiom)" },
+        { "texto": "Looking back, I can honestly say it changed my perspective. → Mirándolo en perspectiva, te diría que me cambió el punto de vista.", "nivel": "C1" }
+      ]
+    },
+    {
+      "id": "muletillas-opinion",
+      "label": "MULETILLA · RELLENO VAGO DE OPINIÓN / ANÁLISIS ABSTRACTO",
+      "icon": "💭",
+      "cuando": "Te piden opinión sobre un tema general ('Do you think people…?' 'Why do you think…?') y no quieres comprometerte ni dar datos concretos. Estas frases suenan a discurso adulto y no dicen casi nada.",
+      "donde": "Como cuerpo de la respuesta en cualquier pregunta de opinión general (Parte 2 Q3, Parte 3 Q3, Parte 4 Q3).",
+      "ejemplo_aplicado": "**It depends entirely on the circumstances. We live in a fast-paced world where small habits make a huge difference. At the end of the day, it all comes down to balance.**",
+      "items": [
+        { "texto": "It depends entirely on the circumstances. → Depende totalmente de las circunstancias.", "nivel": "B2 alto" },
+        { "texto": "We live in a fast-paced world where small habits make a huge difference. → Vivimos en un mundo a toda velocidad donde los pequeños hábitos marcan una gran diferencia.", "nivel": "B2 alto (idiom)" },
+        { "texto": "It's not as black and white as it might seem. → No es tan blanco o negro como podría parecer.", "nivel": "C1 (idiom)" },
+        { "texto": "There's no one-size-fits-all answer to this. → No hay una respuesta única para esto.", "nivel": "C1 (idiom)" },
+        { "texto": "It really comes down to balance. → Al final, todo se reduce a encontrar el equilibrio.", "nivel": "B2 alto (idiom)" },
+        { "texto": "More and more people are starting to see things differently. → Cada vez más gente empieza a verlo de otra manera.", "nivel": "B2 alto" },
+        { "texto": "I think it's high time we rethought this. → Creo que ya va siendo hora de que nos lo replanteemos.", "nivel": "C1 (idiom)" }
+      ]
+    },
+    {
+      "id": "muletillas-cierre",
+      "label": "MULETILLA · CERRAR CUANDO NO SABES CÓMO TERMINAR",
+      "icon": "🏁",
+      "cuando": "Te queda poco tiempo, has dicho lo que tenías y necesitas terminar limpio. Cerrar mal te baja la nota global; cerrar bien con idiom te la sube.",
+      "donde": "Como ÚLTIMA frase de la respuesta. Imprescindible en las 4 partes.",
+      "ejemplo_aplicado": "…and I think it's something most people can relate to. **At the end of the day, it's all about finding the right balance.**",
+      "items": [
+        { "texto": "At the end of the day, it's all about finding the right balance. → Al final del día, todo va de encontrar el equilibrio justo.", "nivel": "C1 (idiom)" },
+        { "texto": "All things considered, it's something I genuinely value. → Mirándolo todo en conjunto, es algo que valoro mucho.", "nivel": "B2 alto" },
+        { "texto": "In a nutshell, it's a double-edged sword. → En pocas palabras, es un arma de doble filo.", "nivel": "C1 (idiom doble)" },
+        { "texto": "Honestly, I wouldn't change it for the world. → La verdad, no lo cambiaría por nada del mundo.", "nivel": "B2 alto" },
+        { "texto": "That's probably the best way I can put it. → Es, seguramente, la mejor forma en que puedo expresarlo.", "nivel": "B2 alto" },
+        { "texto": "I guess that's just the way it is these days. → Supongo que así son las cosas ahora.", "nivel": "B2" },
+        { "texto": "And that's what really makes the difference. → Y eso es lo que marca la diferencia.", "nivel": "B2 (idiom)" }
+      ]
+    },
+    {
+      "id": "muletillas-rescate",
+      "label": "MULETILLA · REFORMULAR CUANDO TE EQUIVOCAS O TE PIERDES",
+      "icon": "🆘",
+      "cuando": "Has empezado una frase mal, se te ha trabado la gramática, o te has perdido a mitad de respuesta. Estas frases te permiten reformular sin romper el flujo. Un nativo las usa todo el tiempo.",
+      "donde": "En medio de la respuesta, cuando notas que algo va mal. Mucho mejor reformular que quedarse en silencio o tartamudear.",
+      "ejemplo_aplicado": "It's really… **or rather**, what I mean is, it's the kind of thing that takes time to appreciate.",
+      "items": [
+        { "texto": "Or rather, what I mean is, → O mejor dicho, lo que quiero decir es,", "nivel": "B2 alto" },
+        { "texto": "Let me put it another way. → Déjame que lo diga de otra manera.", "nivel": "B2 alto" },
+        { "texto": "Sorry, what I was trying to say is, → Perdona, lo que intentaba decir es,", "nivel": "B2" },
+        { "texto": "Actually, scrap that — → Bueno, mejor olvida eso —", "nivel": "C1 (idiom informal)" },
+        { "texto": "Now that I think about it, it's more like… → Ahora que lo pienso, es más bien…", "nivel": "B2 alto" },
+        { "texto": "What I really mean is, → Lo que de verdad quiero decir es,", "nivel": "B2" },
+        { "texto": "To be more precise, → Para ser más exacto,", "nivel": "B2 alto" }
+      ]
+    }
+  ],
+  "speculating": {
+    "label": "🔮 ESPECULAR (Parte 2, descripción de foto)",
+    "items": [
+      { "texto": "Maybe…",                       "nivel": "A2" },
+      { "texto": "I think…",                     "nivel": "B1" },
+      { "texto": "It looks like…",               "nivel": "B1" },
+      { "texto": "It seems to be…",              "nivel": "B2" },
+      { "texto": "She appears to be…",           "nivel": "B2" },
+      { "texto": "She must be…",                 "nivel": "B2" },
+      { "texto": "Presumably,…",                 "nivel": "B2 alto" },
+      { "texto": "I reckon…",                    "nivel": "B2 alto (informal)" },
+      { "texto": "To judge from her posture,…",  "nivel": "C1" },
+      { "texto": "I get the impression that…",   "nivel": "C1" },
+      { "texto": "In all likelihood,…",          "nivel": "C1" },
+      { "texto": "I'm pretty confident that…",   "nivel": "B2 alto" }
+    ]
+  },
+  "opinar": {
+    "label": "💬 OPINAR (apertura de respuesta)",
+    "items": [
+      { "texto": "In my opinion,",                  "nivel": "B1" },
+      { "texto": "Personally,",                     "nivel": "B1" },
+      { "texto": "As I see it,",                    "nivel": "B2" },
+      { "texto": "From my point of view,",          "nivel": "B2" },
+      { "texto": "To my mind,",                     "nivel": "B2 alto" },
+      { "texto": "I strongly believe that",         "nivel": "B2" },
+      { "texto": "I'm absolutely convinced that",   "nivel": "C1" },
+      { "texto": "It's widely recognised that",     "nivel": "C1 (pasiva impersonal)" },
+      { "texto": "There's no denying that",         "nivel": "C1 (idiom)" }
+    ]
+  },
+  "sinonimos": {
+    "label": "🔄 SINÓNIMOS B2/C1 (evita palabras gastadas)",
+    "grupos": [
+      { "base": "important",   "sinonimos": ["critical", "significant", "key", "fundamental", "essential", "vital", "meaningful"] },
+      { "base": "problem",     "sinonimos": ["issue", "challenge", "difficulty", "obstacle", "dilemma", "concern", "complication"] },
+      { "base": "things",      "sinonimos": ["aspects", "factors", "circumstances", "conditions", "elements", "items"] },
+      { "base": "cause (verb)","sinonimos": ["lead to", "result in", "bring about", "give rise to", "trigger", "contribute to"] },
+      { "base": "change",      "sinonimos": ["shift", "transformation", "transition", "evolution"] },
+      { "base": "good",        "sinonimos": ["beneficial", "rewarding", "valuable", "worthwhile", "fulfilling", "enriching"] },
+      { "base": "bad",         "sinonimos": ["harmful", "detrimental", "damaging", "adverse", "negative"] },
+      { "base": "big",         "sinonimos": ["significant", "considerable", "substantial", "remarkable", "profound"] }
+    ]
+  },
+  "idioms_c1": {
+    "label": "💎 IDIOMS C1 (suben nota inmediato)",
+    "items": [
+      { "texto": "In a nutshell",                 "uso": "Cierre: resumiendo." },
+      { "texto": "A double-edged sword",          "uso": "Cuerpo: cuando algo tiene pros y contras." },
+      { "texto": "Here to stay",                  "uso": "Cierre: hablando de tendencias modernas." },
+      { "texto": "All things considered",         "uso": "Cierre: visto lo visto." },
+      { "texto": "At the end of the day",         "uso": "Cierre: en definitiva." },
+      { "texto": "Cost an arm and a leg",         "uso": "Cuerpo: hablando de algo carísimo." },
+      { "texto": "A piece of cake",               "uso": "Cuerpo: muy fácil." },
+      { "texto": "Break the language barrier",    "uso": "Tema: idiomas / vivir fuera." },
+      { "texto": "All that glitters is not gold", "uso": "Contraargumento: no todo es perfecto." },
+      { "texto": "Read between the lines",        "uso": "Tema: publicidad / política." },
+      { "texto": "Bear in mind",                  "uso": "Cuerpo: tener en cuenta." },
+      { "texto": "For better or for worse",       "uso": "Cierre: ambivalente." },
+      { "texto": "Take a load off my mind",       "uso": "Tema: estrés / relajación." },
+      { "texto": "Bring out the best in someone", "uso": "Tema: amigos / familia." },
+      { "texto": "It's a no-brainer",             "uso": "Cuerpo: cuando algo es evidente." },
+      { "texto": "Lean towards",                  "uso": "Comparar: preferir (phrasal verb)." },
+      { "texto": "Cut down on",                   "uso": "Tema: hábitos, salud." },
+      { "texto": "Be at stake",                   "uso": "Cuerpo: lo que está en juego." }
+    ]
+  },
+  "phrasal_verbs": {
+    "label": "🔧 PHRASAL VERBS B2/C1",
+    "items": [
+      { "texto": "unwind",        "uso": "relajarse" },
+      { "texto": "switch off",    "uso": "desconectar mentalmente" },
+      { "texto": "end up + -ing", "uso": "acabar haciendo algo" },
+      { "texto": "come up with",  "uso": "ocurrírsele a uno" },
+      { "texto": "take up",       "uso": "empezar una actividad/hobby" },
+      { "texto": "look after",    "uso": "cuidar de" },
+      { "texto": "carry out",     "uso": "llevar a cabo" },
+      { "texto": "bring about",   "uso": "provocar" },
+      { "texto": "make up for",   "uso": "compensar" },
+      { "texto": "deal with",     "uso": "enfrentar / lidiar con" },
+      { "texto": "find out",      "uso": "averiguar" },
+      { "texto": "go through",    "uso": "pasar por (experiencia)" },
+      { "texto": "show off",      "uso": "presumir" },
+      { "texto": "hang out with", "uso": "pasar el rato con" },
+      { "texto": "catch up with", "uso": "ponerse al día con alguien" }
+    ]
+  },
+  "inversiones_c1": {
+    "label": "🔥 INVERSIONES C1 (opcionales, una por respuesta máximo)",
+    "warning": "Usa máximo UNA por respuesta. Demasiadas suenan forzadas.",
+    "items": [
+      {
+        "patron": "Not only … but also …",
+        "ejemplo": "Not only does it save time, but it also reduces stress.",
+        "uso": "Para sumar dos beneficios con énfasis."
+      },
+      {
+        "patron": "Were I to + infinitivo, I would …",
+        "ejemplo": "Were I to choose, I would go with online learning.",
+        "uso": "Hipótesis formal en lugar de 'If I had to choose'."
+      },
+      {
+        "patron": "Only by + -ing + auxiliar + sujeto …",
+        "ejemplo": "Only by setting limits will we achieve a healthy balance.",
+        "uso": "Énfasis en la única forma posible."
+      },
+      {
+        "patron": "Hardly had I + participio … when …",
+        "ejemplo": "Hardly had I started running when I felt completely energised.",
+        "uso": "Narrar acciones consecutivas con énfasis."
+      },
+      {
+        "patron": "Little did I know that …",
+        "ejemplo": "Little did I know that it would change my life.",
+        "uso": "Sorpresa en narración pasada."
+      }
+    ]
+  }
+}
